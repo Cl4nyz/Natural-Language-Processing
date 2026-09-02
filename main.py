@@ -53,14 +53,14 @@ def byte_pair_encoding(text, k=200):
 # Tokenização por palavra
 def regex_tokenize(text):
     tokenizer = re.compile(
-        r'''(?x)
-        \d+(?:[\.,]\d+)?\s*(?:mg/L|U/L|ng/ml|iu/ml|cm|mm|m)
-        | \d+-\d+\s*(?:U/L|mg/L)?
-        | \d+(?:\.\d+)?
-        | [A-Z][a-zA-Z0-9-]*-\d+
-        | \b[a-zA-Z]+-[a-zA-Z]+\b
-        | \w+
-        | [^\w\s]
+        r'''(?x)                                              # Flag para permitir comentários no Regex
+        \d+(?:[\.,]\d+)?\s*(?:mg/L|U/L|ng/ml|iu/ml|cm|mm|m)   # Valores numéricos + Unidades
+        | \d+-\d+\s*(?:U/L|mg/L)?                             # Intervalos de medidas
+        | \d+(?:\.\d+)?                                       # Números decimais ou inteiros isolados
+        | [A-Z][a-zA-Z0-9-]*-\d+                              # Códigos com hífen e número (ex: CA 19-9, POD-7)
+        | \b[a-zA-Z]+-[a-zA-Z]+\b                             # Palavras com hífen
+        | \w+                                                 # Palavras normais e siglas
+        | [^\w\s]                                             # Caracter de pontuação/símbolo individual
         '''
     )
     return tokenizer.findall(text)
