@@ -50,14 +50,34 @@ def byte_pair_encoding(text, k=200):
         # TODO avoid collisions (ex. a a a -> aa a or a aa?)
     return vocabulary, corpus
 
+# Tokenização por palavra
+def regex_tokenize(text):
+    tokenizer = re.compile(
+        r'''(?x)
+        \d+(?:[\.,]\d+)?\s*(?:mg/L|U/L|ng/ml|iu/ml|cm|mm|m)
+        | \d+-\d+\s*(?:U/L|mg/L)?
+        | \d+(?:\.\d+)?
+        | [A-Z][a-zA-Z0-9-]*-\d+
+        | \b[a-zA-Z]+-[a-zA-Z]+\b
+        | \w+
+        | [^\w\s]
+        '''
+    )
+    return tokenizer.findall(text)
+
+
 def main():
     df = pd.read_csv(CASES, header=0)
-    text = df.loc[0, 'case_text']
-    print('-'*30)
-    print(text)
-    print('-'*30)
-    apply_regex(text)
-    byte_pair_encoding(text)
+    # text = df.loc[0, 'case_text']
+    # print('-'*30)
+    # print(text)
+    # print('-'*30)
+    # apply_regex(text)
+    # byte_pair_encoding(text)
+
+    # Cria uma nova coluna no DataFrame com os tokens extraídos
+    df['tokens'] = df['case_text'].apply(regex_tokenize)
+    print(df['tokens'].iloc[0][:15])
 
 
 if __name__ == '__main__':
