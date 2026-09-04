@@ -3,8 +3,16 @@ import re
 
 import csv
 import pandas as pd
+import networkx as nx
+import nltk
+from nltk.corpus import stopwords
+from nltk.collocations import BigramCollocationFinder
+from nltk.metrics import BigramAssocMeasures
 
 CASES = Path('sample/cases.csv')
+METADATA = Path('sample/metadata.csv')
+
+NUM_CASES = 56
 
 def print_matches_and_groups(matches, title=None):
     if title is not None:
@@ -30,7 +38,6 @@ def apply_regex(text):
 def byte_pair_encoding(text, k=200):
     corpus = list(text)
     for epoch in range(k):
-        print(len(corpus))
         vocabulary = {}
         max_pair = None
         for i in range(len(corpus)-1):
@@ -43,41 +50,86 @@ def byte_pair_encoding(text, k=200):
                 max_pair = pair
         for i in vocabulary[max_pair][::-1]:
             corpus[i:i+2] = [corpus[i] + corpus[i+1]]
-        print(f'Most frequent pair in epoch {epoch}: "{max_pair}"')
+        # print(f'Most frequent pair in epoch {epoch}: "{max_pair}"')
     for c in corpus:
         print(f"{c}", end='|')
     print('\n')
         # TODO avoid collisions (ex. a a a -> aa a or a aa?)
-    return vocabulary, corpus
+    return set(vocabulary).union(set(chr(i) for i in range(32,127))), corpus
 
 # Tokenização por palavra
 def regex_tokenize(text):
     tokenizer = re.compile(
         r'''(?x)                                              # Flag para permitir comentários no Regex
-        \d+(?:[\.,]\d+)?\s*(?:mg/L|U/L|ng/ml|iu/ml|cm|mm|m)   # Valores numéricos + Unidades
+        \d+(?:[\.,]\d+)?\s*(?:mg/L|U/L|ng/ml|iu/ml|cm|mm|m|%)\b # Valores numéricos + Unidades
         | \d+-\d+\s*(?:U/L|mg/L)?                             # Intervalos de medidas
         | \d+(?:\.\d+)?                                       # Números decimais ou inteiros isolados
         | [A-Z][a-zA-Z0-9-]*-\d+                              # Códigos com hífen e número (ex: CA 19-9, POD-7)
         | \b[a-zA-Z]+-[a-zA-Z]+\b                             # Palavras com hífen
+        | \w+'\w*                                             # Palavras com apóstrofo (ex: don't, it's)
         | \w+                                                 # Palavras normais e siglas
         | [^\w\s]                                             # Caracter de pontuação/símbolo individual
         '''
     )
     return tokenizer.findall(text)
 
+def build_pmi_graph(tokens, window_size, min_freq, min_pmi):
+    finder = BigramCollocationFinder.from_words(tokens, window_size=window_size)
+    
+    finder.apply_freq_filter(min_freq)
+    
+    pmi_scores = finder.score_ngrams(BigramAssocMeasures.pmi)
+    
+    G = nx.Graph()
+    
+    for (node1, node2), pmi in pmi_scores:
+        if pmi >= min_pmi:
+            G.add_edge(node1, node2, weight=pmi)
+            
+    return G
 
 def main():
-    df = pd.read_csv(CASES, header=0)
-    # text = df.loc[0, 'case_text']
+    cases_df = pd.read_csv(CASES, header=0)
+    metadata_df = pd.read_csv(METADATA, header=0)
+    concat_text = " ".join(cases_df['case_text'].iloc[:60].dropna().astype(str))
+    # print(concat_text)
+    text = cases_df.loc[23, 'case_text']
+    text = concat_text
     # print('-'*30)
     # print(text)
     # print('-'*30)
     # apply_regex(text)
-    # byte_pair_encoding(text)
+    # byte_pair_encoding(concat_text, k=400)
 
     # Cria uma nova coluna no DataFrame com os tokens extraídos
-    df['tokens'] = df['case_text'].apply(regex_tokenize)
-    print(df['tokens'].iloc[0][:15])
+    # cases_df['tokens'] = cases_df['case_text'].apply(regex_tokenize)
+    text = text.replace('.','').replace(',',' ').replace(';',' ').replace(':',' ').replace('(',' ').replace(')',' ').replace('[',' ').replace(']',' ').replace('{',' ').replace('}',' ')
+    tokens = regex_tokenize(text)
+
+    nltk.download('stopwords')
+    stop_words = set(stopwords.words('english'))
+    stop_words.discard('no')
+
+    tokens = [t for t in tokens if t.lower() not in stop_words]
+    tokens = list(set(tokens))
+    print(tokens)
+    print(len(set(tokens)))
+
+    knowledge_graph = build_pmi_graph(
+        tokens=tokens, 
+        window_size=5, 
+        min_freq=1, 
+        min_pmi=0.5
+    )
+
+    print(len(knowledge_graph.edges()))
+
+    for edge in sorted(knowledge_graph.edges(data=True), key=lambda x: x[2]['weight'], reverse=True)[:20]:
+        print(edge)
+
+    # unique_items = set(metadata_df['keywords'].str.strip('[]').str.split(', ').explode())
+    # print(unique_items)
+    
 
 
 if __name__ == '__main__':
