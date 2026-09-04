@@ -6,4 +6,5 @@ dependencies = [
     "networkx>=3.6.1",
     "nltk>=3.10.3",
     "pandas>=3.0.5",
+    "pyvis>=0.3.2",
 ]

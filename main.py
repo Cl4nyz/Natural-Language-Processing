@@ -8,6 +8,7 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.collocations import BigramCollocationFinder
 from nltk.metrics import BigramAssocMeasures
+from pyvis.network import Network
 
 CASES = Path('sample/cases.csv')
 METADATA = Path('sample/metadata.csv')
@@ -100,13 +101,32 @@ def build_pmi_graph(tokens, window_size, min_freq, min_pmi):
             
     return G
 
+def create_html_graph(knowledge_graph, output_file="knowledge_graph.html", top_nodes=-1):
+    net = Network(notebook=False, height="750px", width="100%", 
+                bgcolor="#222222", font_color="white", 
+                select_menu=True, filter_menu=True)
+    '''Useful for graphs with less than 1000 nodes. Larger graphs might not render properly.'''
+
+    sorted_edges = sorted(
+        knowledge_graph.edges(data=True), 
+        key=lambda x: x[2].get('weight', 0), 
+        reverse=True
+    )[:top_nodes]
+    subgraph = nx.Graph()
+    for u, v, data in sorted_edges:
+        subgraph.add_edge(u, v, **data)
+    net.from_nx(subgraph)
+    net.show_buttons(filter_=['physics'])
+    net.write_html(output_file)
+    print(f"Knowledge graph saved to {output_file}")
+
 def main():
     cases_df = pd.read_csv(CASES, header=0)
     metadata_df = pd.read_csv(METADATA, header=0)
     concat_text = " ".join(cases_df['case_text'].iloc[:60].dropna().astype(str))
     # print(concat_text)
     text = cases_df.loc[23, 'case_text']
-    text = concat_text
+    # text = concat_text
     # print('-'*30)
     # print(text)
     # print('-'*30)
@@ -145,14 +165,16 @@ def main():
     for edge in sorted(knowledge_graph.edges(data=True), key=lambda x: x[2]['weight'], reverse=True)[:20]:
         print(edge)
 
-    # All tokens
-    print(sorted(tokens))
+    create_html_graph(knowledge_graph, "medical_knowledge_graph.html")
 
-    # Tokens separated by type (number, acronym, etc.)
-    matches = apply_regex(text)
-    for title, match_list in matches.items():
-        print(f'{"="*30} {title.upper()} {"="*30}')
-        print(sorted(match_list))
+    # All tokens
+    # print(sorted(tokens))
+
+    # # Tokens separated by type (number, acronym, etc.)
+    # matches = apply_regex(text)
+    # for title, match_list in matches.items():
+    #     print(f'{"="*30} {title.upper()} {"="*30}')
+    #     print(sorted(match_list))
 
     # Keywords from metadata
     # unique_items = set(metadata_df['keywords'].str.strip('[]').str.split(', ').explode())
