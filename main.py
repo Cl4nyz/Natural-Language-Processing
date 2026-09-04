@@ -17,23 +17,35 @@ NUM_CASES = 56
 def print_matches_and_groups(matches, title=None):
     if title is not None:
         print(f'{'='*30} {title.upper()} {'='*30}')
-    for match_num, match in enumerate(matches, start=1):
+    for match_num, match in enumerate(sorted(matches), start=1):
         print(f'Match {match_num} was found at {match.start()}-{match.end()}: {match.group()}')
 
         for group_num, group in enumerate(match.groups(), start=1):
             print(f'    Group {group_num} was found at {match.start(group_num)}-{match.end(group_num)}: {group}')
 
 def apply_regex(text):
+    matches = {}
     patterns = {
-        'numbers': r'(\d+)\.(\d+)',
+        'numbers': r'[\d+]\.[\d+]',
         'exams': r'\w+copy',
         'body parts': r'bowel|stomach|pancreas',
-        'problems': r'nausea|constipation|cyst\w*'
+        'problems': r'nausea|constipation|cyst\w*',
+        'acronyms': r'\b[A-Z]{2,}\b',
+        'numeric_values_with_units': r'\d+(?:[\.,]\d+)?\s*(?:mg/L|U/L|ng/ml|iu/ml|cm|mm|m|%)\b',
+        'measurement_ranges': r'\d+-\d+\s*(?:U/L|mg/L)?',
+        'isolated_numbers': r'\d+(?:\.\d+)?',
+        'alphanumeric_codes': r'[A-Z][a-zA-Z0-9-]*-\d+',
+        'hyphenated_words': r'\b[a-zA-Z]+-[a-zA-Z]+\b',
+        'words_with_apostrophes': r"\w+'\w*",
+        'words_and_acronyms': r'\w+',
+        'punctuation_and_symbols': r'[^\w\s]',
     }
     for title, reg in patterns.items():
         pattern = re.compile(reg)
-        matches = pattern.finditer(text)
-        print_matches_and_groups(matches, title)
+        # matches = pattern.finditer(text)
+        # print_matches_and_groups(matches, title)
+        matches[title] = list(set(pattern.findall(text)))
+    return matches
 
 def byte_pair_encoding(text, k=200):
     corpus = list(text)
@@ -103,7 +115,13 @@ def main():
 
     # Cria uma nova coluna no DataFrame com os tokens extraídos
     # cases_df['tokens'] = cases_df['case_text'].apply(regex_tokenize)
-    text = text.replace('.','').replace(',',' ').replace(';',' ').replace(':',' ').replace('(',' ').replace(')',' ').replace('[',' ').replace(']',' ').replace('{',' ').replace('}',' ')
+    remov_chars = [chr(i) for i in range(33, 48)] + [chr(i) for i in range(58, 65)] + [chr(i) for i in range(123, 127)]
+    remov_chars.remove("'")
+    remov_chars.remove(".")
+    remov_chars.remove("-")
+    print(remov_chars)
+    for c in remov_chars:
+        text = text.replace(c, ' ')
     tokens = regex_tokenize(text)
 
     nltk.download('stopwords')
@@ -112,8 +130,8 @@ def main():
 
     tokens = [t for t in tokens if t.lower() not in stop_words]
     tokens = list(set(tokens))
-    print(tokens)
-    print(len(set(tokens)))
+    # print(tokens)
+    # print(len(set(tokens)))
 
     knowledge_graph = build_pmi_graph(
         tokens=tokens, 
@@ -127,6 +145,16 @@ def main():
     for edge in sorted(knowledge_graph.edges(data=True), key=lambda x: x[2]['weight'], reverse=True)[:20]:
         print(edge)
 
+    # All tokens
+    print(sorted(tokens))
+
+    # Tokens separated by type (number, acronym, etc.)
+    matches = apply_regex(text)
+    for title, match_list in matches.items():
+        print(f'{"="*30} {title.upper()} {"="*30}')
+        print(sorted(match_list))
+
+    # Keywords from metadata
     # unique_items = set(metadata_df['keywords'].str.strip('[]').str.split(', ').explode())
     # print(unique_items)
     
