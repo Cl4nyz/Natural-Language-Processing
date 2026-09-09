@@ -10,8 +10,13 @@ from nltk.collocations import BigramCollocationFinder
 from nltk.metrics import BigramAssocMeasures
 from pyvis.network import Network
 
-CASES = Path('sample/cases.csv')
-METADATA = Path('sample/metadata.csv')
+BASE_DIR = Path(__file__).resolve().parents[1]
+DATA_RAW = BASE_DIR / 'data' / 'raw'
+DATA_PROCESSED = BASE_DIR / 'data' / 'processed'
+
+CASES = DATA_RAW / 'cases.csv'
+METADATA = DATA_RAW / 'metadata.csv'
+OUTPUT_GRAPH = DATA_PROCESSED / '01_medical_knowledge_graph.html'
 
 NUM_CASES = 56
 
@@ -228,7 +233,8 @@ def main():
         entity_map=entity_metadata,
         default_relation=":)"
     )
-    create_html_graph(knowledge_graph, "medical_knowledge_graph.html", top_nodes=100)
+    OUTPUT_GRAPH.parent.mkdir(parents=True, exist_ok=True)
+    create_html_graph(knowledge_graph, str(OUTPUT_GRAPH), top_nodes=100)
 
     # print(len(knowledge_graph.edges()))
 

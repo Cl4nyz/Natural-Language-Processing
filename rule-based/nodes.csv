@@ -1,0 +1,496 @@
+node_id,type,label,attributes
+Patient_PMC5137649_01,Patient,Patient (PMC5137649_01),age=44.0; gender=Female
+Entity_abdominal_pain,Symptom,Abdominal Pain,category=Symptom
+Result_PMC5137649_01_6_cm,ExamResult,6cm,value=6; unit=cm
+Entity_computed_tomography,Exam,Computed Tomography,category=Exam
+Entity_stomach,Anatomy,Stomach,category=Anatomy
+Result_PMC5137649_01_9_cm,ExamResult,9cm,value=9; unit=cm
+Result_PMC5137649_01_476.5_ng_ml,ExamResult,476.5ng/ml,value=476.5; unit=ng/ml
+Result_PMC5137649_01_6_iu_ml,ExamResult,6iu/ml,value=6; unit=iu/ml
+Entity_malignancy,Diagnosis,Malignancy,category=Diagnosis
+Entity_pancreatectomy,Exam,Pancreatectomy,category=Exam
+Entity_endoscopy,Exam,Endoscopy,category=Exam
+Entity_oesophagogastroduodenoscopy,Exam,Oesophagogastroduodenoscopy,category=Exam
+Result_PMC5137649_01_9.5_cm,ExamResult,9.5cm,value=9.5; unit=cm
+Result_PMC5137649_01_4.5_cm,ExamResult,4.5cm,value=4.5; unit=cm
+Result_PMC5137649_01_2.0_cm,ExamResult,2.0cm,value=2.0; unit=cm
+Patient_PMC9387390_01,Patient,Patient (PMC9387390_01),age=57.0; gender=Male
+Entity_adenocarcinoma,Diagnosis,Adenocarcinoma,category=Diagnosis
+Entity_gastrojejunostomy,Exam,Gastrojejunostomy,category=Exam
+Entity_relaparoscopy,Exam,Relaparoscopy,category=Exam
+Entity_esophagogastroduodenoscopy,Exam,Esophagogastroduodenoscopy,category=Exam
+Entity_management,Diagnosis,Management,category=Diagnosis
+Entity_delayed_gastric_emptying,Symptom,Delayed Gastric Emptying,category=Symptom
+Entity_gastrostomy,Exam,Gastrostomy,category=Exam
+Entity_enteroscopy,Exam,Enteroscopy,category=Exam
+Entity_stent,Exam,Stent,category=Exam
+Patient_PMC3437073_01,Patient,Patient (PMC3437073_01),age=55.0; gender=Male
+Entity_tuberculous,Diagnosis,Tuberculous,category=Diagnosis
+Result_PMC3437073_01_7_cm,ExamResult,7 cm,value=7; unit=cm
+Result_PMC3437073_01_8_cm,ExamResult,8 cm,value=8; unit=cm
+Entity_spleen,Anatomy,Spleen,category=Anatomy
+Entity_tuberculosis,Diagnosis,Tuberculosis,category=Diagnosis
+Entity_abscess,Symptom,Abscess,category=Symptom
+Entity_splenectomy,Exam,Splenectomy,category=Exam
+Entity_granuloma,Diagnosis,Granuloma,category=Diagnosis
+Entity_necrosis,Symptom,Necrosis,category=Symptom
+Result_PMC3437073_01_300_mg,ExamResult,300 mg,value=300; unit=mg
+Result_PMC3437073_01_600_mg,ExamResult,600 mg,value=600; unit=mg
+Result_PMC3437073_01_500_mg,ExamResult,500 mg,value=500; unit=mg
+Patient_PMC7102447_01,Patient,Patient (PMC7102447_01),age=65.0; gender=Male
+Entity_hypertension,Diagnosis,Hypertension,category=Diagnosis
+Result_PMC7102447_01_0.04_ng_mL,ExamResult,0.04 ng/mL,value=0.04; unit=ng/mL
+Result_PMC7102447_01_21.2_ng_mL,ExamResult,21.2 ng/mL,value=21.2; unit=ng/mL
+Result_PMC7102447_01_308_U_L,ExamResult,308 U/L,value=308; unit=U/L
+Result_PMC7102447_01_20.1_mmHg,ExamResult,20.1 mmHg,value=20.1; unit=mmHg
+Entity_thrombosis,Diagnosis,Thrombosis,category=Diagnosis
+Entity_stenosis,Diagnosis,Stenosis,category=Diagnosis
+Entity_surgery,Diagnosis,Surgery,category=Diagnosis
+Result_PMC7102447_01_4_mmHg,ExamResult,4 mmHg,value=4; unit=mmHg
+Patient_PMC6354154_01,Patient,Patient (PMC6354154_01),age=30.0; gender=Female
+Entity_laparoscopy,Exam,Laparoscopy,category=Exam
+Entity_mitosis,Diagnosis,Mitosis,category=Diagnosis
+Patient_PMC4782471_01,Patient,Patient (PMC4782471_01),age=10.0; gender=Female
+Result_PMC4782471_01_50_mg_Kg,ExamResult,50 mg/Kg,value=50; unit=mg/Kg
+Entity_fever,Symptom,Fever,category=Symptom
+Result_PMC4782471_01_91_mg,ExamResult,91 mg,value=91; unit=mg
+Result_PMC4782471_01_6_g,ExamResult,6 g,value=6; unit=g
+Entity_blood_transfusion,Diagnosis,Blood Transfusion,category=Diagnosis
+Entity_echocardiography,Exam,Echocardiography,category=Exam
+Entity_infective_endocarditis,Exam,Infective Endocarditis,category=Exam
+Entity_endocarditis,Diagnosis,Endocarditis,category=Diagnosis
+Entity_leucocytosis,Diagnosis,Leucocytosis,category=Diagnosis
+Patient_PMC4835621_01,Patient,Patient (PMC4835621_01),age=81.0; gender=Female
+Entity_basis,Diagnosis,Basis,category=Diagnosis
+Entity_osteoporosis,Diagnosis,Osteoporosis,category=Diagnosis
+Entity_calcium_channel_blocker,Diagnosis,Calcium Channel Blocker,category=Diagnosis
+Result_PMC4835621_01_11.3_g_dL,ExamResult,11.3 g/dL,value=11.3; unit=g/dL
+Entity_liver,Anatomy,Liver,category=Anatomy
+Result_PMC4835621_01_405_IU_L,ExamResult,405 IU/L,value=405; unit=IU/L
+Result_PMC4835621_01_15.30_mg,ExamResult,15.30 mg,value=15.30; unit=mg
+Entity_antibodies,Diagnosis,Antibodies,category=Diagnosis
+Result_PMC4835621_01_3.5_cm,ExamResult,3.5 cm,value=3.5; unit=cm
+Entity_gastroduodenoscopy,Exam,Gastroduodenoscopy,category=Exam
+Entity_gastritis,Diagnosis,Gastritis,category=Diagnosis
+Entity_colonoscopy,Exam,Colonoscopy,category=Exam
+Result_PMC4835621_01_302_IU_L,ExamResult,302 IU/L,value=302; unit=IU/L
+Result_PMC4835621_01_182_IU_L,ExamResult,182 IU/L,value=182; unit=IU/L
+Result_PMC4835621_01_31.2_mg,ExamResult,31.2 mg,value=31.2; unit=mg
+Result_PMC4835621_01_99.3_mg,ExamResult,99.3 mg,value=99.3; unit=mg
+Patient_PMC8627357_01,Patient,Patient (PMC8627357_01),age=36.0; gender=Male
+Entity_cellulitis,Diagnosis,Cellulitis,category=Diagnosis
+Entity_dyspnea,Symptom,Dyspnea,category=Symptom
+Result_PMC8627357_01_15.07_k_mm3,ExamResult,15.07 k/mm3,value=15.07; unit=k/mm3
+Entity_lymphadenopathy,Diagnosis,Lymphadenopathy,category=Diagnosis
+Entity_acidosis,Diagnosis,Acidosis,category=Diagnosis
+Entity_tracheostomy,Symptom,Tracheostomy,category=Symptom
+Patient_PMC5833205_01,Patient,Patient (PMC5833205_01),age=0.0; gender=Male
+Result_PMC5833205_01_1.8_g_dL,ExamResult,1.8 g/dL,value=1.8; unit=g/dL
+Result_PMC5833205_01_6.4_mg,ExamResult,6.4 mg,value=6.4; unit=mg
+Result_PMC5833205_01_69_fL,ExamResult,69 fL,value=69; unit=fL
+Result_PMC5833205_01_1.6_g_dL,ExamResult,1.6 g/dL,value=1.6; unit=g/dL
+Result_PMC5833205_01_3.0_g_dL,ExamResult,3.0 g/dL,value=3.0; unit=g/dL
+Entity_iron_deficiency,Diagnosis,Iron Deficiency,category=Diagnosis
+Entity_anemia,Diagnosis,Anemia,category=Diagnosis
+Result_PMC5833205_01_1.13_mg,ExamResult,1.13 mg,value=1.13; unit=mg
+Result_PMC5833205_01_20_mL,ExamResult,20 mL,value=20; unit=mL
+Result_PMC5833205_01_6_mg_kg,ExamResult,6 mg/kg,value=6; unit=mg/kg
+Result_PMC5833205_01_11.8_g_dL,ExamResult,11.8 g/dL,value=11.8; unit=g/dL
+Patient_PMC3917415_01,Patient,Patient (PMC3917415_01),age=47.0; gender=Female
+Result_PMC3917415_01_7.5_mg,ExamResult,7.5mg,value=7.5; unit=mg
+Result_PMC3917415_01_50_mg,ExamResult,50mg,value=50; unit=mg
+Result_PMC3917415_01_5.6_mL,ExamResult,5.6mL,value=5.6; unit=mL
+Result_PMC3917415_01_66_mg,ExamResult,66mg,value=66; unit=mg
+Result_PMC3917415_01_14_mg,ExamResult,14mg,value=14; unit=mg
+Result_PMC3917415_01_6.5_IU_mL,ExamResult,6.5IU/mL,value=6.5; unit=IU/mL
+Entity_craniotomy,Exam,Craniotomy,category=Exam
+Entity_microscopy,Exam,Microscopy,category=Exam
+Patient_PMC7718649_01,Patient,Patient (PMC7718649_01),age=65.0; gender=Female
+Result_PMC7718649_01_10_mg,ExamResult,10 mg,value=10; unit=mg
+Result_PMC7718649_01_0.2_g,ExamResult,0.2 g,value=0.2; unit=g
+Entity_hydroxychloroquine,Diagnosis,Hydroxychloroquine,category=Diagnosis
+Entity_covid-19,Diagnosis,Covid-19,category=Diagnosis
+Result_PMC7718649_01_75_mg,ExamResult,75 mg,value=75; unit=mg
+Result_PMC7718649_01_0.3_g,ExamResult,0.3 g,value=0.3; unit=g
+Result_PMC7718649_01_0.4_g,ExamResult,0.4 g,value=0.4; unit=g
+Result_PMC7718649_01_1.4_g,ExamResult,1.4 g,value=1.4; unit=g
+Entity_sars-cov-2,Diagnosis,Sars-Cov-2,category=Diagnosis
+Result_PMC7718649_01_5_g,ExamResult,5 g,value=5; unit=g
+Result_PMC7718649_01_25_mg,ExamResult,25 mg,value=25; unit=mg
+Entity_human,Diagnosis,Human,category=Diagnosis
+Result_PMC7718649_01_74_mmHg,ExamResult,74 mmHg,value=74; unit=mmHg
+Result_PMC7718649_01_40_mg,ExamResult,40 mg,value=40; unit=mg
+Result_PMC7718649_01_0.5_g,ExamResult,0.5 g,value=0.5; unit=g
+Result_PMC7718649_01_50_mg,ExamResult,50 mg,value=50; unit=mg
+Result_PMC7718649_01_15_mg,ExamResult,15 mg,value=15; unit=mg
+Result_PMC7718649_01_60_mg,ExamResult,60 mg,value=60; unit=mg
+Patient_PMC6134951_01,Patient,Patient (PMC6134951_01),age=49.0; gender=Female
+Entity_myxoma,Diagnosis,Myxoma,category=Diagnosis
+Result_PMC6134951_01_600_mg,ExamResult,600 mg,value=600; unit=mg
+Entity_alectinib,Exam,Alectinib,category=Exam
+Entity_dermatitis,Diagnosis,Dermatitis,category=Diagnosis
+Entity_pharyngitis,Diagnosis,Pharyngitis,category=Diagnosis
+Entity_strongyloidiasis,Diagnosis,Strongyloidiasis,category=Diagnosis
+Result_PMC6134951_01_30_mg,ExamResult,30 mg,value=30; unit=mg
+Result_PMC6134951_01_20_mg,ExamResult,20 mg,value=20; unit=mg
+Result_PMC6134951_01_10_mg,ExamResult,10 mg,value=10; unit=mg
+Result_PMC6134951_01_50_mg,ExamResult,50 mg,value=50; unit=mg
+Entity_brigatinib,Diagnosis,Brigatinib,category=Diagnosis
+Patient_PMC6343374_01,Patient,Patient (PMC6343374_01),age=0.0; gender=Male
+Result_PMC6343374_01_2760_g,ExamResult,2760 g,value=2760; unit=g
+Entity_infant,Diagnosis,Infant,category=Diagnosis
+Entity_twin,Diagnosis,Twin,category=Diagnosis
+Entity_interrupted_aortic_arch,Diagnosis,Interrupted Aortic Arch,category=Diagnosis
+Entity_ventricular_septal_defect,Exam,Ventricular Septal Defect,category=Exam
+Entity_sternotomy,Exam,Sternotomy,category=Exam
+Entity_ventriculotomy,Exam,Ventriculotomy,category=Exam
+Result_PMC6343374_01_70_mmHg,ExamResult,70 mmHg,value=70; unit=mmHg
+Entity_anastomosis,Diagnosis,Anastomosis,category=Diagnosis
+Entity_bronchial_compression,Diagnosis,Bronchial Compression,category=Diagnosis
+Entity_adult,Diagnosis,Adult,category=Diagnosis
+Patient_PMC9529523_01,Patient,Patient (PMC9529523_01),age=41.0; gender=Female
+Entity_cardiomyopathy,Diagnosis,Cardiomyopathy,category=Diagnosis
+Result_PMC9529523_01_2317_mg,ExamResult,2317 mg,value=2317; unit=mg
+Entity_vasculitis,Diagnosis,Vasculitis,category=Diagnosis
+Result_PMC9529523_01_6.2_mg,ExamResult,6.2 mg,value=6.2; unit=mg
+Entity_systemic_lupus_erythematosus,Diagnosis,Systemic Lupus Erythematosus,category=Diagnosis
+Result_PMC9529523_01_300_mg,ExamResult,300 mg,value=300; unit=mg
+Result_PMC9529523_01_3.9_mg_kg,ExamResult,3.9 mg/kg,value=3.9; unit=mg/kg
+Result_PMC9529523_01_2.14_mg,ExamResult,2.14 mg,value=2.14; unit=mg
+Result_PMC9529523_01_1.0_mg,ExamResult,1.0 mg,value=1.0; unit=mg
+Result_PMC9529523_01_61_mg,ExamResult,61 mg,value=61; unit=mg
+Result_PMC9529523_01_1232.1_ng_ml,ExamResult,1232.1 ng/ml,value=1232.1; unit=ng/ml
+Result_PMC9529523_01_1000_ng_mL,ExamResult,1000 ng/mL,value=1000; unit=ng/mL
+Result_PMC9529523_01_200_mg,ExamResult,200 mg,value=200; unit=mg
+Result_PMC9529523_01_3.1_mg_kg,ExamResult,3.1 mg/kg,value=3.1; unit=mg/kg
+Entity_microangiopathy,Diagnosis,Microangiopathy,category=Diagnosis
+Result_PMC9529523_01_527_ms,ExamResult,527 ms,value=527; unit=ms
+Result_PMC9529523_01_860_ml,ExamResult,860 ml,value=860; unit=ml
+Result_PMC9529523_01_17_mg,ExamResult,17 mg,value=17; unit=mg
+Entity_myocarditis,Diagnosis,Myocarditis,category=Diagnosis
+Result_PMC9529523_01_274_ng_ml,ExamResult,274 ng/ml,value=274; unit=ng/ml
+Patient_PMC9532611_01,Patient,Patient (PMC9532611_01),age=12.0; gender=Female
+Result_PMC9532611_01_94_mmHg,ExamResult,94 mmHg,value=94; unit=mmHg
+Result_PMC9532611_01_142_cm,ExamResult,142 cm,value=142; unit=cm
+Entity_children,Diagnosis,Children,category=Diagnosis
+Patient_PMC9532611_02,Patient,Patient (PMC9532611_02),age=6.0; gender=Female
+Result_PMC9532611_02_136_cm,ExamResult,136 cm,value=136; unit=cm
+Patient_PMC5875137_01,Patient,Patient (PMC5875137_01),age=83.0; gender=Female
+Result_PMC5875137_01_6.5_cm,ExamResult,6.5 cm,value=6.5; unit=cm
+Patient_PMC6949661_01,Patient,Patient (PMC6949661_01),age=23.0; gender=Male
+Entity_tachycardia,Diagnosis,Tachycardia,category=Diagnosis
+Entity_diverticulum,Diagnosis,Diverticulum,category=Diagnosis
+Entity_laparotomy,Exam,Laparotomy,category=Exam
+Result_PMC6949661_01_30_cm,ExamResult,30 cm,value=30; unit=cm
+Result_PMC6949661_01_130_cm,ExamResult,130 cm,value=130; unit=cm
+Patient_PMC10405809_01,Patient,Patient (PMC10405809_01),age=55.0; gender=Female
+Result_PMC10405809_01_8.8_gm_dL,ExamResult,8.8 gm/dL,value=8.8; unit=gm/dL
+Result_PMC10405809_01_3_cm,ExamResult,3 cm,value=3; unit=cm
+Result_PMC10405809_01_2_cm,ExamResult,2 cm,value=2; unit=cm
+Result_PMC10405809_01_20_cm,ExamResult,20 cm,value=20; unit=cm
+Result_PMC10405809_01_20_mg,ExamResult,20 mg,value=20; unit=mg
+Result_PMC10405809_01_10.9_gm_dL,ExamResult,10.9 gm/dL,value=10.9; unit=gm/dL
+Patient_PMC7519975_01,Patient,Patient (PMC7519975_01),age=33.0; gender=Female
+Entity_meningioma,Diagnosis,Meningioma,category=Diagnosis
+Result_PMC7519975_01_65_mmHg,ExamResult,65 mmHg,value=65; unit=mmHg
+Result_PMC7519975_01_148_meq_liter,ExamResult,148 meq/liter,value=148; unit=meq/liter
+Result_PMC7519975_01_3.7_meq_liter,ExamResult,3.7 meq/liter,value=3.7; unit=meq/liter
+Result_PMC7519975_01_112_meq_liter,ExamResult,112 meq/liter,value=112; unit=meq/liter
+Result_PMC7519975_01_17_mg,ExamResult,17 mg,value=17; unit=mg
+Result_PMC7519975_01_0.4_mg,ExamResult,0.4 mg,value=0.4; unit=mg
+Result_PMC7519975_01_125_mg,ExamResult,125 mg,value=125; unit=mg
+Result_PMC7519975_01_8.2_mg,ExamResult,8.2 mg,value=8.2; unit=mg
+Entity_airway,Diagnosis,Airway,category=Diagnosis
+Result_PMC7519975_01_60_mmHg,ExamResult,60 mmHg,value=60; unit=mmHg
+Entity_spontaneous_respiration,Diagnosis,Spontaneous Respiration,category=Diagnosis
+Entity_prognosis,Diagnosis,Prognosis,category=Diagnosis
+Patient_PMC3950436_01,Patient,Patient (PMC3950436_01),age=19.0; gender=Female
+Entity_apnea,Symptom,Apnea,category=Symptom
+Entity_anatomy,Exam,Anatomy,category=Exam
+Result_PMC3950436_01_74_mmHg,ExamResult,74 mmHg,value=74; unit=mmHg
+Entity_sedation,Diagnosis,Sedation,category=Diagnosis
+Result_PMC3950436_01_120_mg,ExamResult,120 mg,value=120; unit=mg
+Result_PMC3950436_01_3_mg_kg,ExamResult,3 mg/kg,value=3; unit=mg/kg
+Result_PMC3950436_01_10_ml,ExamResult,10 ml,value=10; unit=ml
+Result_PMC3950436_01_5_g,ExamResult,5 g,value=5; unit=g
+Result_PMC3950436_01_70_mmHg,ExamResult,70 mmHg,value=70; unit=mmHg
+Result_PMC3950436_01_24_G,ExamResult,24G,value=24; unit=G
+Result_PMC3950436_01_5_ml,ExamResult,5 ml,value=5; unit=ml
+Patient_PMC10434843_01,Patient,Patient (PMC10434843_01),age=49.0; gender=Male
+Result_PMC10434843_01_603_mg_l,ExamResult,603 mg/l,value=603; unit=mg/l
+Entity_flow_cytometry,Diagnosis,Flow Cytometry,category=Diagnosis
+Entity_neuropathy,Diagnosis,Neuropathy,category=Diagnosis
+Entity_caspr2,Diagnosis,Caspr2,category=Diagnosis
+Entity_encephalitis,Diagnosis,Encephalitis,category=Diagnosis
+Entity_sclerosis,Diagnosis,Sclerosis,category=Diagnosis
+Patient_PMC4630775_01,Patient,Patient (PMC4630775_01),age=39.0; gender=Female
+Entity_compartment_syndrome,Diagnosis,Compartment Syndrome,category=Diagnosis
+Entity_neonatal_compartment_syndrome,Diagnosis,Neonatal Compartment Syndrome,category=Diagnosis
+Patient_PMC2700431_01,Patient,Patient (PMC2700431_01),age=35.0; gender=Male
+Entity_hepatitis,Diagnosis,Hepatitis,category=Diagnosis
+Entity_pneumothorax,Diagnosis,Pneumothorax,category=Diagnosis
+Entity_spleenectomy,Exam,Spleenectomy,category=Exam
+Entity_endotracheal_tube,Symptom,Endotracheal Tube,category=Symptom
+Entity_bronchoscopy,Exam,Bronchoscopy,category=Exam
+Entity_intracuff_pressure,Diagnosis,Intracuff Pressure,category=Diagnosis
+Entity_tracheoesophageal_fistula,Symptom,Tracheoesophageal Fistula,category=Symptom
+Patient_PMC10106591_01,Patient,Patient (PMC10106591_01),age=44.0; gender=Female
+Result_PMC10106591_01_150_mg,ExamResult,150 mg,value=150; unit=mg
+Result_PMC10106591_01_51_mmHg,ExamResult,51 mmHg,value=51; unit=mmHg
+Result_PMC10106591_01_0.016_ng_mL,ExamResult,0.016 ng/mL,value=0.016; unit=ng/mL
+Result_PMC10106591_01_0.04_ng_mL,ExamResult,0.04 ng/mL,value=0.04; unit=ng/mL
+Result_PMC10106591_01_0.7_ng_mL,ExamResult,0.7 ng/mL,value=0.7; unit=ng/mL
+Result_PMC10106591_01_5.0_ng_mL,ExamResult,5.0 ng/mL,value=5.0; unit=ng/mL
+Result_PMC10106591_01_14.1_ng_mL,ExamResult,14.1 ng/mL,value=14.1; unit=ng/mL
+Result_PMC10106591_01_70.0_ng_mL,ExamResult,70.0 ng/mL,value=70.0; unit=ng/mL
+Result_PMC10106591_01_300_mg,ExamResult,300 mg,value=300; unit=mg
+Result_PMC10106591_01_5_mg,ExamResult,5 mg,value=5; unit=mg
+Entity_diltiazem,Diagnosis,Diltiazem,category=Diagnosis
+Result_PMC10106591_01_50_mg,ExamResult,50 mg,value=50; unit=mg
+Result_PMC10106591_01_5_mL,ExamResult,5 mL,value=5; unit=mL
+Result_PMC10106591_01_0.031_ng_mL,ExamResult,0.031 ng/mL,value=0.031; unit=ng/mL
+Result_PMC10106591_01_90_mg,ExamResult,90 mg,value=90; unit=mg
+Result_PMC10106591_01_100_mg,ExamResult,100 mg,value=100; unit=mg
+Result_PMC10106591_01_20_mg,ExamResult,20 mg,value=20; unit=mg
+Entity_case_report,Diagnosis,Case Report,category=Diagnosis
+Patient_PMC4073451_01,Patient,Patient (PMC4073451_01),age=14.0; gender=Female
+Patient_PMC6083636_01,Patient,Patient (PMC6083636_01),age=9.0; gender=Male
+Entity_aged,Diagnosis,Aged,category=Diagnosis
+Result_PMC6083636_01_10_mg,ExamResult,10 mg,value=10; unit=mg
+Patient_PMC6083636_02,Patient,Patient (PMC6083636_02),age=nan; gender=Unknown
+Patient_PMC6083636_03,Patient,Patient (PMC6083636_03),age=nan; gender=Unknown
+Patient_PMC9969157_01,Patient,Patient (PMC9969157_01),age=7.0; gender=Male
+Entity_lchadd,Diagnosis,Lchadd,category=Diagnosis
+Result_PMC9969157_01_47.5_cm,ExamResult,47.5 cm,value=47.5; unit=cm
+Result_PMC9969157_01_32.5_cm,ExamResult,32.5 cm,value=32.5; unit=cm
+Result_PMC9969157_01_150_ml,ExamResult,150 ml,value=150; unit=ml
+Entity_human_milk,Diagnosis,Human Milk,category=Diagnosis
+Result_PMC9969157_01_0.5_g,ExamResult,0.5 g,value=0.5; unit=g
+Entity_triheptanoin,Diagnosis,Triheptanoin,category=Diagnosis
+Result_PMC9969157_01_20_ml,ExamResult,20 ml,value=20; unit=ml
+Result_PMC9969157_01_23_ml,ExamResult,23 ml,value=23; unit=ml
+Entity_bradycardia,Diagnosis,Bradycardia,category=Diagnosis
+Entity_pneumatosis,Diagnosis,Pneumatosis,category=Diagnosis
+Result_PMC9969157_01_4_g,ExamResult,4 g,value=4; unit=g
+Result_PMC9969157_01_15_mg_kg,ExamResult,15 mg/kg,value=15; unit=mg/kg
+Result_PMC9969157_01_2_g,ExamResult,2 g,value=2; unit=g
+Patient_PMC4828947_01,Patient,Patient (PMC4828947_01),age=61.0; gender=Male
+Result_PMC4828947_01_1200_mg,ExamResult,1200 mg,value=1200; unit=mg
+Result_PMC4828947_01_1500_mg,ExamResult,1500 mg,value=1500; unit=mg
+Entity_meningitis,Diagnosis,Meningitis,category=Diagnosis
+Entity_amygdalohippocampectomy,Exam,Amygdalohippocampectomy,category=Exam
+Entity_lesionectomy,Symptom,Lesionectomy,category=Symptom
+Entity_lobectomy,Exam,Lobectomy,category=Exam
+Entity_ganglioglioma,Diagnosis,Ganglioglioma,category=Diagnosis
+Patient_PMC7086412_01,Patient,Patient (PMC7086412_01),age=34.0; gender=Female
+Patient_PMC7086412_02,Patient,Patient (PMC7086412_02),age=31.0; gender=Female
+Result_PMC7086412_02_160_mg,ExamResult,160 mg,value=160; unit=mg
+Result_PMC7086412_02_135_mg,ExamResult,135 mg,value=135; unit=mg
+Result_PMC7086412_02_101_mg,ExamResult,101 mg,value=101; unit=mg
+Result_PMC7086412_02_3590_g,ExamResult,3590 g,value=3590; unit=g
+Patient_PMC3557982_01,Patient,Patient (PMC3557982_01),age=1.0; gender=Female
+Entity_viral,Diagnosis,Viral,category=Diagnosis
+Result_PMC3557982_01_593_g,ExamResult,593 g,value=593; unit=g
+Result_PMC3557982_01_268_g,ExamResult,268 g,value=268; unit=g
+Result_PMC3557982_01_450_g,ExamResult,450 g,value=450; unit=g
+Entity_new_brunswick,Diagnosis,New Brunswick,category=Diagnosis
+Entity_otitis,Diagnosis,Otitis,category=Diagnosis
+Patient_PMC9815523_01,Patient,Patient (PMC9815523_01),age=40.0; gender=Unknown
+Entity_anticoagulation_therapy,Diagnosis,Anticoagulation Therapy,category=Diagnosis
+Patient_PMC4310058_01,Patient,Patient (PMC4310058_01),age=16.0; gender=Male
+Result_PMC4310058_01_5_cm,ExamResult,5 cm,value=5; unit=cm
+Patient_PMC3859158_01,Patient,Patient (PMC3859158_01),age=44.0; gender=Male
+Entity_pancreatitis,Diagnosis,Pancreatitis,category=Diagnosis
+Result_PMC3859158_01_11.5_cm,ExamResult,11.5 cm,value=11.5; unit=cm
+Entity_metastasis,Diagnosis,Metastasis,category=Diagnosis
+Result_PMC3859158_01_6.2_cm,ExamResult,6.2 cm,value=6.2; unit=cm
+Entity_stroma,Diagnosis,Stroma,category=Diagnosis
+Entity_schwannoma,Diagnosis,Schwannoma,category=Diagnosis
+Patient_PMC9650410_01,Patient,Patient (PMC9650410_01),age=67.0; gender=Female
+Entity_manager,Diagnosis,Manager,category=Diagnosis
+Patient_PMC5804616_01,Patient,Patient (PMC5804616_01),age=77.0; gender=Male
+Entity_esophageal_bypass_surgery,Diagnosis,Esophageal Bypass Surgery,category=Diagnosis
+Result_PMC5804616_01_80.5_mmHg,ExamResult,80.5 mmHg,value=80.5; unit=mmHg
+Result_PMC5804616_01_38.8_mmHg,ExamResult,38.8 mmHg,value=38.8; unit=mmHg
+Result_PMC5804616_01_35_mg,ExamResult,35 mg,value=35; unit=mg
+Result_PMC5804616_01_26_cm,ExamResult,26 cm,value=26; unit=cm
+Result_PMC5804616_01_400_ml,ExamResult,400 ml,value=400; unit=ml
+Result_PMC5804616_01_6_ml,ExamResult,6 ml,value=6; unit=ml
+Result_PMC5804616_01_252.4_mmHg,ExamResult,252.4 mmHg,value=252.4; unit=mmHg
+Result_PMC5804616_01_36.9_mmHg,ExamResult,36.9 mmHg,value=36.9; unit=mmHg
+Entity_atelectasis,Exam,Atelectasis,category=Exam
+Result_PMC5804616_01_101.7_mmHg,ExamResult,101.7 mmHg,value=101.7; unit=mmHg
+Result_PMC5804616_01_650_ml,ExamResult,650 ml,value=650; unit=ml
+Entity_esophagobronchial_fistula,Diagnosis,Esophagobronchial Fistula,category=Diagnosis
+Patient_PMC3897989_01,Patient,Patient (PMC3897989_01),age=65.0; gender=Male
+Result_PMC3897989_01_79_U_L,ExamResult,79 U/L,value=79; unit=U/L
+Result_PMC3897989_01_45_U_L,ExamResult,45 U/L,value=45; unit=U/L
+Result_PMC3897989_01_51_U_L,ExamResult,51 U/L,value=51; unit=U/L
+Result_PMC3897989_01_35_U_L,ExamResult,35 U/L,value=35; unit=U/L
+Result_PMC3897989_01_540_U_L,ExamResult,540 U/L,value=540; unit=U/L
+Result_PMC3897989_01_110_U_L,ExamResult,110 U/L,value=110; unit=U/L
+Result_PMC3897989_01_197_U_L,ExamResult,197 U/L,value=197; unit=U/L
+Result_PMC3897989_01_50_U_L,ExamResult,50 U/L,value=50; unit=U/L
+Result_PMC3897989_01_180_mg,ExamResult,180 mg,value=180; unit=mg
+Result_PMC3897989_01_1620_mg,ExamResult,1620 mg,value=1620; unit=mg
+Result_PMC3897989_01_344_mg,ExamResult,344 mg,value=344; unit=mg
+Result_PMC3897989_01_263_mg,ExamResult,263 mg,value=263; unit=mg
+Result_PMC3897989_01_66.89_ng_mL,ExamResult,66.89 ng/mL,value=66.89; unit=ng/mL
+Result_PMC3897989_01_5_ng_mL,ExamResult,5 ng/mL,value=5; unit=ng/mL
+Entity_biliary,Diagnosis,Biliary,category=Diagnosis
+Result_PMC3897989_01_0.5_g,ExamResult,0.5 g,value=0.5; unit=g
+Result_PMC3897989_01_250_mg,ExamResult,250 mg,value=250; unit=mg
+Entity_cholestasis,Diagnosis,Cholestasis,category=Diagnosis
+Result_PMC3897989_01_44.36_g,ExamResult,44.36 g,value=44.36; unit=g
+Result_PMC3897989_01_2_g,ExamResult,2 g,value=2; unit=g
+Entity_fibrosis,Diagnosis,Fibrosis,category=Diagnosis
+Result_PMC3897989_01_40_mg,ExamResult,40 mg,value=40; unit=mg
+Entity_methylprednisolone,Diagnosis,Methylprednisolone,category=Diagnosis
+Result_PMC3897989_01_376_U_L,ExamResult,376 U/L,value=376; unit=U/L
+Result_PMC3897989_01_38_U_L,ExamResult,38 U/L,value=38; unit=U/L
+Result_PMC3897989_01_243_U_L,ExamResult,243 U/L,value=243; unit=U/L
+Result_PMC3897989_01_47_U_L,ExamResult,47 U/L,value=47; unit=U/L
+Result_PMC3897989_01_32_mg,ExamResult,32 mg,value=32; unit=mg
+Result_PMC3897989_01_16_mg,ExamResult,16 mg,value=16; unit=mg
+Result_PMC3897989_01_135_U_L,ExamResult,135 U/L,value=135; unit=U/L
+Result_PMC3897989_01_134_U_L,ExamResult,134 U/L,value=134; unit=U/L
+Result_PMC3897989_01_5_mg,ExamResult,5 mg,value=5; unit=mg
+Result_PMC3897989_01_500_mg,ExamResult,500 mg,value=500; unit=mg
+Patient_PMC2817501_01,Patient,Patient (PMC2817501_01),age=53.0; gender=Male
+Result_PMC2817501_01_80_mmHg,ExamResult,80 mmHg,value=80; unit=mmHg
+Result_PMC2817501_01_30_mmHg,ExamResult,30 mmHg,value=30; unit=mmHg
+Result_PMC2817501_01_20_mmHg,ExamResult,20 mmHg,value=20; unit=mmHg
+Result_PMC2817501_01_68_mmHg,ExamResult,68 mmHg,value=68; unit=mmHg
+Entity_aortotomy,Exam,Aortotomy,category=Exam
+Patient_PMC11131390_01,Patient,Patient (PMC11131390_01),age=nan; gender=Male
+Result_PMC11131390_01_16.3_IU_L,ExamResult,16.3 IU/L,value=16.3; unit=IU/L
+Result_PMC11131390_01_1.75_IU_L,ExamResult,1.75 IU/L,value=1.75; unit=IU/L
+Result_PMC11131390_01_34_IU_mL,ExamResult,34 IU/mL,value=34; unit=IU/mL
+Result_PMC11131390_01_115_IU_mL,ExamResult,115 IU/mL,value=115; unit=IU/mL
+Result_PMC11131390_01_20_mg,ExamResult,20 mg,value=20; unit=mg
+Entity_quitting_smoking,Diagnosis,Quitting Smoking,category=Diagnosis
+Result_PMC11131390_01_5_mg,ExamResult,5 mg,value=5; unit=mg
+Result_PMC11131390_01_2.5_mg,ExamResult,2.5 mg,value=2.5; unit=mg
+Result_PMC11131390_01_3.3_IU_L,ExamResult,3.3 IU/L,value=3.3; unit=IU/L
+Entity_hypothyroidism,Diagnosis,Hypothyroidism,category=Diagnosis
+Result_PMC11131390_01_0.8_IU_L,ExamResult,0.8 IU/L,value=0.8; unit=IU/L
+Patient_PMC10521634_01,Patient,Patient (PMC10521634_01),age=38.0; gender=Male
+Result_PMC10521634_01_4_g,ExamResult,4g,value=4; unit=g
+Entity_peritonitis,Diagnosis,Peritonitis,category=Diagnosis
+Entity_colitis,Diagnosis,Colitis,category=Diagnosis
+Result_PMC10521634_01_11.5_g_dl,ExamResult,11.5g/dl,value=11.5; unit=g/dl
+Result_PMC10521634_01_5_mg,ExamResult,5mg,value=5; unit=mg
+Result_PMC10521634_01_300_mg,ExamResult,300 mg,value=300; unit=mg
+Entity_thrombocytosis,Diagnosis,Thrombocytosis,category=Diagnosis
+Entity_ileostomy,Exam,Ileostomy,category=Exam
+Entity_colectomy,Exam,Colectomy,category=Exam
+Result_PMC10521634_01_120_cm,ExamResult,120 cm,value=120; unit=cm
+Result_PMC10521634_01_5_mg_kg,ExamResult,5mg/kg,value=5; unit=mg/kg
+Entity_cryptitis,Diagnosis,Cryptitis,category=Diagnosis
+Result_PMC10521634_01_2.5_mg_kg,ExamResult,2.5mg/kg,value=2.5; unit=mg/kg
+Patient_PMC10710131_01,Patient,Patient (PMC10710131_01),age=26.0; gender=Female
+Entity_maxilla,Diagnosis,Maxilla,category=Diagnosis
+Entity_bone_augmentation,Diagnosis,Bone Augmentation,category=Diagnosis
+Entity_dental_implant,Diagnosis,Dental Implant,category=Diagnosis
+Patient_PMC10488652_01,Patient,Patient (PMC10488652_01),age=22.0; gender=Female
+Entity_myalgia,Symptom,Myalgia,category=Symptom
+Entity_synovitis,Diagnosis,Synovitis,category=Diagnosis
+Entity_nephritis,Diagnosis,Nephritis,category=Diagnosis
+Result_PMC10488652_01_6.2_g_dl,ExamResult,6.2 g/dl,value=6.2; unit=g/dl
+Entity_autoimmune_hemolytic_anemia,Diagnosis,Autoimmune Hemolytic Anemia,category=Diagnosis
+Result_PMC10488652_01_40_mg,ExamResult,40 mg,value=40; unit=mg
+Result_PMC10488652_01_200_mg,ExamResult,200 mg,value=200; unit=mg
+Result_PMC10488652_01_5_mg,ExamResult,5 mg,value=5; unit=mg
+Result_PMC10488652_01_500_mg,ExamResult,500 mg,value=500; unit=mg
+Patient_PMC11420039_01,Patient,Patient (PMC11420039_01),age=74.0; gender=Female
+Result_PMC11420039_01_40_mg,ExamResult,40 mg,value=40; unit=mg
+Result_PMC11420039_01_20_mg,ExamResult,20 mg,value=20; unit=mg
+Result_PMC11420039_01_16_mg,ExamResult,16 mg,value=16; unit=mg
+Result_PMC11420039_01_12_mg,ExamResult,12 mg,value=12; unit=mg
+Result_PMC11420039_01_600_mg,ExamResult,600 mg,value=600; unit=mg
+Result_PMC11420039_01_300_mg,ExamResult,300 mg,value=300; unit=mg
+Result_PMC11420039_01_4_mg,ExamResult,4 mg,value=4; unit=mg
+Result_PMC11420039_01_20_g,ExamResult,20 g,value=20; unit=g
+Result_PMC11420039_01_1.6_mg,ExamResult,1.6 mg,value=1.6; unit=mg
+Patient_PMC11259348_01,Patient,Patient (PMC11259348_01),age=nan; gender=Female
+Result_PMC11259348_01_4_g_dL,ExamResult,4 g/dL,value=4; unit=g/dL
+Patient_PMC11259348_02,Patient,Patient (PMC11259348_02),age=nan; gender=Unknown
+Patient_PMC11368112_01,Patient,Patient (PMC11368112_01),age=35.0; gender=Male
+Result_PMC11368112_01_65_mg_L,ExamResult,65 mg/L,value=65; unit=mg/L
+Result_PMC11368112_01_26.12_mg_L,ExamResult,26.12 mg/L,value=26.12; unit=mg/L
+Entity_pulmonary_embolism,Anatomy,Pulmonary Embolism,category=Anatomy
+Result_PMC11368112_01_3_cm,ExamResult,3 cm,value=3; unit=cm
+Result_PMC11368112_01_0.8_cm,ExamResult,0.8 cm,value=0.8; unit=cm
+Entity_lipofuscinosis,Diagnosis,Lipofuscinosis,category=Diagnosis
+Result_PMC11368112_01_80_mg,ExamResult,80 mg,value=80; unit=mg
+Result_PMC11368112_01_60_mg,ExamResult,60 mg,value=60; unit=mg
+Result_PMC11368112_01_5_mg,ExamResult,5 mg,value=5; unit=mg
+Result_PMC11368112_01_200_mg,ExamResult,200 mg,value=200; unit=mg
+Patient_PMC11345641_01,Patient,Patient (PMC11345641_01),age=48.0; gender=Female
+Entity_leiomyoma,Diagnosis,Leiomyoma,category=Diagnosis
+Result_PMC11345641_01_289_U_L,ExamResult,289U/L,value=289; unit=U/L
+Result_PMC11345641_01_4_cm,ExamResult,4cm,value=4; unit=cm
+Result_PMC11345641_01_6_cm,ExamResult,6cm,value=6; unit=cm
+Entity_salpingectomy,Exam,Salpingectomy,category=Exam
+Entity_hysterectomy,Exam,Hysterectomy,category=Exam
+Result_PMC11345641_01_12_cm,ExamResult,12 cm,value=12; unit=cm
+Result_PMC11345641_01_8_cm,ExamResult,8 cm,value=8; unit=cm
+Result_PMC11345641_01_340_U_L,ExamResult,340 U/L,value=340; unit=U/L
+Result_PMC11345641_01_5_cm,ExamResult,5 cm,value=5; unit=cm
+Result_PMC11345641_01_20_cm,ExamResult,20 cm,value=20; unit=cm
+Result_PMC11345641_01_3_cm,ExamResult,3 cm,value=3; unit=cm
+Result_PMC11345641_01_7_cm,ExamResult,7 cm,value=7; unit=cm
+Entity_undifferentiated_sarcomas,Diagnosis,Undifferentiated Sarcomas,category=Diagnosis
+Entity_hydronephrosis,Diagnosis,Hydronephrosis,category=Diagnosis
+Patient_PMC11723754_01,Patient,Patient (PMC11723754_01),age=0.0; gender=Male
+Entity_spinal_cord_injury,Diagnosis,Spinal Cord Injury,category=Diagnosis
+Entity_pressure_injury,Diagnosis,Pressure Injury,category=Diagnosis
+Result_PMC11723754_01_7_g_dl,ExamResult,7g/dl,value=7; unit=g/dl
+Entity_neurorehabilitation,Diagnosis,Neurorehabilitation,category=Diagnosis
+Entity_orthosis,Diagnosis,Orthosis,category=Diagnosis
+Patient_PMC11783470_01,Patient,Patient (PMC11783470_01),age=22.0; gender=Female
+Result_PMC11783470_01_11.5_g_dL,ExamResult,11.5 g/dL,value=11.5; unit=g/dL
+Result_PMC11783470_01_200_ng_mL,ExamResult,200 ng/mL,value=200; unit=ng/mL
+Entity_ileocolonoscopy,Exam,Ileocolonoscopy,category=Exam
+Entity_gastroenterology,Diagnosis,Gastroenterology,category=Diagnosis
+Patient_PMC11722600_01,Patient,Patient (PMC11722600_01),age=41.0; gender=Female
+Result_PMC11722600_01_55_mg_L,ExamResult,55 mg/L,value=55; unit=mg/L
+Result_PMC11722600_01_5_mg_L,ExamResult,5 mg/L,value=5; unit=mg/L
+Result_PMC11722600_01_4_cm,ExamResult,4 cm,value=4; unit=cm
+Entity_appendicitis,Diagnosis,Appendicitis,category=Diagnosis
+Entity_laparoscopic_appendectomy,Exam,Laparoscopic Appendectomy,category=Exam
+Entity_appendectomy,Exam,Appendectomy,category=Exam
+Entity_endometriosis,Diagnosis,Endometriosis,category=Diagnosis
+Patient_PMC11722600_02,Patient,Patient (PMC11722600_02),age=44.0; gender=Female
+Result_PMC11722600_02_85_mg_L,ExamResult,85 mg/L,value=85; unit=mg/L
+Result_PMC11722600_02_5_mg,ExamResult,5 mg,value=5; unit=mg
+Entity_leukocytosis,Diagnosis,Leukocytosis,category=Diagnosis
+Entity_acute_appendicitis,Diagnosis,Acute Appendicitis,category=Diagnosis
+Result_PMC11722600_02_2.5_cm,ExamResult,2.5 cm,value=2.5; unit=cm
+Patient_PMC12215201_01,Patient,Patient (PMC12215201_01),age=56.0; gender=Male
+Result_PMC12215201_01_6.1_g_dL,ExamResult,6.1 g/dL,value=6.1; unit=g/dL
+Result_PMC12215201_01_3.2_mg,ExamResult,3.2 mg,value=3.2; unit=mg
+Result_PMC12215201_01_315_IU_L,ExamResult,315 IU/L,value=315; unit=IU/L
+Result_PMC12215201_01_305_IU_L,ExamResult,305 IU/L,value=305; unit=IU/L
+Result_PMC12215201_01_209_IU_L,ExamResult,209 IU/L,value=209; unit=IU/L
+Result_PMC12215201_01_2.6_g_dL,ExamResult,2.6 g/dL,value=2.6; unit=g/dL
+Result_PMC12215201_01_2.1_cm,ExamResult,2.1 cm,value=2.1; unit=cm
+Result_PMC12215201_01_4.6_cm,ExamResult,4.6 cm,value=4.6; unit=cm
+Result_PMC12215201_01_1_g_dL,ExamResult,1 g/dL,value=1; unit=g/dL
+Result_PMC12215201_01_2_g_dL,ExamResult,2 g/dL,value=2; unit=g/dL
+Result_PMC12215201_01_1.1_g_dL,ExamResult,1.1 g/dL,value=1.1; unit=g/dL
+Entity_angiosarcoma,Diagnosis,Angiosarcoma,category=Diagnosis
+Patient_PMC12832199_01,Patient,Patient (PMC12832199_01),age=57.0; gender=Female
+Entity_hemicolectomy,Exam,Hemicolectomy,category=Exam
+Entity_colostomy,Exam,Colostomy,category=Exam
+Entity_stoma,Diagnosis,Stoma,category=Diagnosis
+Result_PMC12832199_01_9.6_g_dL,ExamResult,9.6 g/dL,value=9.6; unit=g/dL
+Result_PMC12832199_01_2.8_g_dL,ExamResult,2.8 g/dL,value=2.8; unit=g/dL
+Result_PMC12832199_01_2.2_mg,ExamResult,2.2 mg,value=2.2; unit=mg
+Entity_gastric_outlet_obstruction,Symptom,Gastric Outlet Obstruction,category=Symptom
+Result_PMC12832199_01_6.5_cm,ExamResult,6.5 cm,value=6.5; unit=cm
+Result_PMC12832199_01_5.5_cm,ExamResult,5.5 cm,value=5.5; unit=cm
+Entity_parastomal_hernia,Diagnosis,Parastomal Hernia,category=Diagnosis
+Entity_sugarbaker_technique,Diagnosis,Sugarbaker Technique,category=Diagnosis
+Result_PMC12832199_01_5_cm,ExamResult,5 cm,value=5; unit=cm
+Entity_esophagitis,Diagnosis,Esophagitis,category=Diagnosis

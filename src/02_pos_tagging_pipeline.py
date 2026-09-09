@@ -12,8 +12,12 @@ nltk.download('punkt_tab', quiet=True)
 nltk.download('averaged_perceptron_tagger_eng', quiet=True)
 nltk.download('stopwords', quiet=True)
 
-CASES = Path('sample/cases.csv')
-OUTPUT_FILE = Path('graph.md')
+BASE_DIR = Path(__file__).resolve().parents[1]
+DATA_RAW = BASE_DIR / 'data' / 'raw'
+DATA_PROCESSED = BASE_DIR / 'data' / 'processed'
+
+CASES = DATA_RAW / 'cases.csv'
+OUTPUT_FILE = DATA_PROCESSED / '02_graph.md'
 
 # Vocabulário Controlado Genérico (pode ser expandido ou carregado de um arquivo JSON/UMLS)
 MEDICAL_VOCAB = {

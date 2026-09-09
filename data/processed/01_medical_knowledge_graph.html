@@ -1,0 +1,440 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+                <link href="lib/tom-select/tom-select.css" rel="stylesheet">
+                <script src="lib/tom-select/tom-select.complete.min.js"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 80vh;
+                 background-color: #222222;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+                <div id="select-menu" class="card-header">
+                    <div class="row no-gutters">
+                        <div class="col-10 pb-2">
+                            <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="selectNode([value]);"
+                            id="select-node"
+                            placeholder="Select node..."
+                            >
+                                <option selected>Select a Node by ID</option>
+                                
+                                    <option value="-">-</option>
+                                
+                                    <option value="carcinoembryonic">carcinoembryonic</option>
+                                
+                                    <option value="lesion">lesion</option>
+                                
+                                    <option value="oesophagogastroduodenoscopy">oesophagogastroduodenoscopy</option>
+                                
+                                    <option value="return">return</option>
+                                
+                                    <option value="4">4</option>
+                                
+                                    <option value="9cm">9cm</option>
+                                
+                                    <option value="day">day</option>
+                                
+                                    <option value="well">well</option>
+                                
+                                    <option value="GDC">GDC</option>
+                                
+                                    <option value="associated">associated</option>
+                                
+                                    <option value="examination">examination</option>
+                                
+                                    <option value="show">show</option>
+                                
+                                    <option value=".">.</option>
+                                
+                                    <option value="12">12</option>
+                                
+                                    <option value="EUS-FNA">EUS-FNA</option>
+                                
+                                    <option value="abnormalities">abnormalities</option>
+                                
+                                    <option value="iu">iu</option>
+                                
+                                    <option value="Intraoperative">Intraoperative</option>
+                                
+                                    <option value="performed">performed</option>
+                                
+                                    <option value="portion">portion</option>
+                                
+                                    <option value="discharged">discharged</option>
+                                
+                                    <option value="lesser">lesser</option>
+                                
+                                    <option value="noted">noted</option>
+                                
+                                    <option value="tomography">tomography</option>
+                                
+                                    <option value="complete">complete</option>
+                                
+                                    <option value="septations">septations</option>
+                                
+                                    <option value="tightly">tightly</option>
+                                
+                                    <option value="year-old">year-old</option>
+                                
+                                    <option value="1">1</option>
+                                
+                                    <option value="compressed">compressed</option>
+                                
+                                    <option value="laparoscopic">laparoscopic</option>
+                                
+                                    <option value="line">line</option>
+                                
+                                    <option value="ml">ml</option>
+                                
+                                    <option value="evident">evident</option>
+                                
+                                    <option value="mucosal">mucosal</option>
+                                
+                                    <option value="right">right</option>
+                                
+                                    <option value="smooth">smooth</option>
+                                
+                                    <option value="originated">originated</option>
+                                
+                                    <option value="subsequently">subsequently</option>
+                                
+                                    <option value="ng">ng</option>
+                                
+                                    <option value="axis">axis</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-2 pb-2">
+                            <button type="button" class="btn btn-primary btn-block" onclick="neighbourhoodHighlight({nodes: []});">Reset Selection</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+              <div id="filter-menu" class="card-header">
+                <div class="row no-gutters">
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'item')"
+                            id="select-item"
+                        >
+                        <option value="">Select a network item</option>
+                        <option value="edge">edge</option>
+                        <option value="node">node</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'property')"
+                            id="select-property"
+                        >
+                        <option value="">Select a property...</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="select-value"
+                        >
+                        <option value="">Select value(s)...</option>
+                    </select>
+                  </div>
+                  <div class="col-1 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="highlightFilter(filter);">Filter</button>
+                  </div>
+                  <div class="col-2 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="clearFilter(true)">Reset Selection</button>
+                  </div>
+                </div>
+              </div>
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+                  new TomSelect("#select-node",{
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      }
+                  });
+              
+
+              
+                  // explicitly using onItemAdd and this function as we need to save multiple values
+                  let updateValueFilter = function() {
+                      return function () {
+                      filter['value'].push(arguments[0])
+                      }
+                  }
+
+                  let valueControl = new TomSelect("#select-value",{
+                      maxItems: null,
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: updateValueFilter()
+                  });
+
+                  let addValues = function() {
+                      return function () {
+                          // clear the current value options and add the selected attribute values
+                          // tom-select handles duplicates
+                          let selectedProperty = arguments[0];
+                          valueControl.clear();
+                          valueControl.clearOptions();
+                          filter['value'] = []
+                          if (filter['item'] === 'node') {
+                              for (let each in allNodes) {
+                                  valueControl.addOption({
+                                      id:allNodes[each][selectedProperty],
+                                      title:allNodes[each][selectedProperty]
+                                  })
+                              }
+                          }
+                          else if (filter['item'] === 'edge') {
+                              for (let each in allEdges) {
+                                  valueControl.addOption({
+                                      id:allEdges[each][selectedProperty],
+                                      title:allEdges[each][selectedProperty]
+                                  })
+                              }
+                          }
+                      }
+                  };
+
+                  let propControl = new TomSelect("#select-property",{
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addValues()
+                  });
+
+                  let addProperties = function() {
+                      return function () {
+                          // loops through the selected network item and adds the attributes to dropdown
+                          // tom-select handles duplicates
+                          clearFilter(false)
+                          if (arguments[0] === 'edge') {
+                              for (let each in allEdges) {
+                                  if (allEdges.hasOwnProperty(each)) {
+                                      for (let eachProp in allEdges[each]) {
+                                          if (allEdges[each].hasOwnProperty(eachProp)) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                          else if (arguments[0] === 'node') {
+                              for (let each in allNodes) {
+                                  if (allNodes.hasOwnProperty(each)) {
+                                      for (let eachProp in allNodes[each]) {
+                                          if (allNodes[each].hasOwnProperty(eachProp)
+                                              && (eachProp !== 'hidden' && eachProp !== 'savedLabel'
+                                                  && eachProp !== 'hiddenLabel')) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  };
+
+                  let itemControl = new TomSelect("#select-item",{
+                      create: false,
+                      sortField:{
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addProperties()
+                  });
+
+                  function clearFilter(reset) {
+                      // utility function to clear all the selected filter options
+                      // if reset is set to true, the existing filter will be removed
+                      // else, only the dropdown options are cleared
+                      propControl.clear();
+                      propControl.clearOptions();
+                      valueControl.clear();
+                      valueControl.clearOptions();
+                      filter = {
+                          item : '',
+                          property : '',
+                          value : []
+                      }
+                      if (reset) {
+                          itemControl.clear();
+                          filterHighlight({nodes: []})
+                      }
+                  }
+
+                  function updateFilter(value, key) {
+                      // key could be 'item' or 'property' and value is as selected in dropdown
+                      filter[key] = value
+                  }
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#95A5A6", "font": {"color": "white"}, "id": "-", "label": "-", "shape": "dot", "size": 10, "title": "Node: - Type: punctuation_and_symbols"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "carcinoembryonic", "label": "carcinoembryonic", "shape": "dot", "size": 10, "title": "Node: carcinoembryonic Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "lesion", "label": "lesion", "shape": "dot", "size": 10, "title": "Node: lesion Type: words_and_acronyms"}, {"color": "#4D96FF", "font": {"color": "white"}, "id": "oesophagogastroduodenoscopy", "label": "oesophagogastroduodenoscopy", "shape": "dot", "size": 10, "title": "Node: oesophagogastroduodenoscopy Type: exams"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "return", "label": "return", "shape": "dot", "size": 10, "title": "Node: return Type: words_and_acronyms"}, {"color": "#F4D160", "font": {"color": "white"}, "id": "4", "label": "4", "shape": "dot", "size": 10, "title": "Node: 4 Type: isolated_numbers"}, {"color": "#9B59B6", "font": {"color": "white"}, "id": "9cm", "label": "9cm", "shape": "dot", "size": 10, "title": "Node: 9cm Type: numeric_values_with_units"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "day", "label": "day", "shape": "dot", "size": 10, "title": "Node: day Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "well", "label": "well", "shape": "dot", "size": 10, "title": "Node: well Type: words_and_acronyms"}, {"color": "#E67E22", "font": {"color": "white"}, "id": "GDC", "label": "GDC", "shape": "dot", "size": 10, "title": "Node: GDC Type: acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "associated", "label": "associated", "shape": "dot", "size": 10, "title": "Node: associated Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "examination", "label": "examination", "shape": "dot", "size": 10, "title": "Node: examination Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "show", "label": "show", "shape": "dot", "size": 10, "title": "Node: show Type: words_and_acronyms"}, {"color": "#95A5A6", "font": {"color": "white"}, "id": ".", "label": ".", "shape": "dot", "size": 10, "title": "Node: . Type: punctuation_and_symbols"}, {"color": "#F4D160", "font": {"color": "white"}, "id": "12", "label": "12", "shape": "dot", "size": 10, "title": "Node: 12 Type: isolated_numbers"}, {"color": "#16A085", "font": {"color": "white"}, "id": "EUS-FNA", "label": "EUS-FNA", "shape": "dot", "size": 10, "title": "Node: EUS-FNA Type: hyphenated_words"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "abnormalities", "label": "abnormalities", "shape": "dot", "size": 10, "title": "Node: abnormalities Type: words_and_acronyms"}, {"color": "#95A5A6", "font": {"color": "white"}, "id": "iu", "label": "iu", "shape": "dot", "size": 10, "title": "Node: iu Type: Unknown"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "Intraoperative", "label": "Intraoperative", "shape": "dot", "size": 10, "title": "Node: Intraoperative Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "performed", "label": "performed", "shape": "dot", "size": 10, "title": "Node: performed Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "portion", "label": "portion", "shape": "dot", "size": 10, "title": "Node: portion Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "discharged", "label": "discharged", "shape": "dot", "size": 10, "title": "Node: discharged Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "lesser", "label": "lesser", "shape": "dot", "size": 10, "title": "Node: lesser Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "noted", "label": "noted", "shape": "dot", "size": 10, "title": "Node: noted Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "tomography", "label": "tomography", "shape": "dot", "size": 10, "title": "Node: tomography Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "complete", "label": "complete", "shape": "dot", "size": 10, "title": "Node: complete Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "septations", "label": "septations", "shape": "dot", "size": 10, "title": "Node: septations Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "tightly", "label": "tightly", "shape": "dot", "size": 10, "title": "Node: tightly Type: words_and_acronyms"}, {"color": "#16A085", "font": {"color": "white"}, "id": "year-old", "label": "year-old", "shape": "dot", "size": 10, "title": "Node: year-old Type: hyphenated_words"}, {"color": "#F4D160", "font": {"color": "white"}, "id": "1", "label": "1", "shape": "dot", "size": 10, "title": "Node: 1 Type: isolated_numbers"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "compressed", "label": "compressed", "shape": "dot", "size": 10, "title": "Node: compressed Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "laparoscopic", "label": "laparoscopic", "shape": "dot", "size": 10, "title": "Node: laparoscopic Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "line", "label": "line", "shape": "dot", "size": 10, "title": "Node: line Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "ml", "label": "ml", "shape": "dot", "size": 10, "title": "Node: ml Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "evident", "label": "evident", "shape": "dot", "size": 10, "title": "Node: evident Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "mucosal", "label": "mucosal", "shape": "dot", "size": 10, "title": "Node: mucosal Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "right", "label": "right", "shape": "dot", "size": 10, "title": "Node: right Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "smooth", "label": "smooth", "shape": "dot", "size": 10, "title": "Node: smooth Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "originated", "label": "originated", "shape": "dot", "size": 10, "title": "Node: originated Type: words_and_acronyms"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "subsequently", "label": "subsequently", "shape": "dot", "size": 10, "title": "Node: subsequently Type: words_and_acronyms"}, {"color": "#95A5A6", "font": {"color": "white"}, "id": "ng", "label": "ng", "shape": "dot", "size": 10, "title": "Node: ng Type: Unknown"}, {"color": "#3498DB", "font": {"color": "white"}, "id": "axis", "label": "axis", "shape": "dot", "size": 10, "title": "Node: axis Type: words_and_acronyms"}]);
+                  edges = new vis.DataSet([{"from": "-", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "carcinoembryonic", "width": 5.383704292474052}, {"from": "-", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "lesion", "width": 5.383704292474052}, {"from": "-", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "oesophagogastroduodenoscopy", "width": 5.383704292474052}, {"from": "-", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "return", "width": 5.383704292474052}, {"from": "-", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "4", "width": 5.383704292474052}, {"from": "-", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "9cm", "width": 5.383704292474052}, {"from": "-", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "day", "width": 5.383704292474052}, {"from": "-", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "well", "width": 5.383704292474052}, {"from": "carcinoembryonic", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "GDC", "width": 5.383704292474052}, {"from": "carcinoembryonic", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "associated", "width": 5.383704292474052}, {"from": "carcinoembryonic", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "examination", "width": 5.383704292474052}, {"from": "carcinoembryonic", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "show", "width": 5.383704292474052}, {"from": "carcinoembryonic", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "lesion", "width": 5.383704292474052}, {"from": "carcinoembryonic", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "oesophagogastroduodenoscopy", "width": 5.383704292474052}, {"from": "carcinoembryonic", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "return", "width": 5.383704292474052}, {"from": "lesion", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "9cm", "width": 5.383704292474052}, {"from": "lesion", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "associated", "width": 5.383704292474052}, {"from": "lesion", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "examination", "width": 5.383704292474052}, {"from": "lesion", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "show", "width": 5.383704292474052}, {"from": "lesion", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "oesophagogastroduodenoscopy", "width": 5.383704292474052}, {"from": "lesion", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "return", "width": 5.383704292474052}, {"from": "oesophagogastroduodenoscopy", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "9cm", "width": 5.383704292474052}, {"from": "oesophagogastroduodenoscopy", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "day", "width": 5.383704292474052}, {"from": "oesophagogastroduodenoscopy", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "associated", "width": 5.383704292474052}, {"from": "oesophagogastroduodenoscopy", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "examination", "width": 5.383704292474052}, {"from": "oesophagogastroduodenoscopy", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "return", "width": 5.383704292474052}, {"from": "return", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "9cm", "width": 5.383704292474052}, {"from": "return", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "day", "width": 5.383704292474052}, {"from": "return", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "associated", "width": 5.383704292474052}, {"from": "return", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "well", "width": 5.383704292474052}, {"from": "GDC", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": ".", "width": 5.383704292474052}, {"from": ".", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "12", "width": 5.383704292474052}, {"from": ".", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "EUS-FNA", "width": 5.383704292474052}, {"from": ".", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "abnormalities", "width": 5.383704292474052}, {"from": ".", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "iu", "width": 5.383704292474052}, {"from": ".", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "Intraoperative", "width": 5.383704292474052}, {"from": ".", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "performed", "width": 5.383704292474052}, {"from": ".", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "portion", "width": 5.383704292474052}, {"from": "12", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "discharged", "width": 5.383704292474052}, {"from": "12", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "lesser", "width": 5.383704292474052}, {"from": "12", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "noted", "width": 5.383704292474052}, {"from": "12", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "tomography", "width": 5.383704292474052}, {"from": "12", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "EUS-FNA", "width": 5.383704292474052}, {"from": "12", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "abnormalities", "width": 5.383704292474052}, {"from": "12", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "iu", "width": 5.383704292474052}, {"from": "EUS-FNA", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "abnormalities", "width": 5.383704292474052}, {"from": "EUS-FNA", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "iu", "width": 5.383704292474052}, {"from": "EUS-FNA", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "tomography", "width": 5.383704292474052}, {"from": "EUS-FNA", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "Intraoperative", "width": 5.383704292474052}, {"from": "EUS-FNA", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "performed", "width": 5.383704292474052}, {"from": "EUS-FNA", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "portion", "width": 5.383704292474052}, {"from": "abnormalities", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "Intraoperative", "width": 5.383704292474052}, {"from": "abnormalities", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "lesser", "width": 5.383704292474052}, {"from": "abnormalities", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "noted", "width": 5.383704292474052}, {"from": "abnormalities", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "tomography", "width": 5.383704292474052}, {"from": "abnormalities", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "iu", "width": 5.383704292474052}, {"from": "iu", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "Intraoperative", "width": 5.383704292474052}, {"from": "iu", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "noted", "width": 5.383704292474052}, {"from": "iu", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "tomography", "width": 5.383704292474052}, {"from": "iu", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "portion", "width": 5.383704292474052}, {"from": "discharged", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "complete", "width": 5.383704292474052}, {"from": "discharged", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "septations", "width": 5.383704292474052}, {"from": "discharged", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "tightly", "width": 5.383704292474052}, {"from": "discharged", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "year-old", "width": 5.383704292474052}, {"from": "discharged", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "lesser", "width": 5.383704292474052}, {"from": "discharged", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "noted", "width": 5.383704292474052}, {"from": "discharged", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "tomography", "width": 5.383704292474052}, {"from": "lesser", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "complete", "width": 5.383704292474052}, {"from": "lesser", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "septations", "width": 5.383704292474052}, {"from": "lesser", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "year-old", "width": 5.383704292474052}, {"from": "1", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "compressed", "width": 5.383704292474052}, {"from": "1", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "laparoscopic", "width": 5.383704292474052}, {"from": "1", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "line", "width": 5.383704292474052}, {"from": "1", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "ml", "width": 5.383704292474052}, {"from": "1", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "evident", "width": 5.383704292474052}, {"from": "1", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "mucosal", "width": 5.383704292474052}, {"from": "1", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "right", "width": 5.383704292474052}, {"from": "1", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "smooth", "width": 5.383704292474052}, {"from": "compressed", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "laparoscopic", "width": 5.383704292474052}, {"from": "compressed", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "line", "width": 5.383704292474052}, {"from": "compressed", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "ml", "width": 5.383704292474052}, {"from": "compressed", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "originated", "width": 5.383704292474052}, {"from": "compressed", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "evident", "width": 5.383704292474052}, {"from": "compressed", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "mucosal", "width": 5.383704292474052}, {"from": "compressed", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "smooth", "width": 5.383704292474052}, {"from": "laparoscopic", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "line", "width": 5.383704292474052}, {"from": "laparoscopic", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "ml", "width": 5.383704292474052}, {"from": "laparoscopic", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "originated", "width": 5.383704292474052}, {"from": "laparoscopic", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "subsequently", "width": 5.383704292474052}, {"from": "laparoscopic", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "mucosal", "width": 5.383704292474052}, {"from": "laparoscopic", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "smooth", "width": 5.383704292474052}, {"from": "line", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "ml", "width": 5.383704292474052}, {"from": "line", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "ng", "width": 5.383704292474052}, {"from": "line", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "originated", "width": 5.383704292474052}, {"from": "line", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "subsequently", "width": 5.383704292474052}, {"from": "line", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "mucosal", "width": 5.383704292474052}, {"from": "ml", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "axis", "width": 5.383704292474052}, {"from": "ml", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "ng", "width": 5.383704292474052}, {"from": "ml", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "originated", "width": 5.383704292474052}, {"from": "ml", "label": ":)", "title": "Relation: :) PMI: 5.38", "to": "subsequently", "width": 5.383704292474052}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+                    network.on("selectNode", neighbourhoodHighlight);
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

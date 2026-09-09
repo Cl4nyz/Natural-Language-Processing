@@ -1,0 +1,757 @@
+edge_id,source_id,target_id,relation,attributes
+Edge_PMC5137649_01_Entity_abdominal_pain_0,Patient_PMC5137649_01,Entity_abdominal_pain,PRESENTS_WITH,evidence='...and lower quadrant abdominal pain associated with nau...'
+Edge_PMC5137649_01_Entity_stomach_2,Patient_PMC5137649_01,Entity_stomach,ASSOCIATED_WITH,evidence='...lesion between the stomach and body/tail of th...'
+Edge_PMC5137649_01_Entity_computed_tomography_2,Patient_PMC5137649_01,Entity_computed_tomography,UNDERWENT_EXAM,"evidence='...t contrast enhanced computed tomography, demonstrating a 6c...'"
+Edge_Res_PMC5137649_01_Entity_computed_tomography_Result_PMC5137649_01_6_cm,Entity_computed_tomography,Result_PMC5137649_01_6_cm,HAS_RESULT,measured_value
+Edge_PMC5137649_01_Entity_stomach_3,Patient_PMC5137649_01,Entity_stomach,ASSOCIATED_WITH,evidence='...but compressed the stomach...'
+Edge_PMC5137649_01_Entity_malignancy_4,Patient_PMC5137649_01,Entity_malignancy,RULED_OUT,evidence='...ated no evidence of malignancy but did show the pr...'
+Edge_Res_PMC5137649_01_Entity_malignancy_Result_PMC5137649_01_476.5_ng_ml,Entity_malignancy,Result_PMC5137649_01_476.5_ng_ml,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC5137649_01_Entity_malignancy_Result_PMC5137649_01_6_iu_ml,Entity_malignancy,Result_PMC5137649_01_6_iu_ml,HAS_LAB_VALUE,measured_attribute
+Edge_PMC5137649_01_Entity_pancreatectomy_6,Patient_PMC5137649_01,Entity_pancreatectomy,UNDERWENT_EXAM,evidence='...laparoscopic distal pancreatectomy was planned...'
+Edge_PMC5137649_01_Entity_stomach_7,Patient_PMC5137649_01,Entity_stomach,ASSOCIATED_WITH,"evidence='...sterior wall of the stomach, the lesion was not...'"
+Edge_PMC5137649_01_Entity_stomach_8,Patient_PMC5137649_01,Entity_stomach,ASSOCIATED_WITH,evidence='...originated from the stomach...'
+Edge_PMC5137649_01_Entity_endoscopy_9,Patient_PMC5137649_01,Entity_endoscopy,UNDERWENT_EXAM,evidence='...Intraoperative endoscopy was performed and n...'
+Edge_PMC5137649_01_Entity_stomach_9,Patient_PMC5137649_01,Entity_stomach,ASSOCIATED_WITH,evidence='...bnormalities of the stomach were noted....'
+Edge_PMC5137649_01_Entity_stomach_11,Patient_PMC5137649_01,Entity_stomach,ASSOCIATED_WITH,evidence='...The stomach was fully mobilised...'
+Edge_PMC5137649_01_Entity_stomach_12,Patient_PMC5137649_01,Entity_stomach,ASSOCIATED_WITH,evidence='...sterior wall of the stomach with a surgical sta...'
+Edge_PMC5137649_01_Entity_stomach_13,Patient_PMC5137649_01,Entity_stomach,ASSOCIATED_WITH,evidence='...ne on the posterior stomach wall and no evidenc...'
+Edge_PMC5137649_01_Entity_oesophagogastroduodenoscopy_13,Patient_PMC5137649_01,Entity_oesophagogastroduodenoscopy,UNDERWENT_EXAM,evidence='...Repeat oesophagogastroduodenoscopy revealed the presen...'
+Edge_PMC9387390_01_Entity_computed_tomography_1,Patient_PMC9387390_01,Entity_computed_tomography,UNDERWENT_EXAM,evidence='...Computed tomography (CT) imaging showed...'
+Edge_PMC9387390_01_Entity_adenocarcinoma_4,Patient_PMC9387390_01,Entity_adenocarcinoma,DIAGNOSED_WITH,"evidence='...orly differentiated adenocarcinoma, thought to have ar...'"
+Edge_PMC9387390_01_Entity_gastrojejunostomy_8,Patient_PMC9387390_01,Entity_gastrojejunostomy,UNDERWENT_EXAM,evidence='...erwent laparoscopic gastrojejunostomy (GJ) for palliative...'
+Edge_PMC9387390_01_Entity_relaparoscopy_9,Patient_PMC9387390_01,Entity_relaparoscopy,UNDERWENT_EXAM,evidence='...7 and he underwent relaparoscopy...'
+Edge_PMC9387390_01_Entity_stomach_13,Patient_PMC9387390_01,Entity_stomach,ASSOCIATED_WITH,evidence='...d distension of the stomach and proximal small...'
+Edge_PMC9387390_01_Entity_esophagogastroduodenoscopy_15,Patient_PMC9387390_01,Entity_esophagogastroduodenoscopy,UNDERWENT_EXAM,"evidence='...On POD 16, esophagogastroduodenoscopy (EGD) was performed...'"
+Edge_PMC9387390_01_Entity_stomach_16,Patient_PMC9387390_01,Entity_stomach,ASSOCIATED_WITH,evidence='...id was noted in the stomach....'
+Edge_PMC9387390_01_Entity_management_17,Patient_PMC9387390_01,Entity_management,DIAGNOSED_WITH,evidence='...service for further management...'
+Edge_PMC9387390_01_Entity_delayed_gastric_emptying_18,Patient_PMC9387390_01,Entity_delayed_gastric_emptying,PRESENTS_WITH,evidence='...inical suspicion of delayed gastric emptying secondary to long-s...'
+Edge_PMC9387390_01_Entity_gastrostomy_21,Patient_PMC9387390_01,Entity_gastrostomy,UNDERWENT_EXAM,evidence='...admissions for high gastrostomy tube output...'
+Edge_PMC9387390_01_Entity_enteroscopy_24,Patient_PMC9387390_01,Entity_enteroscopy,UNDERWENT_EXAM,evidence='...afferent limb; push enteroscopy showed the jejunal...'
+Edge_PMC9387390_01_Entity_delayed_gastric_emptying_26,Patient_PMC9387390_01,Entity_delayed_gastric_emptying,PRESENTS_WITH,evidence='...nal obstruction and delayed gastric emptying...'
+Edge_PMC9387390_01_Entity_stent_28,Patient_PMC9387390_01,Entity_stent,UNDERWENT_EXAM,"evidence='...copy, we considered stent placement into the...'"
+Edge_PMC9387390_01_Entity_endoscopy_28,Patient_PMC9387390_01,Entity_endoscopy,UNDERWENT_EXAM,"evidence='...e findings noted on endoscopy, we considered sten...'"
+Edge_PMC9387390_01_Entity_stent_29,Patient_PMC9387390_01,Entity_stent,UNDERWENT_EXAM,"evidence='...An AXIOS  stent (20 mm x 10 mm, Bos...'"
+Edge_PMC9387390_01_Entity_stent_30,Patient_PMC9387390_01,Entity_stent,UNDERWENT_EXAM,evidence='...study which showed stent migration...'
+Edge_PMC9387390_01_Entity_delayed_gastric_emptying_30,Patient_PMC9387390_01,Entity_delayed_gastric_emptying,PRESENTS_WITH,evidence='...current symptoms of delayed gastric emptying prompted a repeat U...'
+Edge_PMC9387390_01_Entity_stent_31,Patient_PMC9387390_01,Entity_stent,UNDERWENT_EXAM,"evidence='...d WallFlex  colonic stent (25 mm x 90 mm, Bos...'"
+Edge_PMC9387390_01_Entity_stent_32,Patient_PMC9387390_01,Entity_stent,UNDERWENT_EXAM,evidence='...al air abutting the stent...'
+Edge_PMC9387390_01_Entity_stent_33,Patient_PMC9387390_01,Entity_stent,UNDERWENT_EXAM,evidence='...nt limb through the stent...'
+Edge_PMC3437073_01_Entity_tuberculous_1,Patient_PMC3437073_01,Entity_tuberculous,RULED_OUT,evidence='...y of contact with a tuberculous patient...'
+Edge_PMC3437073_01_Entity_spleen_3,Patient_PMC3437073_01,Entity_spleen,ASSOCIATED_WITH,evidence='...The spleen was enlarged 8 cm b...'
+Edge_PMC3437073_01_Entity_tuberculosis_5,Patient_PMC3437073_01,Entity_tuberculosis,DIAGNOSED_WITH,evidence='...of an old pulmonary tuberculosis...'
+Edge_PMC3437073_01_Entity_spleen_7,Patient_PMC3437073_01,Entity_spleen,ASSOCIATED_WITH,evidence='...dicated an enlarged spleen with areas of calci...'
+Edge_PMC3437073_01_Entity_abscess_8,Patient_PMC3437073_01,Entity_abscess,PRESENTS_WITH,evidence='...revealed a splenic abscess communicating with...'
+Edge_PMC3437073_01_Entity_tuberculous_9,Patient_PMC3437073_01,Entity_tuberculous,DIAGNOSED_WITH,"evidence='...data, a complicated tuberculous splenic abscess was...'"
+Edge_PMC3437073_01_Entity_abscess_9,Patient_PMC3437073_01,Entity_abscess,PRESENTS_WITH,evidence='...tuberculous splenic abscess was the most probab...'
+Edge_PMC3437073_01_Entity_abscess_10,Patient_PMC3437073_01,Entity_abscess,PRESENTS_WITH,"evidence='...a, the subcutaneous abscess was incised and dra...'"
+Edge_PMC3437073_01_Entity_splenectomy_10,Patient_PMC3437073_01,Entity_splenectomy,UNDERWENT_EXAM,"evidence='...ed and drained, and splenectomy was performed simul...'"
+Edge_PMC3437073_01_Entity_spleen_11,Patient_PMC3437073_01,Entity_spleen,ASSOCIATED_WITH,evidence='...The spleen was found to be enl...'
+Edge_PMC3437073_01_Entity_abscess_12,Patient_PMC3437073_01,Entity_abscess,PRESENTS_WITH,evidence='...There was an abscess cavity within the s...'
+Edge_PMC3437073_01_Entity_spleen_12,Patient_PMC3437073_01,Entity_spleen,ASSOCIATED_WITH,evidence='...s cavity within the spleen communicating with...'
+Edge_Loc_PMC3437073_01_Entity_abscess_Entity_spleen,Entity_abscess,Entity_spleen,LOCATED_IN,anatomical_localization
+Edge_PMC3437073_01_Entity_necrosis_14,Patient_PMC3437073_01,Entity_necrosis,PRESENTS_WITH,"evidence='...ells, and caseation necrosis (Figure 3)...'"
+Edge_PMC3437073_01_Entity_granuloma_14,Patient_PMC3437073_01,Entity_granuloma,DIAGNOSED_WITH,evidence='...eristic tuberculoid granuloma with epithelioid ce...'
+Edge_PMC3437073_01_Entity_spleen_14,Patient_PMC3437073_01,Entity_spleen,ASSOCIATED_WITH,evidence='...stopathology of the spleen revealed the charac...'
+Edge_Loc_PMC3437073_01_Entity_necrosis_Entity_spleen,Entity_necrosis,Entity_spleen,LOCATED_IN,anatomical_localization
+Edge_Loc_PMC3437073_01_Entity_granuloma_Entity_spleen,Entity_granuloma,Entity_spleen,LOCATED_IN,anatomical_localization
+Edge_PMC3437073_01_Entity_tuberculous_15,Patient_PMC3437073_01,Entity_tuberculous,DIAGNOSED_WITH,"evidence='...t bacilli staining, tuberculous and bacterial cultu...'"
+Edge_PMC3437073_01_Entity_tuberculous_17,Patient_PMC3437073_01,Entity_tuberculous,DIAGNOSED_WITH,evidence='...on improved on anti-tuberculous medications and sho...'
+Edge_PMC7102447_01_Entity_hypertension_0,Patient_PMC7102447_01,Entity_hypertension,DIAGNOSED_WITH,"evidence='...ory significant for hypertension, asthma, and minima...'"
+Edge_PMC7102447_01_Entity_computed_tomography_4,Patient_PMC7102447_01,Entity_computed_tomography,UNDERWENT_EXAM,evidence='...ary syndrome (ACS); computed tomography angiogram (CTA) of...'
+Edge_PMC7102447_01_Entity_stenosis_5,Patient_PMC7102447_01,Entity_stenosis,DIAGNOSED_WITH,evidence='...with severe mitral stenosis and regurgitation e...'
+Edge_PMC7102447_01_Entity_thrombosis_5,Patient_PMC7102447_01,Entity_thrombosis,DIAGNOSED_WITH,evidence='...ed showing an acute thrombosis of the bioprostheti...'
+Edge_Res_PMC7102447_01_Entity_stenosis_Result_PMC7102447_01_20.1_mmHg,Entity_stenosis,Result_PMC7102447_01_20.1_mmHg,HAS_SIZE,measured_attribute
+Edge_Res_PMC7102447_01_Entity_thrombosis_Result_PMC7102447_01_20.1_mmHg,Entity_thrombosis,Result_PMC7102447_01_20.1_mmHg,HAS_SIZE,measured_attribute
+Edge_PMC7102447_01_Entity_surgery_7,Patient_PMC7102447_01,Entity_surgery,DIAGNOSED_WITH,evidence='...t redo mitral valve surgery utilizing a 33 mm S...'
+Edge_PMC7102447_01_Entity_thrombosis_9,Patient_PMC7102447_01,Entity_thrombosis,DIAGNOSED_WITH,evidence='...ngs consistent with thrombosis...'
+Edge_PMC6354154_01_Entity_laparoscopy_10,Patient_PMC6354154_01,Entity_laparoscopy,UNDERWENT_EXAM,evidence='...ed for a diagnostic laparoscopy and ovarian drillin...'
+Edge_PMC6354154_01_Entity_surgery_11,Patient_PMC6354154_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...In the surgery, both ovaries were...'"
+Edge_PMC6354154_01_Entity_mitosis_16,Patient_PMC6354154_01,Entity_mitosis,RULED_OUT,"evidence='...cytoplasm, without mitosis and nuclear atypia...'"
+Edge_PMC4782471_01_Entity_hypertension_0,Patient_PMC4782471_01,Entity_hypertension,RULED_OUT,"evidence='...n, and no pulmonary hypertension...'"
+Edge_PMC4782471_01_Entity_fever_7,Patient_PMC4782471_01,Entity_fever,PRESENTS_WITH,evidence='...eloped a persistent fever of up to 40 C which...'
+Edge_PMC4782471_01_Entity_blood_transfusion_11,Patient_PMC4782471_01,Entity_blood_transfusion,DIAGNOSED_WITH,evidence='...which she received blood transfusion...'
+Edge_Res_PMC4782471_01_Entity_blood_transfusion_Result_PMC4782471_01_91_mg,Entity_blood_transfusion,Result_PMC4782471_01_91_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC4782471_01_Entity_blood_transfusion_Result_PMC4782471_01_6_g,Entity_blood_transfusion,Result_PMC4782471_01_6_g,HAS_LAB_VALUE,measured_attribute
+Edge_PMC4782471_01_Entity_echocardiography_13,Patient_PMC4782471_01,Entity_echocardiography,UNDERWENT_EXAM,evidence='...Echocardiography revealed vegetation...'
+Edge_PMC4782471_01_Entity_hypertension_14,Patient_PMC4782471_01,Entity_hypertension,RULED_OUT,"evidence='...e, but no pulmonary hypertension...'"
+Edge_PMC4782471_01_Entity_endocarditis_16,Patient_PMC4782471_01,Entity_endocarditis,RULED_OUT,evidence='...osed with infective endocarditis and started empiric...'
+Edge_PMC4782471_01_Entity_infective_endocarditis_16,Patient_PMC4782471_01,Entity_infective_endocarditis,UNDERWENT_EXAM,evidence='...was diagnosed with infective endocarditis and started empiric...'
+Edge_PMC4782471_01_Entity_leucocytosis_18,Patient_PMC4782471_01,Entity_leucocytosis,DIAGNOSED_WITH,"evidence='...s showed persistent leucocytosis, a high sedimentati...'"
+Edge_PMC4782471_01_Entity_fever_18,Patient_PMC4782471_01,Entity_fever,PRESENTS_WITH,evidence='...evelop intermittent fever; blood tests showed...'
+Edge_PMC4782471_01_Entity_surgery_27,Patient_PMC4782471_01,Entity_surgery,DIAGNOSED_WITH,evidence='...e died 2 days after surgery....'
+Edge_PMC4835621_01_Entity_basis_1,Patient_PMC4835621_01,Entity_basis,DIAGNOSED_WITH,evidence='...eadaches on a daily basis and profound fatigu...'
+Edge_PMC4835621_01_Entity_fever_2,Patient_PMC4835621_01,Entity_fever,DENIES_SYMPTOM,"evidence='...tient denied having fever, any recent change...'"
+Edge_PMC4835621_01_Entity_hypertension_5,Patient_PMC4835621_01,Entity_hypertension,DIAGNOSED_WITH,evidence='...was significant for hypertension and osteoporosis...'
+Edge_PMC4835621_01_Entity_osteoporosis_5,Patient_PMC4835621_01,Entity_osteoporosis,DIAGNOSED_WITH,evidence='...or hypertension and osteoporosis...'
+Edge_PMC4835621_01_Entity_calcium_channel_blocker_6,Patient_PMC4835621_01,Entity_calcium_channel_blocker,DIAGNOSED_WITH,evidence='...medications were a calcium channel blocker and hydrochlorothia...'
+Edge_PMC4835621_01_Entity_fever_9,Patient_PMC4835621_01,Entity_fever,DENIES_SYMPTOM,"evidence='...ere normal, without fever...'"
+Edge_PMC4835621_01_Entity_liver_20,Patient_PMC4835621_01,Entity_liver,ASSOCIATED_WITH,evidence='...rmal creatinine and liver function tests...'
+Edge_PMC4835621_01_Entity_antibodies_24,Patient_PMC4835621_01,Entity_antibodies,DIAGNOSED_WITH,evidence='...h positive ADAMTS13 antibodies...'
+Edge_PMC4835621_01_Entity_stomach_29,Patient_PMC4835621_01,Entity_stomach,ASSOCIATED_WITH,evidence='...3.5 cm size in the stomach (Figure 1)...'
+Edge_PMC4835621_01_Entity_malignancy_29,Patient_PMC4835621_01,Entity_malignancy,DIAGNOSED_WITH,evidence='...rule out underling malignancy a computed tomograp...'
+Edge_PMC4835621_01_Entity_computed_tomography_29,Patient_PMC4835621_01,Entity_computed_tomography,UNDERWENT_EXAM,evidence='...erling malignancy a computed tomography (CT) scan of the ch...'
+Edge_Res_PMC4835621_01_Entity_malignancy_Result_PMC4835621_01_3.5_cm,Entity_malignancy,Result_PMC4835621_01_3.5_cm,HAS_SIZE,measured_attribute
+Edge_Res_PMC4835621_01_Entity_computed_tomography_Result_PMC4835621_01_3.5_cm,Entity_computed_tomography,Result_PMC4835621_01_3.5_cm,HAS_RESULT,measured_value
+Edge_Loc_PMC4835621_01_Entity_malignancy_Entity_stomach,Entity_malignancy,Entity_stomach,LOCATED_IN,anatomical_localization
+Edge_PMC4835621_01_Entity_thrombosis_32,Patient_PMC4835621_01,Entity_thrombosis,DIAGNOSED_WITH,evidence='...veloped a deep vein thrombosis and treatment with...'
+Edge_PMC4835621_01_Entity_gastritis_33,Patient_PMC4835621_01,Entity_gastritis,DIAGNOSED_WITH,evidence='...was consistent with gastritis...'
+Edge_PMC4835621_01_Entity_stomach_33,Patient_PMC4835621_01,Entity_stomach,ASSOCIATED_WITH,evidence='...n the antrum of the stomach and was consistent...'
+Edge_PMC4835621_01_Entity_gastroduodenoscopy_33,Patient_PMC4835621_01,Entity_gastroduodenoscopy,UNDERWENT_EXAM,evidence='...investigation with gastroduodenoscopy demonstrated normal...'
+Edge_Loc_PMC4835621_01_Entity_gastritis_Entity_stomach,Entity_gastritis,Entity_stomach,LOCATED_IN,anatomical_localization
+Edge_PMC4835621_01_Entity_gastritis_34,Patient_PMC4835621_01,Entity_gastritis,DIAGNOSED_WITH,evidence='...rate active chronic gastritis and was positive fo...'
+Edge_PMC4835621_01_Entity_colonoscopy_36,Patient_PMC4835621_01,Entity_colonoscopy,UNDERWENT_EXAM,evidence='...Colonoscopy showed no significa...'
+Edge_PMC8627357_01_Entity_cellulitis_0,Patient_PMC8627357_01,Entity_cellulitis,DIAGNOSED_WITH,evidence='...eft upper extremity cellulitis and dyspnea one wee...'
+Edge_PMC8627357_01_Entity_dyspnea_0,Patient_PMC8627357_01,Entity_dyspnea,PRESENTS_WITH,evidence='...mity cellulitis and dyspnea one week prior to a...'
+Edge_PMC8627357_01_Entity_computed_tomography_1,Patient_PMC8627357_01,Entity_computed_tomography,UNDERWENT_EXAM,"evidence='...outside facility, a computed tomography (CT) of the left up...'"
+Edge_PMC8627357_01_Entity_lymphadenopathy_9,Patient_PMC8627357_01,Entity_lymphadenopathy,DIAGNOSED_WITH,"evidence='...stinal and axillary lymphadenopathy, pleural effusions,...'"
+Edge_PMC8627357_01_Entity_surgery_10,Patient_PMC8627357_01,Entity_surgery,DIAGNOSED_WITH,evidence='...Orthopedic surgery was consulted for d...'
+Edge_PMC8627357_01_Entity_acidosis_14,Patient_PMC8627357_01,Entity_acidosis,DIAGNOSED_WITH,evidence='...py due to worsening acidosis and uremia...'
+Edge_PMC8627357_01_Entity_gastrostomy_17,Patient_PMC8627357_01,Entity_gastrostomy,UNDERWENT_EXAM,"evidence='...utaneous endoscopic gastrostomy were performed, and...'"
+Edge_PMC8627357_01_Entity_management_17,Patient_PMC8627357_01,Entity_management,DIAGNOSED_WITH,"evidence='...ade, and antibiotic management, a tracheostomy and...'"
+Edge_PMC8627357_01_Entity_tracheostomy_17,Patient_PMC8627357_01,Entity_tracheostomy,PRESENTS_WITH,"evidence='...iotic management, a tracheostomy and percutaneous en...'"
+Edge_PMC5833205_01_Entity_anemia_6,Patient_PMC5833205_01,Entity_anemia,DIAGNOSED_WITH,evidence='...t with a microcytic anemia (hemoglobin of 6.4...'
+Edge_PMC5833205_01_Entity_iron_deficiency_6,Patient_PMC5833205_01,Entity_iron_deficiency,DIAGNOSED_WITH,"evidence='...r volume of 69 fL), iron deficiency (ferritin of 4.9 ng...'"
+Edge_Res_PMC5833205_01_Entity_anemia_Result_PMC5833205_01_6.4_mg,Entity_anemia,Result_PMC5833205_01_6.4_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC5833205_01_Entity_iron_deficiency_Result_PMC5833205_01_6.4_mg,Entity_iron_deficiency,Result_PMC5833205_01_6.4_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC5833205_01_Entity_anemia_Result_PMC5833205_01_69_fL,Entity_anemia,Result_PMC5833205_01_69_fL,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC5833205_01_Entity_iron_deficiency_Result_PMC5833205_01_69_fL,Entity_iron_deficiency,Result_PMC5833205_01_69_fL,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC5833205_01_Entity_anemia_Result_PMC5833205_01_1.6_g_dL,Entity_anemia,Result_PMC5833205_01_1.6_g_dL,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC5833205_01_Entity_iron_deficiency_Result_PMC5833205_01_1.6_g_dL,Entity_iron_deficiency,Result_PMC5833205_01_1.6_g_dL,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC5833205_01_Entity_anemia_Result_PMC5833205_01_3.0_g_dL,Entity_anemia,Result_PMC5833205_01_3.0_g_dL,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC5833205_01_Entity_iron_deficiency_Result_PMC5833205_01_3.0_g_dL,Entity_iron_deficiency,Result_PMC5833205_01_3.0_g_dL,HAS_LAB_VALUE,measured_attribute
+Edge_PMC5833205_01_Entity_endoscopy_8,Patient_PMC5833205_01,Entity_endoscopy,UNDERWENT_EXAM,"evidence='...erformance of upper endoscopy and colonoscopy, an...'"
+Edge_PMC5833205_01_Entity_colonoscopy_8,Patient_PMC5833205_01,Entity_colonoscopy,UNDERWENT_EXAM,"evidence='...upper endoscopy and colonoscopy, and these studies...'"
+Edge_PMC3917415_01_Entity_computed_tomography_5,Patient_PMC3917415_01,Entity_computed_tomography,UNDERWENT_EXAM,evidence='...Computed tomography (CT) demonstrated S...'
+Edge_PMC3917415_01_Entity_craniotomy_12,Patient_PMC3917415_01,Entity_craniotomy,UNDERWENT_EXAM,evidence='...left frontotemporal craniotomy was performed to cl...'
+Edge_PMC3917415_01_Entity_microscopy_13,Patient_PMC3917415_01,Entity_microscopy,UNDERWENT_EXAM,"evidence='...rmed under surgical microscopy, and the aneurysm w...'"
+Edge_PMC7718649_01_Entity_hydroxychloroquine_1,Patient_PMC7718649_01,Entity_hydroxychloroquine,DIAGNOSED_WITH,"evidence='...o., once daily) and hydroxychloroquine (0.2 g p.o., twice...'"
+Edge_Res_PMC7718649_01_Entity_hydroxychloroquine_Result_PMC7718649_01_10_mg,Entity_hydroxychloroquine,Result_PMC7718649_01_10_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC7718649_01_Entity_hydroxychloroquine_Result_PMC7718649_01_0.2_g,Entity_hydroxychloroquine,Result_PMC7718649_01_0.2_g,HAS_LAB_VALUE,measured_attribute
+Edge_PMC7718649_01_Entity_covid-19_2,Patient_PMC7718649_01,Entity_covid-19,DIAGNOSED_WITH,evidence='...t epidemic focus of COVID-19 in Wuhan...'
+Edge_PMC7718649_01_Entity_covid-19_3,Patient_PMC7718649_01,Entity_covid-19,DIAGNOSED_WITH,evidence='...firmed or suspected COVID-19 patients....'
+Edge_PMC7718649_01_Entity_fever_4,Patient_PMC7718649_01,Entity_fever,PRESENTS_WITH,evidence='...e patient presented fever (peak value: 39 C)...'
+Edge_PMC7718649_01_Entity_hydroxychloroquine_9,Patient_PMC7718649_01,Entity_hydroxychloroquine,DIAGNOSED_WITH,evidence='...e of prednisone and hydroxychloroquine remained the same a...'
+Edge_PMC7718649_01_Entity_sars-cov-2_11,Patient_PMC7718649_01,Entity_sars-cov-2,DIAGNOSED_WITH,evidence='...ngeal swabs to test SARS-CoV-2 and influenza A vir...'
+Edge_PMC7718649_01_Entity_human_13,Patient_PMC7718649_01,Entity_human,DIAGNOSED_WITH,"evidence='...Hence, human immunoglobulin was...'"
+Edge_Res_PMC7718649_01_Entity_human_Result_PMC7718649_01_5_g,Entity_human,Result_PMC7718649_01_5_g,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC7718649_01_Entity_human_Result_PMC7718649_01_25_mg,Entity_human,Result_PMC7718649_01_25_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC7718649_01_Entity_human_14,Patient_PMC7718649_01,Entity_human,DIAGNOSED_WITH,"evidence='...G made from healthy human plasma, and low dos...'"
+Edge_PMC7718649_01_Entity_leucocytosis_16,Patient_PMC7718649_01,Entity_leucocytosis,DIAGNOSED_WITH,"evidence='...oratory tests found leucocytosis (11.09 x 109/L), ne...'"
+Edge_PMC7718649_01_Entity_covid-19_17,Patient_PMC7718649_01,Entity_covid-19,RULED_OUT,evidence='...is and treatment of COVID-19 in Wuhan....'
+Edge_PMC7718649_01_Entity_fever_17,Patient_PMC7718649_01,Entity_fever,PRESENTS_WITH,evidence='...ent was admitted to fever ward of Sino-French...'
+Edge_PMC7718649_01_Entity_liver_23,Patient_PMC7718649_01,Entity_liver,ASSOCIATED_WITH,"evidence='...kidney, myocardium, liver and coagulation fun...'"
+Edge_PMC7718649_01_Entity_covid-19_28,Patient_PMC7718649_01,Entity_covid-19,RULED_OUT,"evidence='...f SLE combined with COVID-19, influenza A, M...'"
+Edge_PMC7718649_01_Entity_hydroxychloroquine_30,Patient_PMC7718649_01,Entity_hydroxychloroquine,DIAGNOSED_WITH,"evidence='...o., once daily) and hydroxychloroquine (0.2 g p.o., twice...'"
+Edge_PMC7718649_01_Entity_covid-19_30,Patient_PMC7718649_01,Entity_covid-19,DIAGNOSED_WITH,evidence='...currence of SLE and COVID-19...'
+Edge_Res_PMC7718649_01_Entity_hydroxychloroquine_Result_PMC7718649_01_25_mg,Entity_hydroxychloroquine,Result_PMC7718649_01_25_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC7718649_01_Entity_covid-19_Result_PMC7718649_01_25_mg,Entity_covid-19,Result_PMC7718649_01_25_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC7718649_01_Entity_covid-19_Result_PMC7718649_01_0.2_g,Entity_covid-19,Result_PMC7718649_01_0.2_g,HAS_LAB_VALUE,measured_attribute
+Edge_PMC7718649_01_Entity_sars-cov-2_45,Patient_PMC7718649_01,Entity_sars-cov-2,DIAGNOSED_WITH,"evidence='...cted for rRT-PCR of SARS-CoV-2 on day 16 and 18, b...'"
+Edge_PMC7718649_01_Entity_sars-cov-2_49,Patient_PMC7718649_01,Entity_sars-cov-2,DIAGNOSED_WITH,evidence='...The rRT-PCR of SARS-CoV-2 of the third nasoph...'
+Edge_PMC7718649_01_Entity_sars-cov-2_50,Patient_PMC7718649_01,Entity_sars-cov-2,RULED_OUT,evidence='...globulin G (IgG) of SARS-CoV-2 were 33.73 AU/mL (n...'
+Edge_PMC7718649_01_Entity_sars-cov-2_51,Patient_PMC7718649_01,Entity_sars-cov-2,DIAGNOSED_WITH,evidence='...sults of rRT-PCR of SARS-CoV-2 for two nasal phary...'
+Edge_PMC6134951_01_Entity_myxoma_0,Patient_PMC6134951_01,Entity_myxoma,DIAGNOSED_WITH,"evidence='...and resected atrial myxoma, was found to have...'"
+Edge_PMC6134951_01_Entity_lymphadenopathy_0,Patient_PMC6134951_01,Entity_lymphadenopathy,RULED_OUT,"evidence='...nodule, mediastinal lymphadenopathy, and a large left p...'"
+Edge_PMC6134951_01_Entity_adenocarcinoma_1,Patient_PMC6134951_01,Entity_adenocarcinoma,DIAGNOSED_WITH,evidence='...-positive pulmonary adenocarcinoma...'
+Edge_PMC6134951_01_Entity_alectinib_9,Patient_PMC6134951_01,Entity_alectinib,UNDERWENT_EXAM,evidence='...patient started on alectinib 600 mg twice a day...'
+Edge_Res_PMC6134951_01_Entity_alectinib_Result_PMC6134951_01_600_mg,Entity_alectinib,Result_PMC6134951_01_600_mg,HAS_RESULT,measured_value
+Edge_PMC6134951_01_Entity_fever_11,Patient_PMC6134951_01,Entity_fever,PRESENTS_WITH,evidence='...She had recurrent fevers with a maximum temp...'
+Edge_PMC6134951_01_Entity_dermatitis_12,Patient_PMC6134951_01,Entity_dermatitis,DIAGNOSED_WITH,"evidence='...iotic and interface dermatitis with eosinophils, c...'"
+Edge_PMC6134951_01_Entity_strongyloidiasis_14,Patient_PMC6134951_01,Entity_strongyloidiasis,DIAGNOSED_WITH,"evidence='..., herpes, syphilis, strongyloidiasis, and bacteremia...'"
+Edge_PMC6134951_01_Entity_pharyngitis_14,Patient_PMC6134951_01,Entity_pharyngitis,RULED_OUT,"evidence='...e for streptococcal pharyngitis, HIV, parvovirus, h...'"
+Edge_PMC6134951_01_Entity_alectinib_15,Patient_PMC6134951_01,Entity_alectinib,UNDERWENT_EXAM,evidence='...Alectinib was the only medica...'
+Edge_PMC6134951_01_Entity_fever_21,Patient_PMC6134951_01,Entity_fever,PRESENTS_WITH,"evidence='...in biopsy, and high fevers...'"
+Edge_PMC6134951_01_Entity_brigatinib_22,Patient_PMC6134951_01,Entity_brigatinib,DIAGNOSED_WITH,evidence='...he was started with brigatinib 1 week after comple...'
+Edge_PMC6134951_01_Entity_fever_23,Patient_PMC6134951_01,Entity_fever,DENIES_SYMPTOM,evidence='...ll without rash and fever...'
+Edge_PMC6343374_01_Entity_twin_0,Patient_PMC6343374_01,Entity_twin,DIAGNOSED_WITH,evidence='...A 6-day-old twin male infant weighin...'
+Edge_PMC6343374_01_Entity_infant_0,Patient_PMC6343374_01,Entity_infant,DIAGNOSED_WITH,evidence='...6-day-old twin male infant weighing 2760 g was...'
+Edge_Res_PMC6343374_01_Entity_twin_Result_PMC6343374_01_2760_g,Entity_twin,Result_PMC6343374_01_2760_g,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC6343374_01_Entity_infant_Result_PMC6343374_01_2760_g,Entity_infant,Result_PMC6343374_01_2760_g,HAS_LAB_VALUE,measured_attribute
+Edge_PMC6343374_01_Entity_echocardiography_1,Patient_PMC6343374_01,Entity_echocardiography,UNDERWENT_EXAM,evidence='...Echocardiography allowed the diagnos...'
+Edge_PMC6343374_01_Entity_interrupted_aortic_arch_1,Patient_PMC6343374_01,Entity_interrupted_aortic_arch,RULED_OUT,"evidence='...sis of TAC 4A, with interrupted aortic arch (IAA) and trivial t...'"
+Edge_PMC6343374_01_Entity_ventricular_septal_defect_2,Patient_PMC6343374_01,Entity_ventricular_septal_defect,UNDERWENT_EXAM,evidence='...ricular side of the ventricular septal defect (VSD)...'
+Edge_PMC6343374_01_Entity_sternotomy_4,Patient_PMC6343374_01,Entity_sternotomy,UNDERWENT_EXAM,evidence='...6 through a median sternotomy...'
+Edge_PMC6343374_01_Entity_ventriculotomy_6,Patient_PMC6343374_01,Entity_ventriculotomy,UNDERWENT_EXAM,"evidence='...Right ventriculotomy was carried out, an...'"
+Edge_PMC6343374_01_Entity_echocardiography_11,Patient_PMC6343374_01,Entity_echocardiography,UNDERWENT_EXAM,evidence='...The postoperative echocardiography revealed no pressur...'
+Edge_PMC6343374_01_Entity_stent_13,Patient_PMC6343374_01,Entity_stent,UNDERWENT_EXAM,evidence='...ent self-expandable stent insertion at the pr...'
+Edge_PMC6343374_01_Entity_surgery_13,Patient_PMC6343374_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...A at 2 months after surgery, but this caused pr...'"
+Edge_PMC6343374_01_Entity_stent_14,Patient_PMC6343374_01,Entity_stent,UNDERWENT_EXAM,"evidence='...life, he underwent stent removal and PA repa...'"
+Edge_PMC6343374_01_Entity_stenosis_17,Patient_PMC6343374_01,Entity_stenosis,RULED_OUT,"evidence='...almost no right PA stenosis, mild truncal valve...'"
+Edge_PMC6343374_01_Entity_echocardiography_17,Patient_PMC6343374_01,Entity_echocardiography,UNDERWENT_EXAM,evidence='...st recent follow-up echocardiography at 36 months of lif...'
+Edge_PMC6343374_01_Entity_surgery_19,Patient_PMC6343374_01,Entity_surgery,DIAGNOSED_WITH,evidence='...g 16 patients after surgery...'
+Edge_PMC6343374_01_Entity_anastomosis_23,Patient_PMC6343374_01,Entity_anastomosis,DIAGNOSED_WITH,evidence='...repaired by direct anastomosis...'
+Edge_PMC6343374_01_Entity_surgery_23,Patient_PMC6343374_01,Entity_surgery,DIAGNOSED_WITH,evidence='...he congenital heart surgery study was 13.2% (5...'
+Edge_PMC6343374_01_Entity_anastomosis_24,Patient_PMC6343374_01,Entity_anastomosis,DIAGNOSED_WITH,evidence='...to-side aortic arch anastomosis is bronchial compre...'
+Edge_PMC6343374_01_Entity_bronchial_compression_24,Patient_PMC6343374_01,Entity_bronchial_compression,DIAGNOSED_WITH,evidence='...arch anastomosis is bronchial compression...'
+Edge_PMC6343374_01_Entity_anastomosis_27,Patient_PMC6343374_01,Entity_anastomosis,DIAGNOSED_WITH,evidence='...rather than direct anastomosis to the ascending ao...'
+Edge_PMC6343374_01_Entity_bronchial_compression_27,Patient_PMC6343374_01,Entity_bronchial_compression,DIAGNOSED_WITH,evidence='...a to avoid possible bronchial compression...'
+Edge_PMC6343374_01_Entity_stenosis_28,Patient_PMC6343374_01,Entity_stenosis,DIAGNOSED_WITH,"evidence='...veloped proximal PA stenosis, which was away fro...'"
+Edge_PMC6343374_01_Entity_stent_29,Patient_PMC6343374_01,Entity_stent,UNDERWENT_EXAM,evidence='...We believed that stent insertion might rel...'
+Edge_PMC6343374_01_Entity_stent_31,Patient_PMC6343374_01,Entity_stent,UNDERWENT_EXAM,evidence='...ed that the minimum stent area of the self-ex...'
+Edge_PMC6343374_01_Entity_adult_33,Patient_PMC6343374_01,Entity_adult,DIAGNOSED_WITH,evidence='...In adult patient with acute...'
+Edge_PMC6343374_01_Entity_stent_33,Patient_PMC6343374_01,Entity_stent,UNDERWENT_EXAM,evidence='...icantly lower in SE stents than in BE stents...'
+Edge_PMC6343374_01_Entity_stent_34,Patient_PMC6343374_01,Entity_stent,UNDERWENT_EXAM,"evidence='...dences, we chose SE stent in our patient...'"
+Edge_PMC6343374_01_Entity_infant_35,Patient_PMC6343374_01,Entity_infant,DIAGNOSED_WITH,evidence='...d a problem in this infant with bronchomalacia...'
+Edge_PMC6343374_01_Entity_stent_36,Patient_PMC6343374_01,Entity_stent,UNDERWENT_EXAM,evidence='...balloon expandable stent...'
+Edge_PMC6343374_01_Entity_stent_37,Patient_PMC6343374_01,Entity_stent,UNDERWENT_EXAM,evidence='...pression due to the stent with progressive wo...'
+Edge_PMC6343374_01_Entity_bronchial_compression_37,Patient_PMC6343374_01,Entity_bronchial_compression,DIAGNOSED_WITH,evidence='...He developed bronchial compression due to the stent wi...'
+Edge_PMC6343374_01_Entity_stent_38,Patient_PMC6343374_01,Entity_stent,UNDERWENT_EXAM,evidence='...ical removal of the stent and PA repair...'
+Edge_PMC6343374_01_Entity_stenosis_40,Patient_PMC6343374_01,Entity_stenosis,DIAGNOSED_WITH,"evidence='...ance of proximal PA stenosis, surgical treatment...'"
+Edge_PMC6343374_01_Entity_stent_40,Patient_PMC6343374_01,Entity_stent,UNDERWENT_EXAM,evidence='...Bronchial stent might be a solution...'
+Edge_PMC6343374_01_Entity_surgery_40,Patient_PMC6343374_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...solution instead of surgery, but in a circumsta...'"
+Edge_PMC6343374_01_Entity_stenosis_42,Patient_PMC6343374_01,Entity_stenosis,DIAGNOSED_WITH,"evidence='...nt with proximal PA stenosis, but surgical repai...'"
+Edge_PMC6343374_01_Entity_stent_42,Patient_PMC6343374_01,Entity_stent,UNDERWENT_EXAM,evidence='...Stent insertion may have...'
+Edge_PMC6343374_01_Entity_infant_42,Patient_PMC6343374_01,Entity_infant,DIAGNOSED_WITH,evidence='...r choice in a young infant with congenital hea...'
+Edge_PMC9529523_01_Entity_cardiomyopathy_0,Patient_PMC9529523_01,Entity_cardiomyopathy,DIAGNOSED_WITH,evidence='...f stable postpartum cardiomyopathy (baseline ejection...'
+Edge_PMC9529523_01_Entity_endocarditis_2,Patient_PMC9529523_01,Entity_endocarditis,DIAGNOSED_WITH,evidence='...idence of infective endocarditis and an upper extrem...'
+Edge_PMC9529523_01_Entity_infective_endocarditis_2,Patient_PMC9529523_01,Entity_infective_endocarditis,UNDERWENT_EXAM,evidence='...ot show evidence of infective endocarditis and an upper extrem...'
+Edge_PMC9529523_01_Entity_abscess_3,Patient_PMC9529523_01,Entity_abscess,PRESENTS_WITH,evidence='...eft index fingertip abscess for which incision...'
+Edge_PMC9529523_01_Entity_antibodies_4,Patient_PMC9529523_01,Entity_antibodies,DIAGNOSED_WITH,"evidence='..., Smith, and U1-RNP antibodies with elevated IgG l...'"
+Edge_Res_PMC9529523_01_Entity_antibodies_Result_PMC9529523_01_2317_mg,Entity_antibodies,Result_PMC9529523_01_2317_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC9529523_01_Entity_antibodies_6,Patient_PMC9529523_01,Entity_antibodies,DIAGNOSED_WITH,"evidence='...antimyeloperoxidase antibodies (MPO), and cryoglob...'"
+Edge_PMC9529523_01_Entity_vasculitis_6,Patient_PMC9529523_01,Entity_vasculitis,DIAGNOSED_WITH,evidence='...The vasculitis workup was negative...'
+Edge_PMC9529523_01_Entity_antibodies_7,Patient_PMC9529523_01,Entity_antibodies,DIAGNOSED_WITH,evidence='...Antiphospholipid antibodies including lupus ant...'
+Edge_Res_PMC9529523_01_Entity_antibodies_Result_PMC9529523_01_6.2_mg,Entity_antibodies,Result_PMC9529523_01_6.2_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC9529523_01_Entity_vasculitis_9,Patient_PMC9529523_01,Entity_vasculitis,DIAGNOSED_WITH,evidence='...sion was of digital vasculitis secondary to system...'
+Edge_PMC9529523_01_Entity_systemic_lupus_erythematosus_9,Patient_PMC9529523_01,Entity_systemic_lupus_erythematosus,DIAGNOSED_WITH,evidence='...ulitis secondary to systemic lupus erythematosus...'
+Edge_PMC9529523_01_Entity_hydroxychloroquine_10,Patient_PMC9529523_01,Entity_hydroxychloroquine,DIAGNOSED_WITH,evidence='...ient was started on hydroxychloroquine 300 mg daily (3.9 m...'
+Edge_Res_PMC9529523_01_Entity_hydroxychloroquine_Result_PMC9529523_01_300_mg,Entity_hydroxychloroquine,Result_PMC9529523_01_300_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC9529523_01_Entity_hydroxychloroquine_Result_PMC9529523_01_3.9_mg_kg,Entity_hydroxychloroquine,Result_PMC9529523_01_3.9_mg_kg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC9529523_01_Entity_hydroxychloroquine_16,Patient_PMC9529523_01,Entity_hydroxychloroquine,DIAGNOSED_WITH,evidence='...The serum hydroxychloroquine level was 1232.1 ng...'
+Edge_Res_PMC9529523_01_Entity_hydroxychloroquine_Result_PMC9529523_01_1232.1_ng_ml,Entity_hydroxychloroquine,Result_PMC9529523_01_1232.1_ng_ml,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC9529523_01_Entity_hydroxychloroquine_Result_PMC9529523_01_1000_ng_mL,Entity_hydroxychloroquine,Result_PMC9529523_01_1000_ng_mL,HAS_LAB_VALUE,measured_attribute
+Edge_PMC9529523_01_Entity_hydroxychloroquine_18,Patient_PMC9529523_01,Entity_hydroxychloroquine,DIAGNOSED_WITH,evidence='...nephrology and the hydroxychloroquine dose was dropped to...'
+Edge_Res_PMC9529523_01_Entity_hydroxychloroquine_Result_PMC9529523_01_200_mg,Entity_hydroxychloroquine,Result_PMC9529523_01_200_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC9529523_01_Entity_hydroxychloroquine_Result_PMC9529523_01_3.1_mg_kg,Entity_hydroxychloroquine,Result_PMC9529523_01_3.1_mg_kg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC9529523_01_Entity_hypertension_19,Patient_PMC9529523_01,Entity_hypertension,DIAGNOSED_WITH,evidence='...tent with malignant hypertension and chronic thrombo...'
+Edge_PMC9529523_01_Entity_microangiopathy_19,Patient_PMC9529523_01,Entity_microangiopathy,DIAGNOSED_WITH,evidence='...chronic thrombotic microangiopathy (TMA)...'
+Edge_PMC9529523_01_Entity_computed_tomography_22,Patient_PMC9529523_01,Entity_computed_tomography,UNDERWENT_EXAM,evidence='...High-resolution computed tomography (HRCT) scan of the...'
+Edge_PMC9529523_01_Entity_hypertension_27,Patient_PMC9529523_01,Entity_hypertension,DIAGNOSED_WITH,evidence='...possible pulmonary hypertension was completed...'
+Edge_PMC9529523_01_Entity_cardiomyopathy_28,Patient_PMC9529523_01,Entity_cardiomyopathy,RULED_OUT,evidence='...nce of infiltrative cardiomyopathy...'
+Edge_PMC9529523_01_Entity_echocardiography_28,Patient_PMC9529523_01,Entity_echocardiography,UNDERWENT_EXAM,"evidence='...ties, transthoracic echocardiography showed severe biven...'"
+Edge_PMC9529523_01_Entity_dyspnea_30,Patient_PMC9529523_01,Entity_dyspnea,PRESENTS_WITH,evidence='...tness of breath and dyspnea with exertion...'
+Edge_PMC9529523_01_Entity_malignancy_33,Patient_PMC9529523_01,Entity_malignancy,DIAGNOSED_WITH,evidence='...ious etiologies and malignancy...'
+Edge_Res_PMC9529523_01_Entity_malignancy_Result_PMC9529523_01_527_ms,Entity_malignancy,Result_PMC9529523_01_527_ms,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC9529523_01_Entity_malignancy_Result_PMC9529523_01_860_ml,Entity_malignancy,Result_PMC9529523_01_860_ml,HAS_LAB_VALUE,measured_attribute
+Edge_PMC9529523_01_Entity_hypertension_35,Patient_PMC9529523_01,Entity_hypertension,RULED_OUT,evidence='...idence of pulmonary hypertension was noted...'
+Edge_PMC9529523_01_Entity_cardiomyopathy_36,Patient_PMC9529523_01,Entity_cardiomyopathy,DIAGNOSED_WITH,evidence='...chloroquine-induced cardiomyopathy on electron microsc...'
+Edge_PMC9529523_01_Entity_hydroxychloroquine_36,Patient_PMC9529523_01,Entity_hydroxychloroquine,DIAGNOSED_WITH,evidence='...b)) consistent with hydroxychloroquine-induced cardiomyopa...'
+Edge_PMC9529523_01_Entity_myocarditis_36,Patient_PMC9529523_01,Entity_myocarditis,RULED_OUT,evidence='...owed no features of myocarditis but demonstrated oc...'
+Edge_PMC9529523_01_Entity_microscopy_36,Patient_PMC9529523_01,Entity_microscopy,UNDERWENT_EXAM,evidence='...yopathy on electron microscopy...'
+Edge_PMC9529523_01_Entity_hydroxychloroquine_37,Patient_PMC9529523_01,Entity_hydroxychloroquine,DIAGNOSED_WITH,evidence='...The serum hydroxychloroquine level was 274 ng/ml...'
+Edge_Res_PMC9529523_01_Entity_hydroxychloroquine_Result_PMC9529523_01_274_ng_ml,Entity_hydroxychloroquine,Result_PMC9529523_01_274_ng_ml,HAS_LAB_VALUE,measured_attribute
+Edge_PMC9529523_01_Entity_hydroxychloroquine_38,Patient_PMC9529523_01,Entity_hydroxychloroquine,DIAGNOSED_WITH,evidence='...Hydroxychloroquine was stopped and the...'
+Edge_PMC9532611_01_Entity_hypertension_0,Patient_PMC9532611_01,Entity_hypertension,DIAGNOSED_WITH,evidence='...was accompanied by hypertension (138/94 mmHg)...'
+Edge_Res_PMC9532611_01_Entity_hypertension_Result_PMC9532611_01_94_mmHg,Entity_hypertension,Result_PMC9532611_01_94_mmHg,HAS_SIZE,measured_attribute
+Edge_PMC9532611_01_Entity_hypertension_6,Patient_PMC9532611_01,Entity_hypertension,DIAGNOSED_WITH,evidence='...similar history of hypertension and periodic paraly...'
+Edge_PMC9532611_01_Entity_hypertension_7,Patient_PMC9532611_01,Entity_hypertension,DIAGNOSED_WITH,evidence='...were twins and had hypertension on examination (Tab...'
+Edge_PMC9532611_01_Entity_twin_7,Patient_PMC9532611_01,Entity_twin,DIAGNOSED_WITH,evidence='...nt 3) children were twins and had hypertensio...'
+Edge_PMC9532611_01_Entity_children_7,Patient_PMC9532611_01,Entity_children,DIAGNOSED_WITH,"evidence='...46, XX, patient 3) children were twins and had...'"
+Edge_PMC9532611_01_Entity_surgery_8,Patient_PMC9532611_01,Entity_surgery,DIAGNOSED_WITH,evidence='...oband had undergone surgery at the local hospit...'
+Edge_PMC5875137_01_Entity_computed_tomography_0,Patient_PMC5875137_01,Entity_computed_tomography,UNDERWENT_EXAM,evidence='...diagnosed by chest computed tomography (CT) scan as having...'
+Edge_Res_PMC5875137_01_Entity_computed_tomography_Result_PMC5875137_01_6.5_cm,Entity_computed_tomography,Result_PMC5875137_01_6.5_cm,HAS_RESULT,measured_value
+Edge_PMC5875137_01_Entity_stenosis_1,Patient_PMC5875137_01,Entity_stenosis,DIAGNOSED_WITH,evidence='...ry that had a tight stenosis....'
+Edge_PMC5875137_01_Entity_anastomosis_1,Patient_PMC5875137_01,Entity_anastomosis,DIAGNOSED_WITH,evidence='...inum prosthesis and anastomosis of the left interna...'
+Edge_PMC5875137_01_Entity_surgery_3,Patient_PMC5875137_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...A routine after surgery, TTE showed good bi...'"
+Edge_PMC5875137_01_Entity_echocardiography_5,Patient_PMC5875137_01,Entity_echocardiography,UNDERWENT_EXAM,evidence='...mass visible during echocardiography was referred to a p...'
+Edge_PMC6949661_01_Entity_fever_1,Patient_PMC6949661_01,Entity_fever,DENIES_SYMPTOM,"evidence='...patient denied any fever, headache, chest pa...'"
+Edge_PMC6949661_01_Entity_computed_tomography_5,Patient_PMC6949661_01,Entity_computed_tomography,UNDERWENT_EXAM,evidence='...Computed tomography (CT) scan of the he...'
+Edge_PMC6949661_01_Entity_echocardiography_6,Patient_PMC6949661_01,Entity_echocardiography,UNDERWENT_EXAM,"evidence='...Echocardiography, apart from moderat...'"
+Edge_PMC6949661_01_Entity_liver_7,Patient_PMC6949661_01,Entity_liver,ASSOCIATED_WITH,"evidence='...ake, and history of liver disease...'"
+Edge_PMC6949661_01_Entity_tachycardia_8,Patient_PMC6949661_01,Entity_tachycardia,DIAGNOSED_WITH,evidence='...e patient developed tachycardia of 122 bpm but bloo...'
+Edge_PMC6949661_01_Entity_esophagogastroduodenoscopy_14,Patient_PMC6949661_01,Entity_esophagogastroduodenoscopy,UNDERWENT_EXAM,evidence='...Esophagogastroduodenoscopy (EGD) showed normal...'
+Edge_PMC6949661_01_Entity_enteroscopy_15,Patient_PMC6949661_01,Entity_enteroscopy,UNDERWENT_EXAM,"evidence='...was normal, whereas enteroscopy showed a jejunal di...'"
+Edge_PMC6949661_01_Entity_diverticulum_15,Patient_PMC6949661_01,Entity_diverticulum,DIAGNOSED_WITH,evidence='...py showed a jejunal diverticulum about 50 cms from t...'
+Edge_PMC6949661_01_Entity_colonoscopy_15,Patient_PMC6949661_01,Entity_colonoscopy,UNDERWENT_EXAM,"evidence='...Colonoscopy was normal, whereas...'"
+Edge_PMC6949661_01_Entity_laparoscopy_18,Patient_PMC6949661_01,Entity_laparoscopy,UNDERWENT_EXAM,evidence='...nderwent diagnostic laparoscopy that did not show a...'
+Edge_PMC6949661_01_Entity_endoscopy_19,Patient_PMC6949661_01,Entity_endoscopy,UNDERWENT_EXAM,evidence='...Endoscopy was carried out to...'
+Edge_PMC6949661_01_Entity_laparotomy_20,Patient_PMC6949661_01,Entity_laparotomy,UNDERWENT_EXAM,evidence='...Midline laparotomy was performed to gu...'
+Edge_PMC6949661_01_Entity_diverticulum_21,Patient_PMC6949661_01,Entity_diverticulum,DIAGNOSED_WITH,evidence='...red as a suspicious diverticulum with whitish mucosa...'
+Edge_Res_PMC6949661_01_Entity_diverticulum_Result_PMC6949661_01_30_cm,Entity_diverticulum,Result_PMC6949661_01_30_cm,HAS_SIZE,measured_attribute
+Edge_PMC6949661_01_Entity_surgery_25,Patient_PMC6949661_01,Entity_surgery,DIAGNOSED_WITH,evidence='...h recovery from the surgery and did not develop...'
+Edge_PMC6949661_01_Entity_surgery_26,Patient_PMC6949661_01,Entity_surgery,DIAGNOSED_WITH,evidence='...ic after 2 years of surgery without any symptom...'
+Edge_PMC6949661_01_Entity_diverticulum_27,Patient_PMC6949661_01,Entity_diverticulum,DIAGNOSED_WITH,evidence='...wed a small jejunal diverticulum with gastric hetero...'
+Edge_PMC6949661_01_Entity_diverticulum_28,Patient_PMC6949661_01,Entity_diverticulum,DIAGNOSED_WITH,evidence='...consists of a false diverticulum of the small bowel...'
+Edge_PMC6949661_01_Entity_malignancy_30,Patient_PMC6949661_01,Entity_malignancy,RULED_OUT,evidence='...e for dysplasia and malignancy (Figures 2 and 3)...'
+Edge_PMC10405809_01_Entity_diverticulum_10,Patient_PMC10405809_01,Entity_diverticulum,DIAGNOSED_WITH,evidence='...a 3 cm x 2 cm sized diverticulum from the right late...'
+Edge_Res_PMC10405809_01_Entity_diverticulum_Result_PMC10405809_01_3_cm,Entity_diverticulum,Result_PMC10405809_01_3_cm,HAS_SIZE,measured_attribute
+Edge_Res_PMC10405809_01_Entity_diverticulum_Result_PMC10405809_01_2_cm,Entity_diverticulum,Result_PMC10405809_01_2_cm,HAS_SIZE,measured_attribute
+Edge_PMC10405809_01_Entity_anemia_12,Patient_PMC10405809_01,Entity_anemia,DIAGNOSED_WITH,evidence='...und weight loss and anemia...'
+Edge_PMC10405809_01_Entity_malignancy_12,Patient_PMC10405809_01,Entity_malignancy,DIAGNOSED_WITH,evidence='...rule out underlying malignancy because of profound...'
+Edge_PMC10405809_01_Entity_computed_tomography_13,Patient_PMC10405809_01,Entity_computed_tomography,UNDERWENT_EXAM,evidence='...Hence a computed tomography (CT) scan of the ne...'
+Edge_PMC10405809_01_Entity_esophagogastroduodenoscopy_15,Patient_PMC10405809_01,Entity_esophagogastroduodenoscopy,UNDERWENT_EXAM,evidence='...Esophagogastroduodenoscopy revealed KJD at 20...'
+Edge_Res_PMC10405809_01_Entity_esophagogastroduodenoscopy_Result_PMC10405809_01_20_cm,Entity_esophagogastroduodenoscopy,Result_PMC10405809_01_20_cm,HAS_RESULT,measured_value
+Edge_PMC10405809_01_Entity_malignancy_19,Patient_PMC10405809_01,Entity_malignancy,RULED_OUT,evidence='...e were negative for malignancy...'
+Edge_PMC10405809_01_Entity_malignancy_20,Patient_PMC10405809_01,Entity_malignancy,DIAGNOSED_WITH,evidence='...eptic stricture and malignancy of the distal esoph...'
+Edge_PMC10405809_01_Entity_anemia_21,Patient_PMC10405809_01,Entity_anemia,DIAGNOSED_WITH,evidence='...und weight loss and anemia raised suspicion of...'
+Edge_PMC10405809_01_Entity_malignancy_21,Patient_PMC10405809_01,Entity_malignancy,DIAGNOSED_WITH,"evidence='...raised suspicion of malignancy, the long duration...'"
+Edge_PMC10405809_01_Entity_endoscopy_22,Patient_PMC10405809_01,Entity_endoscopy,UNDERWENT_EXAM,evidence='...barium swallow and endoscopy prompted us to cons...'
+Edge_PMC10405809_01_Entity_diverticulum_22,Patient_PMC10405809_01,Entity_diverticulum,DIAGNOSED_WITH,evidence='...he upper esophageal diverticulum in barium swallow a...'
+Edge_PMC10405809_01_Entity_diverticulum_23,Patient_PMC10405809_01,Entity_diverticulum,DIAGNOSED_WITH,evidence='...d the origin of the diverticulum from the anterolate...'
+Edge_PMC7519975_01_Entity_craniotomy_0,Patient_PMC7519975_01,Entity_craniotomy,UNDERWENT_EXAM,"evidence='...on insulin at home, craniotomy for meningioma stat...'"
+Edge_PMC7519975_01_Entity_meningioma_0,Patient_PMC7519975_01,Entity_meningioma,DIAGNOSED_WITH,"evidence='...ome, craniotomy for meningioma status post ventric...'"
+Edge_PMC7519975_01_Entity_computed_tomography_1,Patient_PMC7519975_01,Entity_computed_tomography,UNDERWENT_EXAM,evidence='...Computed tomography (CT) of the abdomen...'
+Edge_PMC7519975_01_Entity_laparotomy_5,Patient_PMC7519975_01,Entity_laparotomy,UNDERWENT_EXAM,evidence='...form an explorative laparotomy for her acute abdom...'
+Edge_PMC7519975_01_Entity_surgery_5,Patient_PMC7519975_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...ncurrently, general surgery was consulted who d...'"
+Edge_PMC7519975_01_Entity_surgery_9,Patient_PMC7519975_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...iac event after the surgery defined as death, m...'"
+Edge_PMC7519975_01_Entity_surgery_10,Patient_PMC7519975_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...sed intraperitoneal surgery, cerebrovascular di...'"
+Edge_PMC7519975_01_Entity_surgery_11,Patient_PMC7519975_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...ure of the required surgery, an extensive discu...'"
+Edge_PMC7519975_01_Entity_surgery_17,Patient_PMC7519975_01,Entity_surgery,DIAGNOSED_WITH,evidence='...airway in place for surgery...'
+Edge_PMC7519975_01_Entity_airway_17,Patient_PMC7519975_01,Entity_airway,DIAGNOSED_WITH,evidence='...ady had an advanced airway in place for surger...'
+Edge_PMC7519975_01_Entity_spontaneous_respiration_25,Patient_PMC7519975_01,Entity_spontaneous_respiration,DIAGNOSED_WITH,"evidence='..., sinus rhythm with spontaneous respiration at a rate of 12 bre...'"
+Edge_Res_PMC7519975_01_Entity_spontaneous_respiration_Result_PMC7519975_01_60_mmHg,Entity_spontaneous_respiration,Result_PMC7519975_01_60_mmHg,HAS_SIZE,measured_attribute
+Edge_PMC7519975_01_Entity_surgery_27,Patient_PMC7519975_01,Entity_surgery,DIAGNOSED_WITH,evidence='...Surgery was immediately res...'
+Edge_PMC7519975_01_Entity_surgery_29,Patient_PMC7519975_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...Surgery was concluded, and...'"
+Edge_PMC7519975_01_Entity_prognosis_33,Patient_PMC7519975_01,Entity_prognosis,DIAGNOSED_WITH,"evidence='...the patient's poor prognosis, the patient was pr...'"
+Edge_PMC3950436_01_Entity_airway_0,Patient_PMC3950436_01,Entity_airway,DIAGNOSED_WITH,evidence='...tracheostomy due to airway compromization...'
+Edge_PMC3950436_01_Entity_tracheostomy_0,Patient_PMC3950436_01,Entity_tracheostomy,PRESENTS_WITH,evidence='...eduled for elective tracheostomy due to airway compr...'
+Edge_PMC3950436_01_Entity_gastrostomy_2,Patient_PMC3950436_01,Entity_gastrostomy,UNDERWENT_EXAM,evidence='...dysphagia for which gastrostomy was inserted for en...'
+Edge_PMC3950436_01_Entity_apnea_2,Patient_PMC3950436_01,Entity_apnea,PRESENTS_WITH,"evidence='...d obstructive sleep apnea, shortness of breat...'"
+Edge_PMC3950436_01_Entity_anatomy_5,Patient_PMC3950436_01,Entity_anatomy,UNDERWENT_EXAM,evidence='...ly distorted airway anatomy in uncooperative pa...'
+Edge_PMC3950436_01_Entity_airway_5,Patient_PMC3950436_01,Entity_airway,DIAGNOSED_WITH,evidence='...severely distorted airway anatomy in uncooper...'
+Edge_PMC3950436_01_Entity_tracheostomy_7,Patient_PMC3950436_01,Entity_tracheostomy,PRESENTS_WITH,evidence='...rception during the tracheostomy procedure...'
+Edge_PMC3950436_01_Entity_sedation_9,Patient_PMC3950436_01,Entity_sedation,DIAGNOSED_WITH,"evidence='...2 h before surgery, sedation was initiated under...'"
+Edge_PMC3950436_01_Entity_surgery_9,Patient_PMC3950436_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...cy unit, 2 h before surgery, sedation was initi...'"
+Edge_Res_PMC3950436_01_Entity_sedation_Result_PMC3950436_01_74_mmHg,Entity_sedation,Result_PMC3950436_01_74_mmHg,HAS_SIZE,measured_attribute
+Edge_Res_PMC3950436_01_Entity_surgery_Result_PMC3950436_01_74_mmHg,Entity_surgery,Result_PMC3950436_01_74_mmHg,HAS_SIZE,measured_attribute
+Edge_PMC3950436_01_Entity_gastrostomy_10,Patient_PMC3950436_01,Entity_gastrostomy,UNDERWENT_EXAM,evidence='...istered through the gastrostomy tube...'
+Edge_Res_PMC3950436_01_Entity_gastrostomy_Result_PMC3950436_01_120_mg,Entity_gastrostomy,Result_PMC3950436_01_120_mg,HAS_RESULT,measured_value
+Edge_Res_PMC3950436_01_Entity_gastrostomy_Result_PMC3950436_01_3_mg_kg,Entity_gastrostomy,Result_PMC3950436_01_3_mg_kg,HAS_RESULT,measured_value
+Edge_Res_PMC3950436_01_Entity_gastrostomy_Result_PMC3950436_01_10_ml,Entity_gastrostomy,Result_PMC3950436_01_10_ml,HAS_RESULT,measured_value
+Edge_PMC3950436_01_Entity_tracheostomy_12,Patient_PMC3950436_01,Entity_tracheostomy,PRESENTS_WITH,evidence='...ed over the planned tracheostomy site about 10 cm2 a...'
+Edge_PMC3950436_01_Entity_tracheostomy_17,Patient_PMC3950436_01,Entity_tracheostomy,PRESENTS_WITH,evidence='...re infiltrated over tracheostomy site by the surgeon...'
+Edge_PMC3950436_01_Entity_tracheostomy_18,Patient_PMC3950436_01,Entity_tracheostomy,PRESENTS_WITH,evidence='...Cuffed tracheostomy tube size 6.0 mm tu...'
+Edge_PMC3950436_01_Entity_tracheostomy_20,Patient_PMC3950436_01,Entity_tracheostomy,PRESENTS_WITH,"evidence='...ing day, the cuffed tracheostomy tube was replaced b...'"
+Edge_PMC10434843_01_Entity_flow_cytometry_14,Patient_PMC10434843_01,Entity_flow_cytometry,DIAGNOSED_WITH,evidence='...Flow cytometry analysis revealed a...'
+Edge_PMC10434843_01_Entity_neuropathy_15,Patient_PMC10434843_01,Entity_neuropathy,DIAGNOSED_WITH,evidence='...other inflammatory neuropathy patients...'
+Edge_PMC10434843_01_Entity_caspr2_17,Patient_PMC10434843_01,Entity_caspr2,DIAGNOSED_WITH,evidence='...antibodies against CASPR2 in the CSF (1:32) a...'
+Edge_PMC10434843_01_Entity_antibodies_17,Patient_PMC10434843_01,Entity_antibodies,DIAGNOSED_WITH,"evidence='...tingly, we detected antibodies against CASPR2 in t...'"
+Edge_PMC10434843_01_Entity_antibodies_18,Patient_PMC10434843_01,Entity_antibodies,RULED_OUT,evidence='...mmunoglobulin (Ig)G antibodies and a borderline po...'
+Edge_PMC10434843_01_Entity_neuropathy_23,Patient_PMC10434843_01,Entity_neuropathy,DIAGNOSED_WITH,evidence='...l and demyelinating neuropathy...'
+Edge_PMC10434843_01_Entity_encephalitis_27,Patient_PMC10434843_01,Entity_encephalitis,DIAGNOSED_WITH,evidence='...on of an autoimmune encephalitis profile...'
+Edge_PMC10434843_01_Entity_encephalitis_28,Patient_PMC10434843_01,Entity_encephalitis,RULED_OUT,evidence='...d out an autoimmune encephalitis...'
+Edge_PMC10434843_01_Entity_caspr2_29,Patient_PMC10434843_01,Entity_caspr2,DIAGNOSED_WITH,"evidence='...Due to the CASPR2 antibodies, which c...'"
+Edge_PMC10434843_01_Entity_malignancy_29,Patient_PMC10434843_01,Entity_malignancy,DIAGNOSED_WITH,"evidence='...be associated with malignancy,   we initiated a t...'"
+Edge_PMC10434843_01_Entity_antibodies_29,Patient_PMC10434843_01,Entity_antibodies,DIAGNOSED_WITH,"evidence='...Due to the CASPR2 antibodies, which can be assoc...'"
+Edge_PMC10434843_01_Entity_computed_tomography_29,Patient_PMC10434843_01,Entity_computed_tomography,UNDERWENT_EXAM,evidence='...emission tomography-computed tomography (PET-CT) which show...'
+Edge_PMC10434843_01_Entity_caspr2_36,Patient_PMC10434843_01,Entity_caspr2,DIAGNOSED_WITH,"evidence='...In the follow-up, CASPR2 antibodies were con...'"
+Edge_PMC10434843_01_Entity_antibodies_36,Patient_PMC10434843_01,Entity_antibodies,DIAGNOSED_WITH,"evidence='...e follow-up, CASPR2 antibodies were confirmed in t...'"
+Edge_PMC10434843_01_Entity_caspr2_37,Patient_PMC10434843_01,Entity_caspr2,DIAGNOSED_WITH,evidence='...re common causes of CASPR2 antibodies....'
+Edge_PMC10434843_01_Entity_antibodies_37,Patient_PMC10434843_01,Entity_antibodies,DIAGNOSED_WITH,evidence='...on causes of CASPR2 antibodies....'
+Edge_PMC10434843_01_Entity_sclerosis_37,Patient_PMC10434843_01,Entity_sclerosis,DIAGNOSED_WITH,evidence='...amyotrophic lateral sclerosis as well as other mo...'
+Edge_PMC10434843_01_Entity_caspr2_42,Patient_PMC10434843_01,Entity_caspr2,DIAGNOSED_WITH,evidence='...ses associated with CASPR2 antibodies....'
+Edge_PMC10434843_01_Entity_antibodies_42,Patient_PMC10434843_01,Entity_antibodies,DIAGNOSED_WITH,evidence='...ociated with CASPR2 antibodies....'
+Edge_PMC4630775_01_Entity_neonatal_compartment_syndrome_2,Patient_PMC4630775_01,Entity_neonatal_compartment_syndrome,DIAGNOSED_WITH,evidence='...t are the causes of neonatal compartment syndrome?...'
+Edge_PMC4630775_01_Entity_compartment_syndrome_2,Patient_PMC4630775_01,Entity_compartment_syndrome,DIAGNOSED_WITH,evidence='...causes of neonatal compartment syndrome?...'
+Edge_PMC4630775_01_Entity_neonatal_compartment_syndrome_3,Patient_PMC4630775_01,Entity_neonatal_compartment_syndrome,DIAGNOSED_WITH,evidence='...tal) correlate with neonatal compartment syndrome?...'
+Edge_PMC4630775_01_Entity_compartment_syndrome_3,Patient_PMC4630775_01,Entity_compartment_syndrome,DIAGNOSED_WITH,evidence='...elate with neonatal compartment syndrome?...'
+Edge_PMC4630775_01_Entity_neonatal_compartment_syndrome_4,Patient_PMC4630775_01,Entity_neonatal_compartment_syndrome,DIAGNOSED_WITH,evidence='...gns and symptoms of neonatal compartment syndrome?...'
+Edge_PMC4630775_01_Entity_compartment_syndrome_4,Patient_PMC4630775_01,Entity_compartment_syndrome,DIAGNOSED_WITH,evidence='...ymptoms of neonatal compartment syndrome?...'
+Edge_PMC4630775_01_Entity_neonatal_compartment_syndrome_5,Patient_PMC4630775_01,Entity_neonatal_compartment_syndrome,DIAGNOSED_WITH,evidence='...or the treatment of neonatal compartment syndrome?...'
+Edge_PMC4630775_01_Entity_compartment_syndrome_5,Patient_PMC4630775_01,Entity_compartment_syndrome,DIAGNOSED_WITH,evidence='...eatment of neonatal compartment syndrome?...'
+Edge_PMC2700431_01_Entity_hepatitis_1,Patient_PMC2700431_01,Entity_hepatitis,DIAGNOSED_WITH,"evidence='...addict, alcoholic, hepatitis B and C positive...'"
+Edge_PMC2700431_01_Entity_airway_2,Patient_PMC2700431_01,Entity_airway,DIAGNOSED_WITH,evidence='...e was intubated for airway protection and tran...'
+Edge_PMC2700431_01_Entity_liver_3,Patient_PMC2700431_01,Entity_liver,ASSOCIATED_WITH,evidence='...rupture spleen and liver....'
+Edge_PMC2700431_01_Entity_pneumothorax_3,Patient_PMC2700431_01,Entity_pneumothorax,DIAGNOSED_WITH,evidence='...side; and bilateral pneumothorax (bilateral chest tu...'
+Edge_PMC2700431_01_Entity_spleen_3,Patient_PMC2700431_01,Entity_spleen,ASSOCIATED_WITH,evidence='...inserted); rupture spleen and liver....'
+Edge_Loc_PMC2700431_01_Entity_pneumothorax_Entity_liver,Entity_pneumothorax,Entity_liver,LOCATED_IN,anatomical_localization
+Edge_Loc_PMC2700431_01_Entity_pneumothorax_Entity_spleen,Entity_pneumothorax,Entity_spleen,LOCATED_IN,anatomical_localization
+Edge_PMC2700431_01_Entity_spleenectomy_4,Patient_PMC2700431_01,Entity_spleenectomy,UNDERWENT_EXAM,evidence='...operating room and spleenectomy and hepatic repair...'
+Edge_PMC2700431_01_Entity_tracheostomy_4,Patient_PMC2700431_01,Entity_tracheostomy,PRESENTS_WITH,evidence='...e elective surgical tracheostomy was done in operati...'
+Edge_PMC2700431_01_Entity_endotracheal_tube_9,Patient_PMC2700431_01,Entity_endotracheal_tube,PRESENTS_WITH,"evidence='...suctioning through endotracheal tube, food material was...'"
+Edge_PMC2700431_01_Entity_bronchoscopy_11,Patient_PMC2700431_01,Entity_bronchoscopy,UNDERWENT_EXAM,evidence='...Bronchoscopy revealed the fistul...'
+Edge_PMC2700431_01_Entity_intracuff_pressure_12,Patient_PMC2700431_01,Entity_intracuff_pressure,DIAGNOSED_WITH,evidence='...Intracuff pressure was measured and wa...'
+Edge_PMC2700431_01_Entity_tracheoesophageal_fistula_14,Patient_PMC2700431_01,Entity_tracheoesophageal_fistula,DENIES_SYMPTOM,evidence='...diagnosed as having tracheoesophageal fistula....'
+Edge_PMC10106591_01_Entity_hypertension_3,Patient_PMC10106591_01,Entity_hypertension,DIAGNOSED_WITH,evidence='...al history included hypertension for 7 years and non...'
+Edge_Res_PMC10106591_01_Entity_hypertension_Result_PMC10106591_01_150_mg,Entity_hypertension,Result_PMC10106591_01_150_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC10106591_01_Entity_echocardiography_10,Patient_PMC10106591_01,Entity_echocardiography,UNDERWENT_EXAM,evidence='...hanges (Figure 1A); echocardiography completed in the ER...'
+Edge_PMC10106591_01_Entity_diltiazem_16,Patient_PMC10106591_01,Entity_diltiazem,RULED_OUT,"evidence='...sis of CAS, 5 mg of diltiazem was administered in...'"
+Edge_Res_PMC10106591_01_Entity_diltiazem_Result_PMC10106591_01_5_mg,Entity_diltiazem,Result_PMC10106591_01_5_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC10106591_01_Entity_diltiazem_17,Patient_PMC10106591_01,Entity_diltiazem,DIAGNOSED_WITH,evidence='...ent was on 50 mg of diltiazem hydrochloride intra...'
+Edge_Res_PMC10106591_01_Entity_diltiazem_Result_PMC10106591_01_50_mg,Entity_diltiazem,Result_PMC10106591_01_50_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC10106591_01_Entity_diltiazem_Result_PMC10106591_01_5_mL,Entity_diltiazem,Result_PMC10106591_01_5_mL,HAS_LAB_VALUE,measured_attribute
+Edge_PMC10106591_01_Entity_stenosis_18,Patient_PMC10106591_01,Entity_stenosis,DIAGNOSED_WITH,"evidence='...ain branch, 20%-30% stenosis at the opening and...'"
+Edge_PMC10106591_01_Entity_liver_19,Patient_PMC10106591_01,Entity_liver,ASSOCIATED_WITH,"evidence='...cell count, lipids, liver function, renal fun...'"
+Edge_PMC10106591_01_Entity_diltiazem_22,Patient_PMC10106591_01,Entity_diltiazem,DIAGNOSED_WITH,evidence='...was then prescribed diltiazem sustained-release c...'
+Edge_Res_PMC10106591_01_Entity_diltiazem_Result_PMC10106591_01_90_mg,Entity_diltiazem,Result_PMC10106591_01_90_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC10106591_01_Entity_diltiazem_Result_PMC10106591_01_100_mg,Entity_diltiazem,Result_PMC10106591_01_100_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC10106591_01_Entity_diltiazem_Result_PMC10106591_01_20_mg,Entity_diltiazem,Result_PMC10106591_01_20_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC10106591_01_Entity_basis_24,Patient_PMC10106591_01,Entity_basis,DIAGNOSED_WITH,evidence='...up on an outpatient basis without recurrence...'
+Edge_PMC10106591_01_Entity_case_report_26,Patient_PMC10106591_01,Entity_case_report,DIAGNOSED_WITH,evidence='...he timeline of this case report is provided in Tabl...'
+Edge_PMC4073451_01_Entity_surgery_0,Patient_PMC4073451_01,Entity_surgery,DIAGNOSED_WITH,evidence='...ed to department of Surgery and Oral Pathology...'
+Edge_PMC6083636_01_Entity_aged_2,Patient_PMC6083636_01,Entity_aged,DIAGNOSED_WITH,"evidence='...thy Caucasian male, aged 9 years...'"
+Edge_PMC9969157_01_Entity_lchadd_0,Patient_PMC9969157_01,Entity_lchadd,DIAGNOSED_WITH,evidence='...for a sibling with LCHADD...'
+Edge_PMC9969157_01_Entity_hypertension_0,Patient_PMC9969157_01,Entity_hypertension,DIAGNOSED_WITH,"evidence='...tes and gestational hypertension, and a family histo...'"
+Edge_PMC9969157_01_Entity_lchadd_6,Patient_PMC9969157_01,Entity_lchadd,DIAGNOSED_WITH,"evidence='...ions complicated by LCHADD, our patient was tr...'"
+Edge_PMC9969157_01_Entity_management_6,Patient_PMC9969157_01,Entity_management,DIAGNOSED_WITH,evidence='...ther evaluation and management...'
+Edge_PMC9969157_01_Entity_lchadd_7,Patient_PMC9969157_01,Entity_lchadd,DIAGNOSED_WITH,evidence='...was consistent with LCHADD given elevation of...'
+Edge_PMC9969157_01_Entity_human_9,Patient_PMC9969157_01,Entity_human,RULED_OUT,evidence='...utrition with donor human milk was initiated...'
+Edge_PMC9969157_01_Entity_human_milk_9,Patient_PMC9969157_01,Entity_human_milk,RULED_OUT,evidence='...utrition with donor human milk was initiated at 12...'
+Edge_PMC9969157_01_Entity_triheptanoin_10,Patient_PMC9969157_01,Entity_triheptanoin,DIAGNOSED_WITH,evidence='...Triheptanoin was initiated at 14...'
+Edge_Res_PMC9969157_01_Entity_triheptanoin_Result_PMC9969157_01_0.5_g,Entity_triheptanoin,Result_PMC9969157_01_0.5_g,HAS_LAB_VALUE,measured_attribute
+Edge_PMC9969157_01_Entity_human_11,Patient_PMC9969157_01,Entity_human,DIAGNOSED_WITH,evidence='...to 23 ml/kg/day of human milk with the remai...'
+Edge_PMC9969157_01_Entity_human_milk_11,Patient_PMC9969157_01,Entity_human_milk,DIAGNOSED_WITH,evidence='...to 23 ml/kg/day of human milk with the remainder...'
+Edge_Res_PMC9969157_01_Entity_human_Result_PMC9969157_01_20_ml,Entity_human,Result_PMC9969157_01_20_ml,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC9969157_01_Entity_human_milk_Result_PMC9969157_01_20_ml,Entity_human_milk,Result_PMC9969157_01_20_ml,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC9969157_01_Entity_human_Result_PMC9969157_01_23_ml,Entity_human,Result_PMC9969157_01_23_ml,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC9969157_01_Entity_human_milk_Result_PMC9969157_01_23_ml,Entity_human_milk,Result_PMC9969157_01_23_ml,HAS_LAB_VALUE,measured_attribute
+Edge_PMC9969157_01_Entity_bradycardia_13,Patient_PMC9969157_01,Entity_bradycardia,DIAGNOSED_WITH,evidence='...started to have new bradycardia and desaturation ep...'
+Edge_PMC9969157_01_Entity_pneumatosis_16,Patient_PMC9969157_01,Entity_pneumatosis,DIAGNOSED_WITH,evidence='...ure 1) demonstrated pneumatosis intestinalis and he...'
+Edge_PMC9969157_01_Entity_human_19,Patient_PMC9969157_01,Entity_human,RULED_OUT,"evidence='...maternal and donor human milk, Enfaport, MCT...'"
+Edge_PMC9969157_01_Entity_human_milk_19,Patient_PMC9969157_01,Entity_human_milk,RULED_OUT,"evidence='...maternal and donor human milk, Enfaport, MCT oil...'"
+Edge_PMC9969157_01_Entity_triheptanoin_19,Patient_PMC9969157_01,Entity_triheptanoin,DIAGNOSED_WITH,evidence='...MCT oil instead of triheptanoin (per parental reque...'
+Edge_PMC4828947_01_Entity_surgery_5,Patient_PMC4828947_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...red a candidate for surgery, the patient had 1-...'"
+Edge_PMC4828947_01_Entity_meningitis_7,Patient_PMC4828947_01,Entity_meningitis,DIAGNOSED_WITH,"evidence='...s febrile seizures, meningitis, and head trauma...'"
+Edge_PMC4828947_01_Entity_amygdalohippocampectomy_14,Patient_PMC4828947_01,Entity_amygdalohippocampectomy,UNDERWENT_EXAM,evidence='...oral lobectomy plus amygdalohippocampectomy and gross-total les...'
+Edge_PMC4828947_01_Entity_lobectomy_14,Patient_PMC4828947_01,Entity_lobectomy,UNDERWENT_EXAM,evidence='...left-sided temporal lobectomy plus amygdalohippoc...'
+Edge_PMC4828947_01_Entity_lesionectomy_14,Patient_PMC4828947_01,Entity_lesionectomy,PRESENTS_WITH,evidence='...omy and gross-total lesionectomy...'
+Edge_PMC4828947_01_Entity_craniotomy_14,Patient_PMC4828947_01,Entity_craniotomy,UNDERWENT_EXAM,evidence='...nsisted of an awake craniotomy (Penfield procedure...'
+Edge_PMC4828947_01_Entity_ganglioglioma_15,Patient_PMC4828947_01,Entity_ganglioglioma,RULED_OUT,"evidence='...agnosis was a mixed ganglioglioma-DNET, WHO Grade I...'"
+Edge_PMC4828947_01_Entity_ganglioglioma_24,Patient_PMC4828947_01,Entity_ganglioglioma,DIAGNOSED_WITH,evidence='...s compatible with a ganglioglioma....'
+Edge_PMC7086412_01_Entity_antibodies_7,Patient_PMC7086412_01,Entity_antibodies,DIAGNOSED_WITH,"evidence='...gin, parvovirus B19 antibodies, cytomegalovirus an...'"
+Edge_PMC7086412_01_Entity_infant_26,Patient_PMC7086412_01,Entity_infant,DIAGNOSED_WITH,evidence='...the delivery of an infant weighing 4190 grams...'
+Edge_PMC7086412_02_Entity_infant_27,Patient_PMC7086412_02,Entity_infant,DIAGNOSED_WITH,evidence='...the delivery of an infant weighing 3590 g (92...'
+Edge_Res_PMC7086412_02_Entity_infant_Result_PMC7086412_02_3590_g,Entity_infant,Result_PMC7086412_02_3590_g,HAS_LAB_VALUE,measured_attribute
+Edge_PMC3557982_01_Entity_viral_3,Patient_PMC3557982_01,Entity_viral,DIAGNOSED_WITH,evidence='...Respiratory viral cultures revealed a...'
+Edge_PMC3557982_01_Entity_necrosis_6,Patient_PMC3557982_01,Entity_necrosis,PRESENTS_WITH,"evidence='...c changes, areas of necrosis, and cellular debri...'"
+Edge_PMC3557982_01_Entity_microscopy_6,Patient_PMC3557982_01,Entity_microscopy,UNDERWENT_EXAM,evidence='...Examination by microscopy showed diffuse alve...'
+Edge_PMC3557982_01_Entity_viral_8,Patient_PMC3557982_01,Entity_viral,RULED_OUT,evidence='...adenovirus-positive viral cultures performed...'
+Edge_PMC3557982_01_Entity_new_brunswick_8,Patient_PMC3557982_01,Entity_new_brunswick,DIAGNOSED_WITH,"evidence='...L.-Dumont (Moncton, New Brunswick, Canada), to search...'"
+Edge_PMC3557982_01_Entity_otitis_12,Patient_PMC3557982_01,Entity_otitis,DIAGNOSED_WITH,evidence='...and acute bilateral otitis media in a 1-year-o...'
+Edge_PMC9815523_01_Entity_thrombosis_2,Patient_PMC9815523_01,Entity_thrombosis,DIAGNOSED_WITH,evidence='...with effort induced thrombosis (Paget-Schroetter s...'
+Edge_PMC9815523_01_Entity_thrombosis_4,Patient_PMC9815523_01,Entity_thrombosis,DIAGNOSED_WITH,evidence='...the etiology of the thrombosis...'
+Edge_PMC9815523_01_Entity_thrombosis_5,Patient_PMC9815523_01,Entity_thrombosis,DIAGNOSED_WITH,evidence='...9%) with idiopathic thrombosis...'
+Edge_PMC9815523_01_Entity_thrombosis_11,Patient_PMC9815523_01,Entity_thrombosis,DIAGNOSED_WITH,evidence='...= 22) or recurrent thrombosis (N = 7)...'
+Edge_PMC9815523_01_Entity_anticoagulation_therapy_13,Patient_PMC9815523_01,Entity_anticoagulation_therapy,DIAGNOSED_WITH,"evidence='...Grade 2) and ceased anticoagulation therapy, the third patient...'"
+Edge_PMC9815523_01_Entity_blood_transfusion_13,Patient_PMC9815523_01,Entity_blood_transfusion,DIAGNOSED_WITH,evidence='...patient required a blood transfusion due to severe vagin...'
+Edge_PMC9815523_01_Entity_surgery_17,Patient_PMC9815523_01,Entity_surgery,DIAGNOSED_WITH,evidence='...s were treated with surgery; 31 patients (58%)...'
+Edge_PMC9815523_01_Entity_stent_18,Patient_PMC9815523_01,Entity_stent,UNDERWENT_EXAM,evidence='...eceived intravenous stent placement (N = 2; 4...'
+Edge_PMC9815523_01_Entity_surgery_18,Patient_PMC9815523_01,Entity_surgery,RULED_OUT,evidence='...t primarily undergo surgery but received intrav...'
+Edge_PMC9815523_01_Entity_anticoagulation_therapy_19,Patient_PMC9815523_01,Entity_anticoagulation_therapy,DIAGNOSED_WITH,evidence='...of post procedural anticoagulation therapy for a median durati...'
+Edge_PMC9815523_01_Entity_thrombosis_21,Patient_PMC9815523_01,Entity_thrombosis,DIAGNOSED_WITH,"evidence='...silateral recurrent thrombosis, the remaining 22 p...'"
+Edge_PMC9815523_01_Entity_stenosis_23,Patient_PMC9815523_01,Entity_stenosis,DIAGNOSED_WITH,"evidence='...mptomatic recurrent stenosis (N = 10, 12 PTA's)...'"
+Edge_PMC9815523_01_Entity_stent_26,Patient_PMC9815523_01,Entity_stent,UNDERWENT_EXAM,evidence='...nts both suffered a stent fracture and were t...'
+Edge_PMC9815523_01_Entity_stenosis_27,Patient_PMC9815523_01,Entity_stenosis,DIAGNOSED_WITH,"evidence='...with PTA resistant stenosis stents were placed,...'"
+Edge_PMC9815523_01_Entity_stent_27,Patient_PMC9815523_01,Entity_stent,UNDERWENT_EXAM,"evidence='...resistant stenosis stents were placed, leadin...'"
+Edge_PMC9815523_01_Entity_surgery_31,Patient_PMC9815523_01,Entity_surgery,DIAGNOSED_WITH,evidence='...Six additional surgery related complicatio...'
+Edge_PMC9815523_01_Entity_thrombosis_34,Patient_PMC9815523_01,Entity_thrombosis,DIAGNOSED_WITH,"evidence='...uffered a recurrent thrombosis, (five while under...'"
+Edge_PMC9815523_01_Entity_anticoagulation_therapy_34,Patient_PMC9815523_01,Entity_anticoagulation_therapy,DIAGNOSED_WITH,"evidence='..., (five while under anticoagulation therapy) and 14 patients ha...'"
+Edge_PMC9815523_01_Entity_anticoagulation_therapy_37,Patient_PMC9815523_01,Entity_anticoagulation_therapy,DIAGNOSED_WITH,evidence='...eived postoperative anticoagulation therapy for a median durati...'
+Edge_PMC9815523_01_Entity_thrombosis_38,Patient_PMC9815523_01,Entity_thrombosis,DIAGNOSED_WITH,evidence='...suffered recurrent thrombosis (N = 4) (Table 2)...'
+Edge_PMC4310058_01_Entity_computed_tomography_8,Patient_PMC4310058_01,Entity_computed_tomography,UNDERWENT_EXAM,evidence='...he second and third computed tomography (CT) scans showed p...'
+Edge_PMC3859158_01_Entity_gastritis_2,Patient_PMC3859158_01,Entity_gastritis,DIAGNOSED_WITH,"evidence='...eal reflux disease, gastritis, peptic ulcer disea...'"
+Edge_PMC3859158_01_Entity_pancreatitis_2,Patient_PMC3859158_01,Entity_pancreatitis,DIAGNOSED_WITH,"evidence='...ptic ulcer disease, pancreatitis, or hepatobiliary d...'"
+Edge_PMC3859158_01_Entity_fever_3,Patient_PMC3859158_01,Entity_fever,PRESENTS_WITH,"evidence='...al symptoms such as fever, night sweating, or...'"
+Edge_PMC3859158_01_Entity_computed_tomography_9,Patient_PMC3859158_01,Entity_computed_tomography,UNDERWENT_EXAM,evidence='...Contrast-enhanced computed tomography (CT) scan showed a...'
+Edge_Res_PMC3859158_01_Entity_computed_tomography_Result_PMC3859158_01_11.5_cm,Entity_computed_tomography,Result_PMC3859158_01_11.5_cm,HAS_RESULT,measured_value
+Edge_PMC3859158_01_Entity_lymphadenopathy_11,Patient_PMC3859158_01,Entity_lymphadenopathy,RULED_OUT,evidence='...No evidence of lymphadenopathy or regional/distant...'
+Edge_PMC3859158_01_Entity_metastasis_11,Patient_PMC3859158_01,Entity_metastasis,RULED_OUT,evidence='...or regional/distant metastasis was identified (Fig...'
+Edge_PMC3859158_01_Entity_laparoscopy_12,Patient_PMC3859158_01,Entity_laparoscopy,UNDERWENT_EXAM,"evidence='...At laparoscopy, the mass was notic...'"
+Edge_PMC3859158_01_Entity_splenectomy_13,Patient_PMC3859158_01,Entity_splenectomy,UNDERWENT_EXAM,"evidence='...of pancreatic tail, splenectomy, and celiac lymph n...'"
+Edge_PMC3859158_01_Entity_spleen_14,Patient_PMC3859158_01,Entity_spleen,ASSOCIATED_WITH,evidence='...opic examination of spleen and celiac lymph no...'
+Edge_PMC3859158_01_Entity_stroma_17,Patient_PMC3859158_01,Entity_stroma,RULED_OUT,evidence='...et in a collagenous stroma...'
+Edge_PMC3859158_01_Entity_schwannoma_20,Patient_PMC3859158_01,Entity_schwannoma,DIAGNOSED_WITH,evidence='...ggestive of ancient schwannoma were present...'
+Edge_PMC3859158_01_Entity_stroma_20,Patient_PMC3859158_01,Entity_stroma,DIAGNOSED_WITH,evidence='...lei in a hyalinized stroma suggestive of ancie...'
+Edge_PMC3859158_01_Entity_necrosis_21,Patient_PMC3859158_01,Entity_necrosis,DENIES_SYMPTOM,evidence='...No mitosis or necrosis was noted (Figure 2...'
+Edge_PMC3859158_01_Entity_mitosis_21,Patient_PMC3859158_01,Entity_mitosis,RULED_OUT,evidence='...No mitosis or necrosis was not...'
+Edge_PMC3859158_01_Entity_schwannoma_24,Patient_PMC3859158_01,Entity_schwannoma,RULED_OUT,evidence='...of primary ancient schwannoma of pancreatic tail...'
+Edge_PMC3859158_01_Entity_surgery_25,Patient_PMC3859158_01,Entity_surgery,DIAGNOSED_WITH,evidence='...ve course following surgery...'
+Edge_PMC9650410_01_Entity_human_16,Patient_PMC9650410_01,Entity_human,DIAGNOSED_WITH,evidence='...ormation is a basic human right...'
+Edge_PMC9650410_01_Entity_human_24,Patient_PMC9650410_01,Entity_human,DIAGNOSED_WITH,evidence='...would contribute to human flourishing and the...'
+Edge_PMC9650410_01_Entity_management_62,Patient_PMC9650410_01,Entity_management,DIAGNOSED_WITH,"evidence='...tions with Holmes's management, particularly the i...'"
+Edge_PMC9650410_01_Entity_manager_96,Patient_PMC9650410_01,Entity_manager,DIAGNOSED_WITH,evidence='...med by the Weberian manager...'
+Edge_PMC5804616_01_Entity_surgery_0,Patient_PMC5804616_01,Entity_surgery,DIAGNOSED_WITH,evidence='...Esophageal bypass surgery with gastric tube w...'
+Edge_PMC5804616_01_Entity_esophageal_bypass_surgery_0,Patient_PMC5804616_01,Entity_esophageal_bypass_surgery,DIAGNOSED_WITH,evidence='...Esophageal bypass surgery with gastric tube w...'
+Edge_PMC5804616_01_Entity_hypertension_3,Patient_PMC5804616_01,Entity_hypertension,DIAGNOSED_WITH,"evidence='...d a past history of hypertension, diabetes mellitus,...'"
+Edge_PMC5804616_01_Entity_computed_tomography_5,Patient_PMC5804616_01,Entity_computed_tomography,UNDERWENT_EXAM,evidence='...Preoperative computed tomography showed two esophago...'
+Edge_PMC5804616_01_Entity_bronchoscopy_9,Patient_PMC5804616_01,Entity_bronchoscopy,UNDERWENT_EXAM,evidence='...main bronchus using bronchoscopy after intravenously...'
+Edge_Res_PMC5804616_01_Entity_bronchoscopy_Result_PMC5804616_01_35_mg,Entity_bronchoscopy,Result_PMC5804616_01_35_mg,HAS_RESULT,measured_value
+Edge_PMC5804616_01_Entity_bronchoscopy_11,Patient_PMC5804616_01,Entity_bronchoscopy,UNDERWENT_EXAM,evidence='...above the carina on bronchoscopy...'
+Edge_PMC5804616_01_Entity_spontaneous_respiration_12,Patient_PMC5804616_01,Entity_spontaneous_respiration,DIAGNOSED_WITH,evidence='...in bronchus in case spontaneous respiration ceased...'
+Edge_PMC5804616_01_Entity_spontaneous_respiration_13,Patient_PMC5804616_01,Entity_spontaneous_respiration,DIAGNOSED_WITH,evidence='...ory management with spontaneous respiration rather than one-lun...'
+Edge_PMC5804616_01_Entity_management_13,Patient_PMC5804616_01,Entity_management,DIAGNOSED_WITH,evidence='...e chose respiratory management with spontaneous re...'
+Edge_PMC5804616_01_Entity_spontaneous_respiration_19,Patient_PMC5804616_01,Entity_spontaneous_respiration,DIAGNOSED_WITH,evidence='...Spontaneous respiration was maintained and...'
+Edge_PMC5804616_01_Entity_surgery_20,Patient_PMC5804616_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...r minute throughout surgery, respectively...'"
+Edge_Res_PMC5804616_01_Entity_surgery_Result_PMC5804616_01_400_ml,Entity_surgery,Result_PMC5804616_01_400_ml,HAS_LAB_VALUE,measured_attribute
+Edge_PMC5804616_01_Entity_surgery_24,Patient_PMC5804616_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...ely 60 min into the surgery, SpO2 suddenly drop...'"
+Edge_PMC5804616_01_Entity_atelectasis_25,Patient_PMC5804616_01,Entity_atelectasis,UNDERWENT_EXAM,evidence='...e assumed that lung atelectasis associated with air...'
+Edge_PMC5804616_01_Entity_airway_25,Patient_PMC5804616_01,Entity_airway,DIAGNOSED_WITH,evidence='...sis associated with airway secretion or pulmon...'
+Edge_PMC5804616_01_Entity_pneumothorax_29,Patient_PMC5804616_01,Entity_pneumothorax,DIAGNOSED_WITH,evidence='...-ray revealed right pneumothorax (Fig...'
+Edge_PMC5804616_01_Entity_surgery_29,Patient_PMC5804616_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...r the completion of surgery, chest X-ray reveal...'"
+Edge_PMC5804616_01_Entity_pneumothorax_31,Patient_PMC5804616_01,Entity_pneumothorax,DIAGNOSED_WITH,"evidence='...was inserted, right pneumothorax was ameliorated, an...'"
+Edge_PMC5804616_01_Entity_spontaneous_respiration_35,Patient_PMC5804616_01,Entity_spontaneous_respiration,DIAGNOSED_WITH,evidence='...and maintenance of spontaneous respiration during the surgical...'
+Edge_PMC5804616_01_Entity_pneumothorax_35,Patient_PMC5804616_01,Entity_pneumothorax,DIAGNOSED_WITH,evidence='...e to intraoperative pneumothorax...'
+Edge_PMC5804616_01_Entity_management_35,Patient_PMC5804616_01,Entity_management,DIAGNOSED_WITH,"evidence='...Our management plan, comprising co...'"
+Edge_PMC5804616_01_Entity_spontaneous_respiration_36,Patient_PMC5804616_01,Entity_spontaneous_respiration,DIAGNOSED_WITH,evidence='...facilitated by the spontaneous respiration strategy resulting...'
+Edge_PMC5804616_01_Entity_pneumothorax_37,Patient_PMC5804616_01,Entity_pneumothorax,DIAGNOSED_WITH,"evidence='...graphy, spontaneous pneumothorax was considered unli...'"
+Edge_PMC5804616_01_Entity_computed_tomography_37,Patient_PMC5804616_01,Entity_computed_tomography,UNDERWENT_EXAM,"evidence='...ent on preoperative computed tomography, spontaneous pneumo...'"
+Edge_PMC5804616_01_Entity_spontaneous_respiration_38,Patient_PMC5804616_01,Entity_spontaneous_respiration,DIAGNOSED_WITH,evidence='...ed with maintaining spontaneous respiration in a case of esopha...'
+Edge_PMC5804616_01_Entity_case_report_38,Patient_PMC5804616_01,Entity_case_report,DIAGNOSED_WITH,evidence='...epresents the first case report to describe an adve...'
+Edge_PMC5804616_01_Entity_management_39,Patient_PMC5804616_01,Entity_management,DIAGNOSED_WITH,evidence='...Optimal respiratory management may differ dependin...'
+Edge_PMC5804616_01_Entity_spontaneous_respiration_43,Patient_PMC5804616_01,Entity_spontaneous_respiration,DIAGNOSED_WITH,evidence='...ory management with spontaneous respiration since we believed t...'
+Edge_PMC5804616_01_Entity_management_43,Patient_PMC5804616_01,Entity_management,DIAGNOSED_WITH,evidence='...e chose respiratory management with spontaneous re...'
+Edge_PMC5804616_01_Entity_esophagobronchial_fistula_43,Patient_PMC5804616_01,Entity_esophagobronchial_fistula,DIAGNOSED_WITH,evidence='...issues close to the esophagobronchial fistula should not be damag...'
+Edge_PMC5804616_01_Entity_spontaneous_respiration_47,Patient_PMC5804616_01,Entity_spontaneous_respiration,DIAGNOSED_WITH,evidence='...Maintaining spontaneous respiration is one of the metho...'
+Edge_PMC5804616_01_Entity_management_47,Patient_PMC5804616_01,Entity_management,DIAGNOSED_WITH,evidence='...hods of respiratory management chosen in patients...'
+Edge_PMC5804616_01_Entity_spontaneous_respiration_48,Patient_PMC5804616_01,Entity_spontaneous_respiration,DIAGNOSED_WITH,evidence='...e first 60 min with spontaneous respiration...'
+Edge_PMC5804616_01_Entity_pneumothorax_49,Patient_PMC5804616_01,Entity_pneumothorax,DIAGNOSED_WITH,evidence='...e assume that right pneumothorax occurred during the...'
+Edge_PMC5804616_01_Entity_atelectasis_50,Patient_PMC5804616_01,Entity_atelectasis,UNDERWENT_EXAM,"evidence='...piration, while the atelectasis may have been less...'"
+Edge_PMC5804616_01_Entity_spontaneous_respiration_50,Patient_PMC5804616_01,Entity_spontaneous_respiration,DIAGNOSED_WITH,"evidence='...pneumothorax due to spontaneous respiration, while the atelecta...'"
+Edge_PMC5804616_01_Entity_pneumothorax_50,Patient_PMC5804616_01,Entity_pneumothorax,DIAGNOSED_WITH,evidence='...h the occurrence of pneumothorax due to spontaneous...'
+Edge_PMC5804616_01_Entity_spontaneous_respiration_51,Patient_PMC5804616_01,Entity_spontaneous_respiration,DIAGNOSED_WITH,evidence='...case was that while spontaneous respiration may be useful in a...'
+Edge_PMC5804616_01_Entity_surgery_51,Patient_PMC5804616_01,Entity_surgery,DIAGNOSED_WITH,evidence='...ietal pleura during surgery....'
+Edge_PMC5804616_01_Entity_pneumothorax_52,Patient_PMC5804616_01,Entity_pneumothorax,DIAGNOSED_WITH,evidence='...isms underlying the pneumothorax that occurred in th...'
+Edge_PMC5804616_01_Entity_surgery_52,Patient_PMC5804616_01,Entity_surgery,DIAGNOSED_WITH,evidence='...g esophageal bypass surgery have not been prove...'
+Edge_PMC5804616_01_Entity_esophageal_bypass_surgery_52,Patient_PMC5804616_01,Entity_esophageal_bypass_surgery,DIAGNOSED_WITH,evidence='...in this case during esophageal bypass surgery have not been prove...'
+Edge_PMC5804616_01_Entity_pneumothorax_53,Patient_PMC5804616_01,Entity_pneumothorax,DIAGNOSED_WITH,evidence='...y and postoperative pneumothorax was encountered in...'
+Edge_PMC5804616_01_Entity_surgery_53,Patient_PMC5804616_01,Entity_surgery,DIAGNOSED_WITH,evidence='...f esophageal bypass surgery and postoperative p...'
+Edge_PMC5804616_01_Entity_esophageal_bypass_surgery_53,Patient_PMC5804616_01,Entity_esophageal_bypass_surgery,DIAGNOSED_WITH,evidence='...treated 48 cases of esophageal bypass surgery and postoperative p...'
+Edge_PMC5804616_01_Entity_surgery_54,Patient_PMC5804616_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...jima, Department of Surgery of Tokyo Medical an...'"
+Edge_PMC5804616_01_Entity_spontaneous_respiration_55,Patient_PMC5804616_01,Entity_spontaneous_respiration,DIAGNOSED_WITH,"evidence='...rely) into account, spontaneous respiration may have needed to...'"
+Edge_PMC5804616_01_Entity_pneumothorax_55,Patient_PMC5804616_01,Entity_pneumothorax,DIAGNOSED_WITH,evidence='...aking the fact that pneumothorax can occur (albeit r...'
+Edge_PMC5804616_01_Entity_spontaneous_respiration_56,Patient_PMC5804616_01,Entity_spontaneous_respiration,RULED_OUT,evidence='...kup plan to convert spontaneous respiration to PPV on suspicion...'
+Edge_PMC5804616_01_Entity_pneumothorax_56,Patient_PMC5804616_01,Entity_pneumothorax,DIAGNOSED_WITH,evidence='...PPV on suspicion of pneumothorax may be important fo...'
+Edge_PMC5804616_01_Entity_surgery_56,Patient_PMC5804616_01,Entity_surgery,RULED_OUT,evidence='...rgoing non-thoracic surgery being performed clo...'
+Edge_PMC5804616_01_Entity_spontaneous_respiration_57,Patient_PMC5804616_01,Entity_spontaneous_respiration,DIAGNOSED_WITH,evidence='...ilation rather than spontaneous respiration should be chosen in...'
+Edge_PMC5804616_01_Entity_pneumothorax_57,Patient_PMC5804616_01,Entity_pneumothorax,DIAGNOSED_WITH,evidence='...higher incidence of pneumothorax after esophageal by...'
+Edge_PMC5804616_01_Entity_surgery_57,Patient_PMC5804616_01,Entity_surgery,DIAGNOSED_WITH,evidence='...r esophageal bypass surgery....'
+Edge_PMC5804616_01_Entity_esophageal_bypass_surgery_57,Patient_PMC5804616_01,Entity_esophageal_bypass_surgery,DIAGNOSED_WITH,evidence='...pneumothorax after esophageal bypass surgery....'
+Edge_PMC3897989_01_Entity_abdominal_pain_0,Patient_PMC3897989_01,Entity_abdominal_pain,PRESENTS_WITH,"evidence='...s, mild right upper abdominal pain and darkening urine...'"
+Edge_PMC3897989_01_Entity_viral_8,Patient_PMC3897989_01,Entity_viral,DIAGNOSED_WITH,evidence='...n tumor markers and viral markers were all ne...'
+Edge_PMC3897989_01_Entity_computed_tomography_9,Patient_PMC3897989_01,Entity_computed_tomography,UNDERWENT_EXAM,evidence='...Both computed tomography (CT) and magnetic r...'
+Edge_PMC3897989_01_Entity_malignancy_12,Patient_PMC3897989_01,Entity_malignancy,RULED_OUT,evidence='...No sign of malignancy was observed...'
+Edge_PMC3897989_01_Entity_biliary_14,Patient_PMC3897989_01,Entity_biliary,DIAGNOSED_WITH,evidence='...The biliary culture was positiv...'
+Edge_PMC3897989_01_Entity_cholestasis_16,Patient_PMC3897989_01,Entity_cholestasis,DIAGNOSED_WITH,evidence='...hemical evidence of cholestasis from the elevation...'
+Edge_PMC3897989_01_Entity_liver_16,Patient_PMC3897989_01,Entity_liver,ASSOCIATED_WITH,evidence='...roved the patient's liver function (Figure 2)...'
+Edge_Res_PMC3897989_01_Entity_cholestasis_Result_PMC3897989_01_250_mg,Entity_cholestasis,Result_PMC3897989_01_250_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Loc_PMC3897989_01_Entity_cholestasis_Entity_liver,Entity_cholestasis,Entity_liver,LOCATED_IN,anatomical_localization
+Edge_PMC3897989_01_Entity_fibrosis_19,Patient_PMC3897989_01,Entity_fibrosis,DIAGNOSED_WITH,evidence='...ic infiltration and fibrosis...'
+Edge_PMC3897989_01_Entity_methylprednisolone_23,Patient_PMC3897989_01,Entity_methylprednisolone,RULED_OUT,evidence='...py with intravenous methylprednisolone (MEP) (40 mg per da...'
+Edge_Res_PMC3897989_01_Entity_methylprednisolone_Result_PMC3897989_01_40_mg,Entity_methylprednisolone,Result_PMC3897989_01_40_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC3897989_01_Entity_liver_25,Patient_PMC3897989_01,Entity_liver,ASSOCIATED_WITH,"evidence='...aily, yet the serum liver enzymes and bilirub...'"
+Edge_PMC3897989_01_Entity_abscess_38,Patient_PMC3897989_01,Entity_abscess,DENIES_SYMPTOM,evidence='...osed with pulmonary abscess and was treated eff...'
+Edge_PMC3897989_01_Entity_liver_40,Patient_PMC3897989_01,Entity_liver,ASSOCIATED_WITH,evidence='...The liver function and immuno...'
+Edge_PMC2817501_01_Entity_dyspnea_0,Patient_PMC2817501_01,Entity_dyspnea,PRESENTS_WITH,evidence='...ion with exertional dyspnea and angina...'
+Edge_PMC2817501_01_Entity_echocardiography_4,Patient_PMC2817501_01,Entity_echocardiography,UNDERWENT_EXAM,evidence='...Transesophageal echocardiography showed a functionin...'
+Edge_Res_PMC2817501_01_Entity_echocardiography_Result_PMC2817501_01_30_mmHg,Entity_echocardiography,Result_PMC2817501_01_30_mmHg,HAS_RESULT,measured_value
+Edge_Res_PMC2817501_01_Entity_echocardiography_Result_PMC2817501_01_20_mmHg,Entity_echocardiography,Result_PMC2817501_01_20_mmHg,HAS_RESULT,measured_value
+Edge_Res_PMC2817501_01_Entity_echocardiography_Result_PMC2817501_01_68_mmHg,Entity_echocardiography,Result_PMC2817501_01_68_mmHg,HAS_RESULT,measured_value
+Edge_PMC2817501_01_Entity_stenosis_5,Patient_PMC2817501_01,Entity_stenosis,DIAGNOSED_WITH,evidence='...graphy showed a 90% stenosis at proximal portion...'
+Edge_PMC2817501_01_Entity_sternotomy_6,Patient_PMC2817501_01,Entity_sternotomy,UNDERWENT_EXAM,evidence='...ng through a median sternotomy by the help of card...'
+Edge_PMC2817501_01_Entity_aortotomy_9,Patient_PMC2817501_01,Entity_aortotomy,UNDERWENT_EXAM,"evidence='...dical 29 mm, and an aortotomy was applied because...'"
+Edge_PMC2817501_01_Entity_aortotomy_10,Patient_PMC2817501_01,Entity_aortotomy,UNDERWENT_EXAM,evidence='...After aortotomy we saw that the clo...'
+Edge_PMC11131390_01_Entity_antibodies_3,Patient_PMC11131390_01,Entity_antibodies,RULED_OUT,"evidence='...al <1.75 IU/L), TPO antibodies = 268 (Normal <34 I...'"
+Edge_Res_PMC11131390_01_Entity_antibodies_Result_PMC11131390_01_16.3_IU_L,Entity_antibodies,Result_PMC11131390_01_16.3_IU_L,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC11131390_01_Entity_antibodies_Result_PMC11131390_01_1.75_IU_L,Entity_antibodies,Result_PMC11131390_01_1.75_IU_L,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC11131390_01_Entity_antibodies_Result_PMC11131390_01_34_IU_mL,Entity_antibodies,Result_PMC11131390_01_34_IU_mL,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC11131390_01_Entity_antibodies_Result_PMC11131390_01_115_IU_mL,Entity_antibodies,Result_PMC11131390_01_115_IU_mL,HAS_LAB_VALUE,measured_attribute
+Edge_PMC11131390_01_Entity_quitting_smoking_4,Patient_PMC11131390_01,Entity_quitting_smoking,DIAGNOSED_WITH,"evidence='...out the benefits of quitting smoking, and he was offered...'"
+Edge_Res_PMC11131390_01_Entity_quitting_smoking_Result_PMC11131390_01_20_mg,Entity_quitting_smoking,Result_PMC11131390_01_20_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC11131390_01_Entity_quitting_smoking_7,Patient_PMC11131390_01,Entity_quitting_smoking,DIAGNOSED_WITH,evidence='...repeated advice of quitting smoking that was offered to...'
+Edge_PMC11131390_01_Entity_hypothyroidism_9,Patient_PMC11131390_01,Entity_hypothyroidism,DIAGNOSED_WITH,"evidence='...severe biochemical hypothyroidism, TSH = 73.5 microIU...'"
+Edge_PMC11131390_01_Entity_quitting_smoking_12,Patient_PMC11131390_01,Entity_quitting_smoking,DIAGNOSED_WITH,evidence='...The coincidence of quitting smoking in July 2017 and th...'
+Edge_PMC11131390_01_Entity_hypothyroidism_12,Patient_PMC11131390_01,Entity_hypothyroidism,DIAGNOSED_WITH,"evidence='...evelopment of overt hypothyroidism in November 2017, o...'"
+Edge_PMC10521634_01_Entity_abdominal_pain_2,Patient_PMC10521634_01,Entity_abdominal_pain,PRESENTS_WITH,"evidence='...ls/day), fever, and abdominal pain without signs of pe...'"
+Edge_PMC10521634_01_Entity_fever_2,Patient_PMC10521634_01,Entity_fever,PRESENTS_WITH,"evidence='...p to 7 stools/day), fever, and abdominal pain...'"
+Edge_PMC10521634_01_Entity_peritonitis_2,Patient_PMC10521634_01,Entity_peritonitis,RULED_OUT,evidence='...in without signs of peritonitis...'
+Edge_PMC10521634_01_Entity_colitis_3,Patient_PMC10521634_01,Entity_colitis,RULED_OUT,evidence='...py showed extensive colitis and was classified...'
+Edge_PMC10521634_01_Entity_colonoscopy_3,Patient_PMC10521634_01,Entity_colonoscopy,UNDERWENT_EXAM,evidence='...The colonoscopy showed extensive co...'
+Edge_PMC10521634_01_Entity_thrombosis_6,Patient_PMC10521634_01,Entity_thrombosis,RULED_OUT,evidence='...Venous thrombosis prophylaxis was als...'
+Edge_PMC10521634_01_Entity_thrombocytosis_8,Patient_PMC10521634_01,Entity_thrombocytosis,DIAGNOSED_WITH,"evidence='...llow-up showed mild thrombocytosis, and normal Hb, fer...'"
+Edge_PMC10521634_01_Entity_colonoscopy_11,Patient_PMC10521634_01,Entity_colonoscopy,UNDERWENT_EXAM,evidence='...A colonoscopy is performed showin...'
+Edge_PMC10521634_01_Entity_ileostomy_14,Patient_PMC10521634_01,Entity_ileostomy,UNDERWENT_EXAM,evidence='...rectum and terminal ileostomy are performed...'
+Edge_PMC10521634_01_Entity_colectomy_14,Patient_PMC10521634_01,Entity_colectomy,UNDERWENT_EXAM,evidence='...Urgent subtotal colectomy and splenectomy wit...'
+Edge_PMC10521634_01_Entity_splenectomy_14,Patient_PMC10521634_01,Entity_splenectomy,UNDERWENT_EXAM,evidence='...total colectomy and splenectomy with preservation o...'
+Edge_PMC10521634_01_Entity_malignancy_16,Patient_PMC10521634_01,Entity_malignancy,RULED_OUT,"evidence='...on did not identify malignancy or dysplasia, but i...'"
+Edge_PMC10521634_01_Entity_thrombocytosis_17,Patient_PMC10521634_01,Entity_thrombocytosis,DIAGNOSED_WITH,"evidence='...nt post-splenectomy thrombocytosis), but shortly after...'"
+Edge_PMC10521634_01_Entity_splenectomy_17,Patient_PMC10521634_01,Entity_splenectomy,UNDERWENT_EXAM,"evidence='...H (significant post-splenectomy thrombocytosis), bu...'"
+Edge_Res_PMC10521634_01_Entity_thrombocytosis_Result_PMC10521634_01_5_mg_kg,Entity_thrombocytosis,Result_PMC10521634_01_5_mg_kg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC10521634_01_Entity_splenectomy_Result_PMC10521634_01_5_mg_kg,Entity_splenectomy,Result_PMC10521634_01_5_mg_kg,HAS_RESULT,measured_value
+Edge_PMC10521634_01_Entity_abscess_20,Patient_PMC10521634_01,Entity_abscess,PRESENTS_WITH,"evidence='...ation, an abdominal abscess...'"
+Edge_PMC10521634_01_Entity_abscess_21,Patient_PMC10521634_01,Entity_abscess,PRESENTS_WITH,"evidence='...ge of an underlying abscess, with a good surgic...'"
+Edge_PMC10521634_01_Entity_surgery_21,Patient_PMC10521634_01,Entity_surgery,DIAGNOSED_WITH,evidence='...an and was taken to surgery for drainage of an...'
+Edge_PMC10521634_01_Entity_cryptitis_22,Patient_PMC10521634_01,Entity_cryptitis,DIAGNOSED_WITH,evidence='...active disease with cryptitis and crypt abscesses...'
+Edge_PMC10521634_01_Entity_endoscopy_22,Patient_PMC10521634_01,Entity_endoscopy,UNDERWENT_EXAM,evidence='...The endoscopy report showed Mayo...'
+Edge_PMC10521634_01_Entity_anastomosis_24,Patient_PMC10521634_01,Entity_anastomosis,DIAGNOSED_WITH,evidence='...ative procedure and anastomosis....'
+Edge_PMC10710131_01_Entity_maxilla_0,Patient_PMC10710131_01,Entity_maxilla,DIAGNOSED_WITH,evidence='...ing in the anterior maxilla were included as th...'
+Edge_PMC10710131_01_Entity_bone_augmentation_3,Patient_PMC10710131_01,Entity_bone_augmentation,DIAGNOSED_WITH,evidence='...ts underwent second bone augmentation simultaneously with...'
+Edge_PMC10710131_01_Entity_dental_implant_3,Patient_PMC10710131_01,Entity_dental_implant,DIAGNOSED_WITH,evidence='...simultaneously with dental implant placement at T2...'
+Edge_PMC10488652_01_Entity_fever_0,Patient_PMC10488652_01,Entity_fever,PRESENTS_WITH,"evidence='...luding intermittent fever up to 39 C, general...'"
+Edge_PMC10488652_01_Entity_myalgia_0,Patient_PMC10488652_01,Entity_myalgia,PRESENTS_WITH,"evidence='...malaise, headache, myalgia, a mild self-limiti...'"
+Edge_PMC10488652_01_Entity_synovitis_1,Patient_PMC10488652_01,Entity_synovitis,RULED_OUT,"evidence='...vical adenopathies, synovitis in bilateral metaca...'"
+Edge_PMC10488652_01_Entity_nephritis_4,Patient_PMC10488652_01,Entity_nephritis,DIAGNOSED_WITH,evidence='...II mesangial lupus nephritis...'
+Edge_PMC10488652_01_Entity_autoimmune_hemolytic_anemia_5,Patient_PMC10488652_01,Entity_autoimmune_hemolytic_anemia,DIAGNOSED_WITH,"evidence='...Autoimmune hemolytic anemia was also confirmed,...'"
+Edge_PMC10488652_01_Entity_anemia_5,Patient_PMC10488652_01,Entity_anemia,DIAGNOSED_WITH,"evidence='...utoimmune hemolytic anemia was also confirmed,...'"
+Edge_Res_PMC10488652_01_Entity_autoimmune_hemolytic_anemia_Result_PMC10488652_01_6.2_g_dl,Entity_autoimmune_hemolytic_anemia,Result_PMC10488652_01_6.2_g_dl,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC10488652_01_Entity_anemia_Result_PMC10488652_01_6.2_g_dl,Entity_anemia,Result_PMC10488652_01_6.2_g_dl,HAS_LAB_VALUE,measured_attribute
+Edge_PMC10488652_01_Entity_hydroxychloroquine_7,Patient_PMC10488652_01,Entity_hydroxychloroquine,RULED_OUT,evidence='...aily for 4 days and hydroxychloroquine at a dose of 200 mg...'
+Edge_PMC10488652_01_Entity_blood_transfusion_7,Patient_PMC10488652_01,Entity_blood_transfusion,RULED_OUT,evidence='...ithout the need for blood transfusions...'
+Edge_Res_PMC10488652_01_Entity_hydroxychloroquine_Result_PMC10488652_01_40_mg,Entity_hydroxychloroquine,Result_PMC10488652_01_40_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC10488652_01_Entity_blood_transfusion_Result_PMC10488652_01_40_mg,Entity_blood_transfusion,Result_PMC10488652_01_40_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC10488652_01_Entity_hydroxychloroquine_Result_PMC10488652_01_200_mg,Entity_hydroxychloroquine,Result_PMC10488652_01_200_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC10488652_01_Entity_blood_transfusion_Result_PMC10488652_01_200_mg,Entity_blood_transfusion,Result_PMC10488652_01_200_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC10488652_01_Entity_hydroxychloroquine_9,Patient_PMC10488652_01,Entity_hydroxychloroquine,DIAGNOSED_WITH,"evidence='...5 mg daily orally, hydroxychloroquine at a dose of 200 mg...'"
+Edge_Res_PMC10488652_01_Entity_hydroxychloroquine_Result_PMC10488652_01_5_mg,Entity_hydroxychloroquine,Result_PMC10488652_01_5_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC10488652_01_Entity_hydroxychloroquine_Result_PMC10488652_01_500_mg,Entity_hydroxychloroquine,Result_PMC10488652_01_500_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC10488652_01_Entity_case_report_11,Patient_PMC10488652_01,Entity_case_report,DIAGNOSED_WITH,"evidence='...In this case report, all procedures wer...'"
+Edge_PMC11420039_01_Entity_methylprednisolone_9,Patient_PMC11420039_01,Entity_methylprednisolone,DIAGNOSED_WITH,evidence='...nt was treated with methylprednisolone 40 mg orally per da...'
+Edge_Res_PMC11420039_01_Entity_methylprednisolone_Result_PMC11420039_01_40_mg,Entity_methylprednisolone,Result_PMC11420039_01_40_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC11420039_01_Entity_methylprednisolone_Result_PMC11420039_01_20_mg,Entity_methylprednisolone,Result_PMC11420039_01_20_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC11420039_01_Entity_methylprednisolone_Result_PMC11420039_01_16_mg,Entity_methylprednisolone,Result_PMC11420039_01_16_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC11420039_01_Entity_methylprednisolone_11,Patient_PMC11420039_01,Entity_methylprednisolone,DIAGNOSED_WITH,evidence='...The dosage of methylprednisolone tablets was gradual...'
+Edge_PMC11420039_01_Entity_methylprednisolone_13,Patient_PMC11420039_01,Entity_methylprednisolone,DIAGNOSED_WITH,evidence='...The methylprednisolone dosage was adjusted...'
+Edge_Res_PMC11420039_01_Entity_methylprednisolone_Result_PMC11420039_01_12_mg,Entity_methylprednisolone,Result_PMC11420039_01_12_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC11420039_01_Entity_methylprednisolone_16,Patient_PMC11420039_01,Entity_methylprednisolone,DIAGNOSED_WITH,evidence='...d continued to take methylprednisolone tablets orally at t...'
+Edge_PMC11420039_01_Entity_dyspnea_17,Patient_PMC11420039_01,Entity_dyspnea,PRESENTS_WITH,"evidence='...toms of fatigue and dyspnea, leading to admissi...'"
+Edge_PMC11420039_01_Entity_viral_20,Patient_PMC11420039_01,Entity_viral,DIAGNOSED_WITH,"evidence='...virus 4 (EBV), with viral sequence counts exc...'"
+Edge_PMC11420039_01_Entity_human_20,Patient_PMC11420039_01,Entity_human,DIAGNOSED_WITH,evidence='...ted the presence of human herpesvirus 3 (VZV)...'
+Edge_PMC11420039_01_Entity_viral_21,Patient_PMC11420039_01,Entity_viral,RULED_OUT,evidence='...was diagnosed with viral septicemia and trea...'
+Edge_PMC11420039_01_Entity_methylprednisolone_22,Patient_PMC11420039_01,Entity_methylprednisolone,DIAGNOSED_WITH,"evidence='...vere infection, the methylprednisolone dosage was reduced...'"
+Edge_Res_PMC11420039_01_Entity_methylprednisolone_Result_PMC11420039_01_4_mg,Entity_methylprednisolone,Result_PMC11420039_01_4_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC11420039_01_Entity_antibodies_23,Patient_PMC11420039_01,Entity_antibodies,DIAGNOSED_WITH,"evidence='...i-recombinant RO-52 antibodies, anti-nuclear antib...'"
+Edge_PMC11420039_01_Entity_human_29,Patient_PMC11420039_01,Entity_human,DIAGNOSED_WITH,evidence='...ed Enterococcus and human herpesvirus 7 in th...'
+Edge_PMC11420039_01_Entity_human_32,Patient_PMC11420039_01,Entity_human,DIAGNOSED_WITH,evidence='...Human immunoglobulin was...'
+Edge_Res_PMC11420039_01_Entity_human_Result_PMC11420039_01_20_g,Entity_human,Result_PMC11420039_01_20_g,HAS_LAB_VALUE,measured_attribute
+Edge_PMC11259348_01_Entity_fever_0,Patient_PMC11259348_01,Entity_fever,PRESENTS_WITH,"evidence='...child admitted with fever, loose stools, and...'"
+Edge_PMC11259348_01_Entity_blood_transfusion_4,Patient_PMC11259348_01,Entity_blood_transfusion,DIAGNOSED_WITH,"evidence='...Following each blood transfusion, she developed epis...'"
+Edge_PMC11259348_02_Entity_blood_transfusion_1,Patient_PMC11259348_02,Entity_blood_transfusion,DIAGNOSED_WITH,evidence='...hemolysis following blood transfusions were considered as...'
+Edge_PMC11368112_01_Entity_fever_0,Patient_PMC11368112_01,Entity_fever,PRESENTS_WITH,evidence='...chest tightness and fever was admitted to the...'
+Edge_PMC11368112_01_Entity_thrombosis_1,Patient_PMC11368112_01,Entity_thrombosis,RULED_OUT,"evidence='...er extremity venous thrombosis, pulmonary nodules,...'"
+Edge_PMC11368112_01_Entity_hypertension_1,Patient_PMC11368112_01,Entity_hypertension,RULED_OUT,"evidence='...ardiac surgery, and hypertension...'"
+Edge_PMC11368112_01_Entity_surgery_1,Patient_PMC11368112_01,Entity_surgery,RULED_OUT,"evidence='...ry nodules, cardiac surgery, and hypertension...'"
+Edge_PMC11368112_01_Entity_fever_2,Patient_PMC11368112_01,Entity_fever,PRESENTS_WITH,evidence='...ied by intermittent fever and chills...'
+Edge_PMC11368112_01_Entity_dyspnea_2,Patient_PMC11368112_01,Entity_dyspnea,PRESENTS_WITH,evidence='...rienced significant dyspnea accompanied by inte...'
+Edge_PMC11368112_01_Entity_thrombosis_5,Patient_PMC11368112_01,Entity_thrombosis,RULED_OUT,evidence='...ultrasound revealed thrombosis in the common femor...'
+Edge_PMC11368112_01_Entity_tachycardia_6,Patient_PMC11368112_01,Entity_tachycardia,DIAGNOSED_WITH,evidence='...ECG indicated sinus tachycardia...'
+Edge_PMC11368112_01_Entity_pulmonary_embolism_8,Patient_PMC11368112_01,Entity_pulmonary_embolism,ASSOCIATED_WITH,evidence='...with a diagnosis of pulmonary embolism (PE)...'
+Edge_PMC11368112_01_Entity_fever_10,Patient_PMC11368112_01,Entity_fever,PRESENTS_WITH,"evidence='...and linezolid, his fever persisted, reaching...'"
+Edge_PMC11368112_01_Entity_fever_12,Patient_PMC11368112_01,Entity_fever,PRESENTS_WITH,evidence='...cing a similar high fever two months earlier...'
+Edge_PMC11368112_01_Entity_surgery_12,Patient_PMC11368112_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...r following cardiac surgery, which had subsided...'"
+Edge_PMC11368112_01_Entity_surgery_14,Patient_PMC11368112_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...2022, he underwent surgery to remove an intrac...'"
+Edge_PMC11368112_01_Entity_tuberculosis_17,Patient_PMC11368112_01,Entity_tuberculosis,DIAGNOSED_WITH,"evidence='...surgery, suspecting tuberculosis and fungal infectio...'"
+Edge_PMC11368112_01_Entity_surgery_17,Patient_PMC11368112_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...efore and after the surgery, suspecting tubercu...'"
+Edge_PMC11368112_01_Entity_lipofuscinosis_20,Patient_PMC11368112_01,Entity_lipofuscinosis,DIAGNOSED_WITH,evidence='...mal ulceration with lipofuscinosis (Figure 2c)...'
+Edge_PMC11368112_01_Entity_surgery_21,Patient_PMC11368112_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...rdiac microvascular surgery, pathology, dermato...'"
+Edge_PMC11368112_01_Entity_methylprednisolone_22,Patient_PMC11368112_01,Entity_methylprednisolone,DIAGNOSED_WITH,"evidence='...nitiated, including methylprednisolone at 80 mg per day fo...'"
+Edge_Res_PMC11368112_01_Entity_methylprednisolone_Result_PMC11368112_01_80_mg,Entity_methylprednisolone,Result_PMC11368112_01_80_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC11368112_01_Entity_methylprednisolone_Result_PMC11368112_01_60_mg,Entity_methylprednisolone,Result_PMC11368112_01_60_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC11368112_01_Entity_methylprednisolone_Result_PMC11368112_01_5_mg,Entity_methylprednisolone,Result_PMC11368112_01_5_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC11368112_01_Entity_methylprednisolone_Result_PMC11368112_01_200_mg,Entity_methylprednisolone,Result_PMC11368112_01_200_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC11345641_01_Entity_leiomyoma_0,Patient_PMC11345641_01,Entity_leiomyoma,RULED_OUT,"evidence='..., which suggested a leiomyoma...'"
+Edge_PMC11345641_01_Entity_abdominal_pain_2,Patient_PMC11345641_01,Entity_abdominal_pain,PRESENTS_WITH,evidence='...She has experienced abdominal pain and noticeable abdo...'
+Edge_PMC11345641_01_Entity_human_4,Patient_PMC11345641_01,Entity_human,DIAGNOSED_WITH,"evidence='...-fetoprotein (AFP), human epididymis protein...'"
+Edge_PMC11345641_01_Entity_leiomyoma_9,Patient_PMC11345641_01,Entity_leiomyoma,DIAGNOSED_WITH,"evidence='...degeneration of the leiomyomas, possibly indicatin...'"
+Edge_PMC11345641_01_Entity_salpingectomy_11,Patient_PMC11345641_01,Entity_salpingectomy,UNDERWENT_EXAM,evidence='...ctomy and bilateral salpingectomy on a patient...'
+Edge_PMC11345641_01_Entity_hysterectomy_11,Patient_PMC11345641_01,Entity_hysterectomy,UNDERWENT_EXAM,evidence='...total laparoscopic hysterectomy and bilateral salpi...'
+Edge_PMC11345641_01_Entity_surgery_12,Patient_PMC11345641_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...During surgery, the uterus resembl...'"
+Edge_Res_PMC11345641_01_Entity_surgery_Result_PMC11345641_01_12_cm,Entity_surgery,Result_PMC11345641_01_12_cm,HAS_SIZE,measured_attribute
+Edge_PMC11345641_01_Entity_leiomyoma_15,Patient_PMC11345641_01,Entity_leiomyoma,DIAGNOSED_WITH,"evidence='...ed the mass to be a leiomyoma, with most areas in...'"
+Edge_PMC11345641_01_Entity_surgery_15,Patient_PMC11345641_01,Entity_surgery,DIAGNOSED_WITH,evidence='...ic examination post-surgery revealed the mass t...'
+Edge_PMC11345641_01_Entity_laparotomy_25,Patient_PMC11345641_01,Entity_laparotomy,UNDERWENT_EXAM,"evidence='...rmed an exploratory laparotomy, including resectio...'"
+Edge_PMC11345641_01_Entity_surgery_26,Patient_PMC11345641_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...During surgery, we identified a 20...'"
+Edge_Res_PMC11345641_01_Entity_surgery_Result_PMC11345641_01_20_cm,Entity_surgery,Result_PMC11345641_01_20_cm,HAS_SIZE,measured_attribute
+Edge_PMC11345641_01_Entity_surgery_31,Patient_PMC11345641_01,Entity_surgery,DIAGNOSED_WITH,"evidence='...plete cytoreductive surgery, recommending a pal...'"
+Edge_PMC11345641_01_Entity_undifferentiated_sarcomas_33,Patient_PMC11345641_01,Entity_undifferentiated_sarcomas,DIAGNOSED_WITH,evidence='...analysis confirmed undifferentiated sarcomas in the abdominal an...'
+Edge_PMC11345641_01_Entity_hydronephrosis_34,Patient_PMC11345641_01,Entity_hydronephrosis,DIAGNOSED_WITH,"evidence='...ral effusion, right hydronephrosis, and poor incision...'"
+Edge_PMC11723754_01_Entity_pressure_injury_0,Patient_PMC11723754_01,Entity_pressure_injury,DIAGNOSED_WITH,evidence='...dder with Grade III pressure injury over sacral region...'
+Edge_PMC11723754_01_Entity_spinal_cord_injury_0,Patient_PMC11723754_01,Entity_spinal_cord_injury,DIAGNOSED_WITH,evidence='...d case of traumatic spinal cord injury (cause: fall from h...'
+Edge_PMC11723754_01_Entity_liver_15,Patient_PMC11723754_01,Entity_liver,ASSOCIATED_WITH,evidence='...ing which renal and liver function tests norm...'
+Edge_PMC11723754_01_Entity_orthosis_19,Patient_PMC11723754_01,Entity_orthosis,DIAGNOSED_WITH,evidence='...hip knee ankle foot orthosis (HKAFO) for therape...'
+Edge_PMC11723754_01_Entity_neurorehabilitation_19,Patient_PMC11723754_01,Entity_neurorehabilitation,DIAGNOSED_WITH,evidence='...ding and home-based neurorehabilitation program....'
+Edge_PMC11783470_01_Entity_malignancy_1,Patient_PMC11783470_01,Entity_malignancy,DIAGNOSED_WITH,evidence='...of gastrointestinal malignancy...'
+Edge_PMC11783470_01_Entity_abdominal_pain_2,Patient_PMC11783470_01,Entity_abdominal_pain,PRESENTS_WITH,"evidence='..., nausea, vomiting, abdominal pain, altered bowel habi...'"
+Edge_PMC11783470_01_Entity_iron_deficiency_6,Patient_PMC11783470_01,Entity_iron_deficiency,DIAGNOSED_WITH,evidence='...20% was in favor of iron deficiency and the patient und...'
+Edge_PMC11783470_01_Entity_esophagogastroduodenoscopy_6,Patient_PMC11783470_01,Entity_esophagogastroduodenoscopy,UNDERWENT_EXAM,evidence='...e patient underwent esophagogastroduodenoscopy (EGD) and colonosco...'
+Edge_PMC11783470_01_Entity_colonoscopy_6,Patient_PMC11783470_01,Entity_colonoscopy,UNDERWENT_EXAM,evidence='...denoscopy (EGD) and colonoscopy at a different inst...'
+Edge_PMC11783470_01_Entity_ileocolonoscopy_9,Patient_PMC11783470_01,Entity_ileocolonoscopy,UNDERWENT_EXAM,"evidence='...celiac disease, and ileocolonoscopy did not identify an...'"
+Edge_PMC11783470_01_Entity_endoscopy_13,Patient_PMC11783470_01,Entity_endoscopy,UNDERWENT_EXAM,"evidence='...ative bidirectional endoscopy, the patient was ad...'"
+Edge_PMC11783470_01_Entity_anemia_13,Patient_PMC11783470_01,Entity_anemia,DIAGNOSED_WITH,evidence='...ntestinal causes of anemia...'
+Edge_PMC11783470_01_Entity_gastroenterology_13,Patient_PMC11783470_01,Entity_gastroenterology,DIAGNOSED_WITH,evidence='...to follow up at the gastroenterology clinic and discuss...'
+Edge_PMC11722600_01_Entity_abdominal_pain_0,Patient_PMC11722600_01,Entity_abdominal_pain,PRESENTS_WITH,"evidence='...ent with continuous abdominal pain for 12 h, localized...'"
+Edge_PMC11722600_01_Entity_fever_1,Patient_PMC11722600_01,Entity_fever,DENIES_SYMPTOM,evidence='...She had no fever or genitourinary sy...'
+Edge_PMC11722600_01_Entity_abdominal_pain_4,Patient_PMC11722600_01,Entity_abdominal_pain,PRESENTS_WITH,"evidence='...xamination revealed abdominal pain in RIF, with locali...'"
+Edge_PMC11722600_01_Entity_appendicitis_9,Patient_PMC11722600_01,Entity_appendicitis,RULED_OUT,evidence='...evealed phlegmonous appendicitis without peritonitis...'
+Edge_PMC11722600_01_Entity_peritonitis_9,Patient_PMC11722600_01,Entity_peritonitis,RULED_OUT,"evidence='...ppendicitis without peritonitis, showing the append...'"
+Edge_PMC11722600_01_Entity_salpingectomy_10,Patient_PMC11722600_01,Entity_salpingectomy,UNDERWENT_EXAM,evidence='...nsulted for a right salpingectomy due to the inflamma...'
+Edge_PMC11722600_01_Entity_appendectomy_10,Patient_PMC11722600_01,Entity_appendectomy,UNDERWENT_EXAM,evidence='...A laparoscopic appendectomy was performed succe...'
+Edge_PMC11722600_01_Entity_laparoscopic_appendectomy_10,Patient_PMC11722600_01,Entity_laparoscopic_appendectomy,UNDERWENT_EXAM,evidence='...A laparoscopic appendectomy was performed succe...'
+Edge_PMC11722600_01_Entity_endometriosis_11,Patient_PMC11722600_01,Entity_endometriosis,DIAGNOSED_WITH,evidence='...ogical or abdominal endometriosis were observed....'
+Edge_PMC11722600_01_Entity_endometriosis_13,Patient_PMC11722600_01,Entity_endometriosis,DIAGNOSED_WITH,"evidence='...ndix, a hallmark of endometriosis; it revealedsigns o...'"
+Edge_PMC11722600_01_Entity_stroma_13,Patient_PMC11722600_01,Entity_stroma,DIAGNOSED_WITH,evidence='...ectopic endometrial stroma within the muscular...'
+Edge_PMC11722600_01_Entity_malignancy_14,Patient_PMC11722600_01,Entity_malignancy,RULED_OUT,"evidence='...troma, negative for malignancy....'"
+Edge_PMC11722600_01_Entity_stroma_14,Patient_PMC11722600_01,Entity_stroma,DIAGNOSED_WITH,"evidence='...ometrial glands and stroma, negative for malig...'"
+Edge_PMC11722600_02_Entity_endometriosis_0,Patient_PMC11722600_02,Entity_endometriosis,DIAGNOSED_WITH,evidence='...e with a history of endometriosis on hormonal treatme...'
+Edge_PMC11722600_02_Entity_abdominal_pain_0,Patient_PMC11722600_02,Entity_abdominal_pain,PRESENTS_WITH,"evidence='...ior, presented with abdominal pain for 72 h, initially...'"
+Edge_PMC11722600_02_Entity_fever_1,Patient_PMC11722600_02,Entity_fever,DENIES_SYMPTOM,evidence='...No fever or urinary symptoms...'
+Edge_PMC11722600_02_Entity_abdominal_pain_2,Patient_PMC11722600_02,Entity_abdominal_pain,DENIES_SYMPTOM,evidence='...or chronic cyclical abdominal pain....'
+Edge_PMC11722600_02_Entity_abdominal_pain_3,Patient_PMC11722600_02,Entity_abdominal_pain,PRESENTS_WITH,"evidence='...examination showed abdominal pain in RIF, with locali...'"
+Edge_PMC11722600_02_Entity_leukocytosis_5,Patient_PMC11722600_02,Entity_leukocytosis,DIAGNOSED_WITH,"evidence='...ory tests indicated leukocytosis with 17,200/mm3 whi...'"
+Edge_Res_PMC11722600_02_Entity_leukocytosis_Result_PMC11722600_02_85_mg_L,Entity_leukocytosis,Result_PMC11722600_02_85_mg_L,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC11722600_02_Entity_leukocytosis_Result_PMC11722600_02_5_mg,Entity_leukocytosis,Result_PMC11722600_02_5_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC11722600_02_Entity_acute_appendicitis_6,Patient_PMC11722600_02,Entity_acute_appendicitis,RULED_OUT,"evidence='...mptive diagnosis of acute appendicitis was made, and an ab...'"
+Edge_PMC11722600_02_Entity_appendicitis_6,Patient_PMC11722600_02,Entity_appendicitis,RULED_OUT,"evidence='...diagnosis of acute appendicitis was made, and an ab...'"
+Edge_PMC11722600_02_Entity_appendicitis_7,Patient_PMC11722600_02,Entity_appendicitis,RULED_OUT,"evidence='...agnosis of advanced appendicitis, non-operative trea...'"
+Edge_PMC11722600_02_Entity_laparoscopy_8,Patient_PMC11722600_02,Entity_laparoscopy,UNDERWENT_EXAM,evidence='...ding to exploratory laparoscopy which revealed infl...'
+Edge_PMC11722600_02_Entity_abdominal_pain_8,Patient_PMC11722600_02,Entity_abdominal_pain,PRESENTS_WITH,"evidence='...th fever, increased abdominal pain, tachycardia, and r...'"
+Edge_PMC11722600_02_Entity_tachycardia_8,Patient_PMC11722600_02,Entity_tachycardia,DIAGNOSED_WITH,"evidence='...sed abdominal pain, tachycardia, and rising acute p...'"
+Edge_PMC11722600_02_Entity_fever_8,Patient_PMC11722600_02,Entity_fever,PRESENTS_WITH,"evidence='...was irregular, with fever, increased abdomina...'"
+Edge_PMC11722600_02_Entity_abscess_9,Patient_PMC11722600_02,Entity_abscess,PRESENTS_WITH,evidence='...A 75 cc abscess of purulent fluid w...'
+Edge_PMC11722600_02_Entity_surgery_10,Patient_PMC11722600_02,Entity_surgery,RULED_OUT,evidence='...No further surgery was performed due t...'
+Edge_PMC11722600_02_Entity_appendectomy_15,Patient_PMC11722600_02,Entity_appendectomy,UNDERWENT_EXAM,evidence='...eduled laparoscopic appendectomy was suggested due t...'
+Edge_PMC11722600_02_Entity_laparoscopic_appendectomy_15,Patient_PMC11722600_02,Entity_laparoscopic_appendectomy,UNDERWENT_EXAM,"evidence='...omatic, a scheduled laparoscopic appendectomy was suggested due t...'"
+Edge_PMC11722600_02_Entity_appendectomy_16,Patient_PMC11722600_02,Entity_appendectomy,UNDERWENT_EXAM,"evidence='...Laparoscopic appendectomy was performed, reve...'"
+Edge_PMC11722600_02_Entity_laparoscopic_appendectomy_16,Patient_PMC11722600_02,Entity_laparoscopic_appendectomy,UNDERWENT_EXAM,"evidence='...Laparoscopic appendectomy was performed, reve...'"
+Edge_PMC11722600_02_Entity_endometriosis_19,Patient_PMC11722600_02,Entity_endometriosis,DIAGNOSED_WITH,evidence='...ological feature of endometriosis; these were surroun...'
+Edge_PMC11722600_02_Entity_stroma_19,Patient_PMC11722600_02,Entity_stroma,DIAGNOSED_WITH,evidence='...les the endometrial stroma found in the uterin...'
+Edge_PMC12215201_01_Entity_liver_9,Patient_PMC12215201_01,Entity_liver,ASSOCIATED_WITH,"evidence='...solid masses in the liver, the most extensive...'"
+Edge_PMC12215201_01_Entity_spleen_10,Patient_PMC12215201_01,Entity_spleen,ASSOCIATED_WITH,evidence='...The spleen was enlarged and in...'
+Edge_PMC12215201_01_Entity_liver_11,Patient_PMC12215201_01,Entity_liver,ASSOCIATED_WITH,evidence='...ense lesions in the liver and spleen with the...'
+Edge_PMC12215201_01_Entity_spleen_11,Patient_PMC12215201_01,Entity_spleen,ASSOCIATED_WITH,evidence='...ns in the liver and spleen with the peripheral...'
+Edge_PMC12215201_01_Entity_anemia_14,Patient_PMC12215201_01,Entity_anemia,DIAGNOSED_WITH,evidence='...elets for worsening anemia and thrombocytopeni...'
+Edge_PMC12215201_01_Entity_colonoscopy_18,Patient_PMC12215201_01,Entity_colonoscopy,UNDERWENT_EXAM,"evidence='...possible primary, a colonoscopy was performed, whic...'"
+Edge_PMC12215201_01_Entity_esophagogastroduodenoscopy_19,Patient_PMC12215201_01,Entity_esophagogastroduodenoscopy,UNDERWENT_EXAM,evidence='...Esophagogastroduodenoscopy demonstrated multip...'
+Edge_PMC12215201_01_Entity_endoscopy_23,Patient_PMC12215201_01,Entity_endoscopy,UNDERWENT_EXAM,evidence='...Video capsule endoscopy showed numerous met...'
+Edge_PMC12215201_01_Entity_stomach_23,Patient_PMC12215201_01,Entity_stomach,ASSOCIATED_WITH,evidence='...seen throughout the stomach and small bowel...'
+Edge_PMC12215201_01_Entity_liver_25,Patient_PMC12215201_01,Entity_liver,ASSOCIATED_WITH,"evidence='...e patient underwent liver biopsy, which showe...'"
+Edge_PMC12215201_01_Entity_angiosarcoma_25,Patient_PMC12215201_01,Entity_angiosarcoma,DIAGNOSED_WITH,evidence='...cells suggestive of angiosarcoma (Fig...'
+Edge_Loc_PMC12215201_01_Entity_angiosarcoma_Entity_liver,Entity_angiosarcoma,Entity_liver,LOCATED_IN,anatomical_localization
+Edge_PMC12832199_01_Entity_abdominal_pain_0,Patient_PMC12832199_01,Entity_abdominal_pain,PRESENTS_WITH,evidence='...partment with upper abdominal pain and vomiting...'
+Edge_PMC12832199_01_Entity_hemicolectomy_3,Patient_PMC12832199_01,Entity_hemicolectomy,UNDERWENT_EXAM,evidence='...he underwent a left hemicolectomy with transverse col...'
+Edge_PMC12832199_01_Entity_colitis_3,Patient_PMC12832199_01,Entity_colitis,DIAGNOSED_WITH,evidence='...ostomy for ischemic colitis...'
+Edge_PMC12832199_01_Entity_colostomy_3,Patient_PMC12832199_01,Entity_colostomy,UNDERWENT_EXAM,evidence='...omy with transverse colostomy for ischemic coliti...'
+Edge_PMC12832199_01_Entity_stoma_4,Patient_PMC12832199_01,Entity_stoma,DIAGNOSED_WITH,"evidence='...perienced recurrent stoma prolapse, which req...'"
+Edge_PMC12832199_01_Entity_stoma_6,Patient_PMC12832199_01,Entity_stoma,DIAGNOSED_WITH,evidence='...abdomen around the stoma was distended with...'
+Edge_PMC12832199_01_Entity_anemia_8,Patient_PMC12832199_01,Entity_anemia,DIAGNOSED_WITH,"evidence='...count, 26000/muL), anemia (hemoglobin, 9.6 g/...'"
+Edge_PMC12832199_01_Entity_leukocytosis_8,Patient_PMC12832199_01,Entity_leukocytosis,DIAGNOSED_WITH,evidence='...stigations revealed leukocytosis (white blood cell c...'
+Edge_Res_PMC12832199_01_Entity_anemia_Result_PMC12832199_01_9.6_g_dL,Entity_anemia,Result_PMC12832199_01_9.6_g_dL,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC12832199_01_Entity_leukocytosis_Result_PMC12832199_01_9.6_g_dL,Entity_leukocytosis,Result_PMC12832199_01_9.6_g_dL,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC12832199_01_Entity_anemia_Result_PMC12832199_01_2.8_g_dL,Entity_anemia,Result_PMC12832199_01_2.8_g_dL,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC12832199_01_Entity_leukocytosis_Result_PMC12832199_01_2.8_g_dL,Entity_leukocytosis,Result_PMC12832199_01_2.8_g_dL,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC12832199_01_Entity_anemia_Result_PMC12832199_01_2.2_mg,Entity_anemia,Result_PMC12832199_01_2.2_mg,HAS_LAB_VALUE,measured_attribute
+Edge_Res_PMC12832199_01_Entity_leukocytosis_Result_PMC12832199_01_2.2_mg,Entity_leukocytosis,Result_PMC12832199_01_2.2_mg,HAS_LAB_VALUE,measured_attribute
+Edge_PMC12832199_01_Entity_gastric_outlet_obstruction_9,Patient_PMC12832199_01,Entity_gastric_outlet_obstruction,PRESENTS_WITH,"evidence='...c, with evidence of gastric outlet obstruction (Fig...'"
+Edge_PMC12832199_01_Entity_abdominal_pain_15,Patient_PMC12832199_01,Entity_abdominal_pain,PRESENTS_WITH,evidence='...Her abdominal pain and distension impr...'
+Edge_PMC12832199_01_Entity_anemia_16,Patient_PMC12832199_01,Entity_anemia,RULED_OUT,evidence='...d no progression of anemia and improvement in...'
+Edge_PMC12832199_01_Entity_necrosis_17,Patient_PMC12832199_01,Entity_necrosis,PRESENTS_WITH,evidence='...oration or ischemic necrosis was low...'
+Edge_PMC12832199_01_Entity_parastomal_hernia_18,Patient_PMC12832199_01,Entity_parastomal_hernia,DIAGNOSED_WITH,"evidence='...stability, elective parastomal hernia repair was planned....'"
+Edge_PMC12832199_01_Entity_stoma_19,Patient_PMC12832199_01,Entity_stoma,DIAGNOSED_WITH,"evidence='...onic resections for stoma prolapse, further c...'"
+Edge_PMC12832199_01_Entity_stoma_20,Patient_PMC12832199_01,Entity_stoma,DIAGNOSED_WITH,evidence='...bility of recurrent stoma prolapse due to sag...'
+Edge_PMC12832199_01_Entity_stoma_21,Patient_PMC12832199_01,Entity_stoma,DIAGNOSED_WITH,evidence='...omal herniation and stoma prolapse...'
+Edge_PMC12832199_01_Entity_sugarbaker_technique_21,Patient_PMC12832199_01,Entity_sugarbaker_technique,DIAGNOSED_WITH,"evidence='...s, the laparoscopic Sugarbaker technique was deemed the most...'"
+Edge_PMC12832199_01_Entity_stomach_23,Patient_PMC12832199_01,Entity_stomach,ASSOCIATED_WITH,"evidence='...traoperatively, the stomach was drawn into the...'"
+Edge_PMC12832199_01_Entity_stoma_25,Patient_PMC12832199_01,Entity_stoma,DIAGNOSED_WITH,evidence='...ent adjacent to the stoma was divided to faci...'
+Edge_PMC12832199_01_Entity_stomach_25,Patient_PMC12832199_01,Entity_stomach,ASSOCIATED_WITH,evidence='...of the incarcerated stomach was challenging; th...'
+Edge_Loc_PMC12832199_01_Entity_stoma_Entity_stomach,Entity_stoma,Entity_stomach,LOCATED_IN,anatomical_localization
+Edge_PMC12832199_01_Entity_stoma_26,Patient_PMC12832199_01,Entity_stoma,DIAGNOSED_WITH,evidence='...e distance from the stoma and prevent further...'
+Edge_PMC12832199_01_Entity_stomach_26,Patient_PMC12832199_01,Entity_stomach,ASSOCIATED_WITH,"evidence='...er divided, and the stomach was dissected from...'"
+Edge_PMC12832199_01_Entity_stoma_27,Patient_PMC12832199_01,Entity_stoma,DIAGNOSED_WITH,evidence='...medial side of the stoma...'
+Edge_PMC12832199_01_Entity_stoma_29,Patient_PMC12832199_01,Entity_stoma,DIAGNOSED_WITH,evidence='...t farthest from the stoma toward the bowel si...'
+Edge_PMC12832199_01_Entity_stoma_30,Patient_PMC12832199_01,Entity_stoma,DIAGNOSED_WITH,evidence='...suture line and the stoma opening...'
+Edge_Res_PMC12832199_01_Entity_stoma_Result_PMC12832199_01_5_cm,Entity_stoma,Result_PMC12832199_01_5_cm,HAS_SIZE,measured_attribute
+Edge_PMC12832199_01_Entity_stoma_31,Patient_PMC12832199_01,Entity_stoma,DIAGNOSED_WITH,evidence='...in contact with the stoma and proximal colon...'
+Edge_PMC12832199_01_Entity_gastritis_35,Patient_PMC12832199_01,Entity_gastritis,DIAGNOSED_WITH,evidence='...27 revealed chronic gastritis and linear duodenal...'
+Edge_PMC12832199_01_Entity_endoscopy_35,Patient_PMC12832199_01,Entity_endoscopy,UNDERWENT_EXAM,evidence='...Endoscopy performed on day 27...'
+Edge_PMC12832199_01_Entity_esophagitis_35,Patient_PMC12832199_01,Entity_esophagitis,DIAGNOSED_WITH,"evidence='...origin, and severe esophagitis secondary to reflux...'"
+Edge_PMC12832199_01_Entity_stoma_40,Patient_PMC12832199_01,Entity_stoma,DIAGNOSED_WITH,"evidence='...dominal wall as the stoma, and no recurrence...'"
+Edge_PMC12832199_01_Entity_parastomal_hernia_40,Patient_PMC12832199_01,Entity_parastomal_hernia,RULED_OUT,evidence='...o recurrence of the parastomal hernia was identified...'
+Edge_PMC12832199_01_Entity_sugarbaker_technique_41,Patient_PMC12832199_01,Entity_sugarbaker_technique,DIAGNOSED_WITH,evidence='...ing achieved by the Sugarbaker technique...'

@@ -7,4 +7,5 @@ dependencies = [
     "nltk>=3.10.3",
     "pandas>=3.0.5",
     "pyvis>=0.3.2",
+    "tabulate>=0.10.0",
 ]
