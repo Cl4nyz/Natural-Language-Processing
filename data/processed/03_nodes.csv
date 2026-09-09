@@ -2,8 +2,8 @@ node_id,type,label,attributes
 Patient_PMC5137649_01,Patient,Patient (PMC5137649_01),age=44.0; gender=Female
 Entity_abdominal_pain,Symptom,Abdominal Pain,category=Symptom
 Result_PMC5137649_01_6_cm,ExamResult,6cm,value=6; unit=cm
-Entity_stomach,Anatomy,Stomach,category=Anatomy
 Entity_computed_tomography,Exam,Computed Tomography,category=Exam
+Entity_stomach,Anatomy,Stomach,category=Anatomy
 Result_PMC5137649_01_9_cm,ExamResult,9cm,value=9; unit=cm
 Result_PMC5137649_01_476.5_ng_ml,ExamResult,476.5ng/ml,value=476.5; unit=ng/ml
 Result_PMC5137649_01_6_iu_ml,ExamResult,6iu/ml,value=6; unit=iu/ml
@@ -43,8 +43,8 @@ Result_PMC7102447_01_0.04_ng_mL,ExamResult,0.04 ng/mL,value=0.04; unit=ng/mL
 Result_PMC7102447_01_21.2_ng_mL,ExamResult,21.2 ng/mL,value=21.2; unit=ng/mL
 Result_PMC7102447_01_308_U_L,ExamResult,308 U/L,value=308; unit=U/L
 Result_PMC7102447_01_20.1_mmHg,ExamResult,20.1 mmHg,value=20.1; unit=mmHg
-Entity_stenosis,Diagnosis,Stenosis,category=Diagnosis
 Entity_thrombosis,Diagnosis,Thrombosis,category=Diagnosis
+Entity_stenosis,Diagnosis,Stenosis,category=Diagnosis
 Entity_surgery,Diagnosis,Surgery,category=Diagnosis
 Result_PMC7102447_01_4_mmHg,ExamResult,4 mmHg,value=4; unit=mmHg
 Patient_PMC6354154_01,Patient,Patient (PMC6354154_01),age=30.0; gender=Female
@@ -57,8 +57,8 @@ Result_PMC4782471_01_91_mg,ExamResult,91 mg,value=91; unit=mg
 Result_PMC4782471_01_6_g,ExamResult,6 g,value=6; unit=g
 Entity_blood_transfusion,Diagnosis,Blood Transfusion,category=Diagnosis
 Entity_echocardiography,Exam,Echocardiography,category=Exam
-Entity_endocarditis,Diagnosis,Endocarditis,category=Diagnosis
 Entity_infective_endocarditis,Exam,Infective Endocarditis,category=Exam
+Entity_endocarditis,Diagnosis,Endocarditis,category=Diagnosis
 Entity_leucocytosis,Diagnosis,Leucocytosis,category=Diagnosis
 Patient_PMC4835621_01,Patient,Patient (PMC4835621_01),age=81.0; gender=Female
 Entity_basis,Diagnosis,Basis,category=Diagnosis
@@ -138,8 +138,8 @@ Result_PMC6134951_01_50_mg,ExamResult,50 mg,value=50; unit=mg
 Entity_brigatinib,Diagnosis,Brigatinib,category=Diagnosis
 Patient_PMC6343374_01,Patient,Patient (PMC6343374_01),age=0.0; gender=Male
 Result_PMC6343374_01_2760_g,ExamResult,2760 g,value=2760; unit=g
-Entity_twin,Diagnosis,Twin,category=Diagnosis
 Entity_infant,Diagnosis,Infant,category=Diagnosis
+Entity_twin,Diagnosis,Twin,category=Diagnosis
 Entity_interrupted_aortic_arch,Diagnosis,Interrupted Aortic Arch,category=Diagnosis
 Entity_ventricular_septal_defect,Exam,Ventricular Septal Defect,category=Exam
 Entity_sternotomy,Exam,Sternotomy,category=Exam
@@ -224,8 +224,8 @@ Entity_caspr2,Diagnosis,Caspr2,category=Diagnosis
 Entity_encephalitis,Diagnosis,Encephalitis,category=Diagnosis
 Entity_sclerosis,Diagnosis,Sclerosis,category=Diagnosis
 Patient_PMC4630775_01,Patient,Patient (PMC4630775_01),age=39.0; gender=Female
-Entity_neonatal_compartment_syndrome,Diagnosis,Neonatal Compartment Syndrome,category=Diagnosis
 Entity_compartment_syndrome,Diagnosis,Compartment Syndrome,category=Diagnosis
+Entity_neonatal_compartment_syndrome,Diagnosis,Neonatal Compartment Syndrome,category=Diagnosis
 Patient_PMC2700431_01,Patient,Patient (PMC2700431_01),age=35.0; gender=Male
 Entity_hepatitis,Diagnosis,Hepatitis,category=Diagnosis
 Entity_pneumothorax,Diagnosis,Pneumothorax,category=Diagnosis
@@ -278,9 +278,9 @@ Patient_PMC4828947_01,Patient,Patient (PMC4828947_01),age=61.0; gender=Male
 Result_PMC4828947_01_1200_mg,ExamResult,1200 mg,value=1200; unit=mg
 Result_PMC4828947_01_1500_mg,ExamResult,1500 mg,value=1500; unit=mg
 Entity_meningitis,Diagnosis,Meningitis,category=Diagnosis
+Entity_lesionectomy,Symptom,Lesionectomy,category=Symptom
 Entity_amygdalohippocampectomy,Exam,Amygdalohippocampectomy,category=Exam
 Entity_lobectomy,Exam,Lobectomy,category=Exam
-Entity_lesionectomy,Symptom,Lesionectomy,category=Symptom
 Entity_ganglioglioma,Diagnosis,Ganglioglioma,category=Diagnosis
 Patient_PMC7086412_01,Patient,Patient (PMC7086412_01),age=34.0; gender=Female
 Patient_PMC7086412_02,Patient,Patient (PMC7086412_02),age=31.0; gender=Female
@@ -382,8 +382,8 @@ Result_PMC10521634_01_11.5_g_dl,ExamResult,11.5g/dl,value=11.5; unit=g/dl
 Result_PMC10521634_01_5_mg,ExamResult,5mg,value=5; unit=mg
 Result_PMC10521634_01_300_mg,ExamResult,300 mg,value=300; unit=mg
 Entity_thrombocytosis,Diagnosis,Thrombocytosis,category=Diagnosis
-Entity_ileostomy,Exam,Ileostomy,category=Exam
 Entity_colectomy,Exam,Colectomy,category=Exam
+Entity_ileostomy,Exam,Ileostomy,category=Exam
 Result_PMC10521634_01_120_cm,ExamResult,120 cm,value=120; unit=cm
 Result_PMC10521634_01_5_mg_kg,ExamResult,5mg/kg,value=5; unit=mg/kg
 Entity_cryptitis,Diagnosis,Cryptitis,category=Diagnosis
@@ -431,8 +431,8 @@ Entity_leiomyoma,Diagnosis,Leiomyoma,category=Diagnosis
 Result_PMC11345641_01_289_U_L,ExamResult,289U/L,value=289; unit=U/L
 Result_PMC11345641_01_4_cm,ExamResult,4cm,value=4; unit=cm
 Result_PMC11345641_01_6_cm,ExamResult,6cm,value=6; unit=cm
-Entity_salpingectomy,Exam,Salpingectomy,category=Exam
 Entity_hysterectomy,Exam,Hysterectomy,category=Exam
+Entity_salpingectomy,Exam,Salpingectomy,category=Exam
 Result_PMC11345641_01_12_cm,ExamResult,12 cm,value=12; unit=cm
 Result_PMC11345641_01_8_cm,ExamResult,8 cm,value=8; unit=cm
 Result_PMC11345641_01_340_U_L,ExamResult,340 U/L,value=340; unit=U/L
@@ -443,8 +443,8 @@ Result_PMC11345641_01_7_cm,ExamResult,7 cm,value=7; unit=cm
 Entity_undifferentiated_sarcomas,Diagnosis,Undifferentiated Sarcomas,category=Diagnosis
 Entity_hydronephrosis,Diagnosis,Hydronephrosis,category=Diagnosis
 Patient_PMC11723754_01,Patient,Patient (PMC11723754_01),age=0.0; gender=Male
-Entity_pressure_injury,Diagnosis,Pressure Injury,category=Diagnosis
 Entity_spinal_cord_injury,Diagnosis,Spinal Cord Injury,category=Diagnosis
+Entity_pressure_injury,Diagnosis,Pressure Injury,category=Diagnosis
 Result_PMC11723754_01_7_g_dl,ExamResult,7g/dl,value=7; unit=g/dl
 Entity_orthosis,Diagnosis,Orthosis,category=Diagnosis
 Entity_neurorehabilitation,Diagnosis,Neurorehabilitation,category=Diagnosis
@@ -458,8 +458,8 @@ Result_PMC11722600_01_55_mg_L,ExamResult,55 mg/L,value=55; unit=mg/L
 Result_PMC11722600_01_5_mg_L,ExamResult,5 mg/L,value=5; unit=mg/L
 Result_PMC11722600_01_4_cm,ExamResult,4 cm,value=4; unit=cm
 Entity_appendicitis,Diagnosis,Appendicitis,category=Diagnosis
-Entity_appendectomy,Exam,Appendectomy,category=Exam
 Entity_laparoscopic_appendectomy,Exam,Laparoscopic Appendectomy,category=Exam
+Entity_appendectomy,Exam,Appendectomy,category=Exam
 Entity_endometriosis,Diagnosis,Endometriosis,category=Diagnosis
 Patient_PMC11722600_02,Patient,Patient (PMC11722600_02),age=44.0; gender=Female
 Result_PMC11722600_02_85_mg_L,ExamResult,85 mg/L,value=85; unit=mg/L
