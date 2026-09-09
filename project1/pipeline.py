@@ -4,7 +4,14 @@ import json
 
 import pandas as pd
 
-from project1.nlp_utils import clean_text, extract_measurements, split_sentences, tokenize
+from project1.nlp_utils import (
+    clean_text,
+    extract_measurements,
+    extract_reference_range_candidates,
+    extract_temporal_candidates,
+    split_sentences,
+    tokenize,
+)
 
 
 def load_cases(cases_path, metadata_path, case_ids):
@@ -70,7 +77,7 @@ def write_mermaid(case_id, measurements, output_path):
         label = measurement["original_span"].replace('"', "'").replace("\n", " ")
         lines.append(f'    {node_id}["Measurement: {label}"]')
     lines.append(
-        "    %% No edges: clinical/structural relations were not approved in Iteration 1."
+        "    %% No edges: clinical/structural relations have not been approved."
     )
     output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -88,15 +95,21 @@ def run_pipeline(cases_path, metadata_path, output_dir, case_ids):
     all_sentences = []
     all_tokens = []
     all_measurements = []
+    all_temporal_candidates = []
+    all_reference_candidates = []
 
     for case in selected_output.itertuples(index=False):
         sentences = split_sentences(case.case_id, case.original_text)
         tokens = [token for sentence in sentences for token in tokenize(sentence)]
         measurements = extract_measurements(sentences)
+        temporal_candidates = extract_temporal_candidates(sentences)
+        reference_candidates = extract_reference_range_candidates(sentences)
 
         all_sentences.extend(sentences)
         all_tokens.extend(tokens)
         all_measurements.extend(measurements)
+        all_temporal_candidates.extend(temporal_candidates)
+        all_reference_candidates.extend(reference_candidates)
         write_mermaid(case.case_id, measurements, mermaid_dir / f"{case.case_id}.mmd")
 
     patient_nodes = []
@@ -122,6 +135,12 @@ def run_pipeline(cases_path, metadata_path, output_dir, case_ids):
     pd.DataFrame(prepare_entities_for_csv(all_measurements)).to_csv(
         output_dir / "measurements.csv", index=False
     )
+    pd.DataFrame(prepare_entities_for_csv(all_temporal_candidates)).to_csv(
+        output_dir / "temporal_candidates.csv", index=False
+    )
+    pd.DataFrame(prepare_entities_for_csv(all_reference_candidates)).to_csv(
+        output_dir / "reference_range_candidates.csv", index=False
+    )
     pd.DataFrame(prepare_entities_for_csv(patient_nodes + all_measurements)).to_csv(
         output_dir / "nodes.csv", index=False
     )
@@ -141,6 +160,8 @@ def run_pipeline(cases_path, metadata_path, output_dir, case_ids):
         "sentences": len(all_sentences),
         "tokens": len(all_tokens),
         "measurements": len(all_measurements),
+        "temporal_candidates": len(all_temporal_candidates),
+        "reference_range_candidates": len(all_reference_candidates),
         "edges": 0,
         "per_case": {},
     }
@@ -149,6 +170,12 @@ def run_pipeline(cases_path, metadata_path, output_dir, case_ids):
             "sentences": sum(row["case_id"] == case_id for row in all_sentences),
             "tokens": sum(row["case_id"] == case_id for row in all_tokens),
             "measurements": sum(row["case_id"] == case_id for row in all_measurements),
+            "temporal_candidates": sum(
+                row["case_id"] == case_id for row in all_temporal_candidates
+            ),
+            "reference_range_candidates": sum(
+                row["case_id"] == case_id for row in all_reference_candidates
+            ),
         }
 
     (output_dir / "summary.json").write_text(

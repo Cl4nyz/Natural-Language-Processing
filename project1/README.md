@@ -1,8 +1,8 @@
 # Primeira entrega
 
 Esta pasta contém a base do pipeline de NLP desenvolvida para a primeira entrega.
-A implementação atual processa cinco casos clínicos e extrai medições mediante
-expressões regulares.
+A implementação atual processa cinco casos clínicos e extrai medições, candidatos
+temporais e candidatos a intervalos de referência mediante expressões regulares.
 
 ## Estrutura
 
@@ -12,7 +12,7 @@ project1/
 ├── pipeline.py           carga, validação e geração dos resultados
 ├── nlp_utils.py          limpeza, sentenças, tokens e medições
 ├── tests/                testes automatizados
-├── results/iteration_1/  arquivos CSV, JSON e Mermaid
+├── results/              resultados preservados por iteração
 └── docs/                 relatório técnico
 ```
 
@@ -32,8 +32,13 @@ O arquivo `main.py` da raiz não é utilizado.
 - 5 casos processados;
 - 88 sentenças;
 - 2.097 tokens;
-- 48 medições;
-- 53 nós preliminares;
+- 44 medições;
+- 19 candidatos temporais;
+- 3 candidatos a intervalos de referência;
+- 49 nós preliminares;
 - nenhuma relação clínica, pois essa etapa ainda não foi aprovada.
 
 Os offsets usam intervalos `[start_char, end_char)` sobre o texto original.
+Os candidatos temporais e de referência não são transformados em nós do grafo.
+O estado atual corresponde ao ajuste posterior à Iteração 1 e está salvo em
+`results/post_iteration_1/`; `results/iteration_1/` conserva a saída anterior.
