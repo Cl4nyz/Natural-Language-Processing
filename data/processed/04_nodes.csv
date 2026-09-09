@@ -1,0 +1,257 @@
+entity_id,case_id,sentence_id,type,original_span,normalized_label,start_char,end_char,attributes,rule_id
+PMC5137649_01_PATIENT,PMC5137649_01,,Patient,,patient,,,{},structural_patient_per_case_v1
+PMC11722600_01_PATIENT,PMC11722600_01,,Patient,,patient,,,{},structural_patient_per_case_v1
+PMC11783470_01_PATIENT,PMC11783470_01,,Patient,,patient,,,{},structural_patient_per_case_v1
+PMC2817501_01_PATIENT,PMC2817501_01,,Patient,,patient,,,{},structural_patient_per_case_v1
+PMC11368112_01_PATIENT,PMC11368112_01,,Patient,,patient,,,{},structural_patient_per_case_v1
+PMC5137649_01_M0001,PMC5137649_01,3.0,Measurement,6cm,6 cm,337.0,340.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""cm"", ""value"": 6}",measurement_value_unit_v1
+PMC5137649_01_M0002,PMC5137649_01,4.0,Measurement,6cm x 9cm,6 cm x 9 cm,516.0,525.0,"{""measurement_type"": ""dimension"", ""units"": [""cm"", ""cm""], ""values"": [6, 9]}",measurement_dimension_v1
+PMC5137649_01_M0003,PMC5137649_01,5.0,Measurement,"12,476.5ng/ml",12476.5 ng/mL,777.0,790.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""ng/mL"", ""value"": 12476.5}",measurement_value_unit_v1
+PMC5137649_01_M0004,PMC5137649_01,5.0,Measurement,6iu/ml,6 IU/mL,837.0,843.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""IU/mL"", ""value"": 6}",measurement_value_unit_v1
+PMC5137649_01_M0005,PMC5137649_01,16.0,Measurement,9.5cm x 4.5cm x 2.0cm,9.5 cm x 4.5 cm x 2 cm,2073.0,2094.0,"{""measurement_type"": ""dimension"", ""units"": [""cm"", ""cm"", ""cm""], ""values"": [9.5, 4.5, 2]}",measurement_dimension_v1
+PMC11722600_01_M0001,PMC11722600_01,7.0,Measurement,8800/mm3,8800 /mm3,576.0,584.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""/mm3"", ""value"": 8800}",measurement_value_unit_v1
+PMC11722600_01_M0002,PMC11722600_01,7.0,Measurement,"3800-10,000/mm3",3800-10000 /mm3,604.0,619.0,"{""high"": 10000, ""low"": 3800, ""measurement_type"": ""range"", ""unit"": ""/mm3""}",measurement_range_v1
+PMC11722600_01_M0003,PMC11722600_01,7.0,Measurement,55 mg/L,55 mg/L,650.0,657.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mg/L"", ""value"": 55}",measurement_value_unit_v1
+PMC11722600_01_M0004,PMC11722600_01,7.0,Measurement,<5 mg/L,<5 mg/L,662.0,669.0,"{""comparator"": ""<"", ""measurement_type"": ""simple_measurement"", ""unit"": ""mg/L"", ""value"": 5}",measurement_value_unit_v1
+PMC11722600_01_M0005,PMC11722600_01,7.0,Measurement,29 mm/h,29 mm/h,706.0,713.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mm/h"", ""value"": 29}",measurement_value_unit_v1
+PMC11722600_01_M0006,PMC11722600_01,7.0,Measurement,3-20 mm/h,3-20 mm/h,718.0,727.0,"{""high"": 20, ""low"": 3, ""measurement_type"": ""range"", ""unit"": ""mm/h""}",measurement_range_v1
+PMC11722600_01_M0007,PMC11722600_01,9.0,Measurement,8 mm,8 mm,991.0,995.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mm"", ""value"": 8}",measurement_value_unit_v1
+PMC11722600_01_M0008,PMC11722600_01,9.0,Measurement,4 cm,4 cm,1074.0,1078.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""cm"", ""value"": 4}",measurement_value_unit_v1
+PMC11783470_01_M0001,PMC11783470_01,6.0,Measurement,11.5 g/dL,11.5 g/dL,419.0,428.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""g/dL"", ""value"": 11.5}",measurement_value_unit_v1
+PMC11783470_01_M0002,PMC11783470_01,6.0,Measurement,12.8%,12.8 %,453.0,458.0,"{""measurement_type"": ""percentage"", ""unit"": ""%"", ""value"": 12.8}",measurement_percentage_v1
+PMC11783470_01_M0003,PMC11783470_01,6.0,Measurement,200 ng/mL,200 ng/mL,469.0,478.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""ng/mL"", ""value"": 200}",measurement_value_unit_v1
+PMC11783470_01_M0004,PMC11783470_01,6.0,Measurement,76 mcg/dL,76 mcg/dL,489.0,498.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mcg/dL"", ""value"": 76}",measurement_value_unit_v1
+PMC11783470_01_M0005,PMC11783470_01,7.0,Measurement,<20%,<20 %,567.0,571.0,"{""comparator"": ""<"", ""measurement_type"": ""percentage"", ""unit"": ""%"", ""value"": 20}",measurement_percentage_v1
+PMC11783470_01_M0006,PMC11783470_01,8.0,Measurement,7-mm,7 mm,731.0,735.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mm"", ""value"": 7}",measurement_value_unit_v1
+PMC2817501_01_M0001,PMC2817501_01,3.0,Measurement,120/80 mmHg,120/80 mmHg,336.0,347.0,"{""diastolic"": 80, ""measurement_type"": ""blood_pressure"", ""systolic"": 120, ""unit"": ""mmHg""}",measurement_blood_pressure_v1
+PMC2817501_01_M0002,PMC2817501_01,3.0,Measurement,92 beats/min,92 beats/min,360.0,372.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""beats/min"", ""value"": 92}",measurement_value_unit_v1
+PMC2817501_01_M0003,PMC2817501_01,5.0,Measurement,30 mmHg,30 mmHg,591.0,598.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mmHg"", ""value"": 30}",measurement_value_unit_v1
+PMC2817501_01_M0004,PMC2817501_01,5.0,Measurement,20 mmHg,20 mmHg,677.0,684.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mmHg"", ""value"": 20}",measurement_value_unit_v1
+PMC2817501_01_M0005,PMC2817501_01,5.0,Measurement,1.8 cm2,1.8 cm2,700.0,707.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""cm2"", ""value"": 1.8}",measurement_value_unit_v1
+PMC2817501_01_M0006,PMC2817501_01,5.0,Measurement,30%,30 %,789.0,792.0,"{""measurement_type"": ""percentage"", ""unit"": ""%"", ""value"": 30}",measurement_percentage_v1
+PMC2817501_01_M0007,PMC2817501_01,5.0,Measurement,68 mmHg,68 mmHg,832.0,839.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mmHg"", ""value"": 68}",measurement_value_unit_v1
+PMC2817501_01_M0008,PMC2817501_01,6.0,Measurement,90%,90 %,946.0,949.0,"{""measurement_type"": ""percentage"", ""unit"": ""%"", ""value"": 90}",measurement_percentage_v1
+PMC2817501_01_M0009,PMC2817501_01,9.0,Measurement,29 mm,29 mm,1503.0,1508.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mm"", ""value"": 29}",measurement_value_unit_v1
+PMC2817501_01_M0010,PMC2817501_01,10.0,Measurement,21 mm,21 mm,1830.0,1835.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mm"", ""value"": 21}",measurement_value_unit_v1
+PMC11368112_01_M0001,PMC11368112_01,4.0,Measurement,38.7 C,38.7 C,392.0,398.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""C"", ""value"": 38.7}",measurement_value_unit_v1
+PMC11368112_01_M0002,PMC11368112_01,5.0,Measurement,12.65 x 109/L,12.65 × 10^9/L,504.0,517.0,"{""base"": 10, ""coefficient"": 12.65, ""exponent"": 9, ""measurement_type"": ""scientific_notation"", ""normalization_rule"": ""normalize_degraded_scientific_notation_v1"", ""unit"": ""1/L"", ""value"": 12650000000.0}",measurement_scientific_notation_degraded_v1
+PMC11368112_01_M0003,PMC11368112_01,5.0,Measurement,85%,85 %,532.0,535.0,"{""measurement_type"": ""percentage"", ""unit"": ""%"", ""value"": 85}",measurement_percentage_v1
+PMC11368112_01_M0004,PMC11368112_01,5.0,Measurement,65 mg/L,65 mg/L,542.0,549.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mg/L"", ""value"": 65}",measurement_value_unit_v1
+PMC11368112_01_M0005,PMC11368112_01,5.0,Measurement,55 mm/h,55 mm/h,556.0,563.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mm/h"", ""value"": 55}",measurement_value_unit_v1
+PMC11368112_01_M0006,PMC11368112_01,5.0,Measurement,26.12 mg/L,26.12 mg/L,578.0,588.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mg/L"", ""value"": 26.12}",measurement_value_unit_v1
+PMC11368112_01_M0007,PMC11368112_01,10.0,Measurement,39.5 C,39.5 C,1130.0,1136.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""C"", ""value"": 39.5}",measurement_value_unit_v1
+PMC11368112_01_M0008,PMC11368112_01,11.0,Measurement,39.8 C,39.8 C,1289.0,1295.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""C"", ""value"": 39.8}",measurement_value_unit_v1
+PMC11368112_01_M0009,PMC11368112_01,16.0,Measurement,3 x 3 cm,3 cm x 3 cm,1779.0,1787.0,"{""measurement_type"": ""dimension"", ""units"": [""cm"", ""cm""], ""values"": [3, 3]}",measurement_dimension_v1
+PMC11368112_01_M0010,PMC11368112_01,19.0,Measurement,0.2-0.8 cm,0.2-0.8 cm,2280.0,2290.0,"{""high"": 0.8, ""low"": 0.2, ""measurement_type"": ""range"", ""unit"": ""cm""}",measurement_range_v1
+PMC11368112_01_M0011,PMC11368112_01,23.0,Measurement,80 mg per day,80 mg/day,2966.0,2979.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mg/day"", ""value"": 80}",measurement_value_unit_v1
+PMC11368112_01_M0012,PMC11368112_01,23.0,Measurement,60 mg per day,60 mg/day,3000.0,3013.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mg/day"", ""value"": 60}",measurement_value_unit_v1
+PMC11368112_01_M0013,PMC11368112_01,23.0,Measurement,5 mg,5 mg,3043.0,3047.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mg"", ""value"": 5}",measurement_value_unit_v1
+PMC11368112_01_M0014,PMC11368112_01,23.0,Measurement,5 mg,5 mg,3064.0,3068.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mg"", ""value"": 5}",measurement_value_unit_v1
+PMC11368112_01_M0015,PMC11368112_01,23.0,Measurement,200 mg per day,200 mg/day,3093.0,3107.0,"{""measurement_type"": ""simple_measurement"", ""unit"": ""mg/day"", ""value"": 200}",measurement_value_unit_v1
+PMC5137649_01_C0001,PMC5137649_01,1.0,Symptom,lower quadrant abdominal pain,lower quadrant abdominal pain,70.0,99.0,"{""assertion"": ""present"", ""gazetteer_term"": ""lower quadrant abdominal pain""}",gazetteer_symptom_v1
+PMC5137649_01_C0002,PMC5137649_01,1.0,Symptom,nausea,nausea,116.0,122.0,"{""assertion"": ""present"", ""gazetteer_term"": ""nausea""}",gazetteer_symptom_v1
+PMC5137649_01_C0003,PMC5137649_01,1.0,Symptom,constipation,constipation,127.0,139.0,"{""assertion"": ""present"", ""gazetteer_term"": ""constipation""}",gazetteer_symptom_v1
+PMC5137649_01_C0004,PMC5137649_01,2.0,Exam,physical examination,physical examination,229.0,249.0,"{""assertion"": ""present"", ""gazetteer_term"": ""physical examination""}",gazetteer_exam_v1
+PMC5137649_01_C0005,PMC5137649_01,3.0,Exam,contrast enhanced computed tomography,computed tomography,282.0,319.0,"{""assertion"": ""present"", ""gazetteer_term"": ""contrast enhanced computed tomography""}",gazetteer_exam_v1
+PMC5137649_01_C0006,PMC5137649_01,3.0,Finding,cystic lesion,cystic lesion,341.0,354.0,"{""assertion"": ""present"", ""gazetteer_term"": ""cystic lesion""}",gazetteer_finding_v1
+PMC5137649_01_C0007,PMC5137649_01,3.0,AnatomicalSite,stomach,stomach,367.0,374.0,"{""assertion"": ""present"", ""gazetteer_term"": ""stomach""}",gazetteer_anatomicalsite_v1
+PMC5137649_01_C0008,PMC5137649_01,3.0,AnatomicalSite,body/tail of the pancreas,pancreatic body/tail,379.0,404.0,"{""assertion"": ""present"", ""gazetteer_term"": ""body/tail of the pancreas""}",gazetteer_anatomicalsite_v1
+PMC5137649_01_C0009,PMC5137649_01,4.0,Exam,EUS-FNA,endoscopic ultrasound-guided fine-needle aspiration,441.0,448.0,"{""assertion"": ""present"", ""gazetteer_term"": ""EUS-FNA""}",gazetteer_exam_v1
+PMC5137649_01_C0010,PMC5137649_01,4.0,Finding,normal pancreatic echotexture,normal pancreatic echotexture,465.0,494.0,"{""assertion"": ""present"", ""gazetteer_term"": ""normal pancreatic echotexture""}",gazetteer_finding_v1
+PMC5137649_01_C0011,PMC5137649_01,4.0,Finding,cyst,cyst,501.0,505.0,"{""assertion"": ""present"", ""gazetteer_term"": ""cyst""}",gazetteer_finding_v1
+PMC5137649_01_C0012,PMC5137649_01,4.0,Finding,internal septations,internal septations,543.0,562.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""internal septations""}",gazetteer_finding_v1
+PMC5137649_01_C0013,PMC5137649_01,4.0,Finding,associated masses,associated masses,566.0,583.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""associated masses""}",gazetteer_finding_v1
+PMC5137649_01_C0014,PMC5137649_01,4.0,AnatomicalSite,stomach,stomach,611.0,618.0,"{""assertion"": ""present"", ""gazetteer_term"": ""stomach""}",gazetteer_anatomicalsite_v1
+PMC5137649_01_C0015,PMC5137649_01,5.0,Procedure,FNA,fine-needle aspiration,620.0,623.0,"{""assertion"": ""present"", ""gazetteer_term"": ""FNA""}",gazetteer_procedure_v1
+PMC5137649_01_C0016,PMC5137649_01,5.0,Finding,cyst,cyst,631.0,635.0,"{""assertion"": ""present"", ""gazetteer_term"": ""cyst""}",gazetteer_finding_v1
+PMC5137649_01_C0017,PMC5137649_01,5.0,Diagnosis,malignancy,malignancy,664.0,674.0,"{""assertion"": ""negated"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""malignancy""}",gazetteer_diagnosis_v1
+PMC5137649_01_C0018,PMC5137649_01,5.0,Finding,extracellular mucin,extracellular mucin,704.0,723.0,"{""assertion"": ""present"", ""gazetteer_term"": ""extracellular mucin""}",gazetteer_finding_v1
+PMC5137649_01_C0019,PMC5137649_01,5.0,Diagnosis,mucinous pancreatic cystic neoplasm,mucinous pancreatic cystic neoplasm,875.0,910.0,"{""assertion"": ""present"", ""certainty"": ""suspected"", ""gazetteer_term"": ""mucinous pancreatic cystic neoplasm""}",gazetteer_diagnosis_v1
+PMC5137649_01_C0020,PMC5137649_01,6.0,Procedure,surgical resection,surgical resection,951.0,969.0,"{""assertion"": ""present"", ""gazetteer_term"": ""surgical resection""}",gazetteer_procedure_v1
+PMC5137649_01_C0021,PMC5137649_01,7.0,Procedure,laparoscopic distal pancreatectomy,distal pancreatectomy,977.0,1011.0,"{""assertion"": ""present"", ""gazetteer_term"": ""laparoscopic distal pancreatectomy""}",gazetteer_procedure_v1
+PMC5137649_01_C0022,PMC5137649_01,8.0,Procedure,laparoscopic exploration,laparoscopic exploration,1044.0,1068.0,"{""assertion"": ""present"", ""gazetteer_term"": ""laparoscopic exploration""}",gazetteer_procedure_v1
+PMC5137649_01_C0023,PMC5137649_01,8.0,AnatomicalSite,posterior wall of the stomach,posterior wall of stomach,1139.0,1168.0,"{""assertion"": ""present"", ""gazetteer_term"": ""posterior wall of the stomach""}",gazetteer_anatomicalsite_v1
+PMC5137649_01_C0024,PMC5137649_01,8.0,AnatomicalSite,stomach,stomach,1226.0,1233.0,"{""assertion"": ""present"", ""gazetteer_term"": ""stomach""}",gazetteer_anatomicalsite_v1
+PMC5137649_01_C0025,PMC5137649_01,8.0,AnatomicalSite,pancreas,pancreas,1238.0,1246.0,"{""assertion"": ""present"", ""gazetteer_term"": ""pancreas""}",gazetteer_anatomicalsite_v1
+PMC5137649_01_C0026,PMC5137649_01,9.0,AnatomicalSite,pancreas,pancreas,1252.0,1260.0,"{""assertion"": ""present"", ""gazetteer_term"": ""pancreas""}",gazetteer_anatomicalsite_v1
+PMC5137649_01_C0027,PMC5137649_01,9.0,Finding,cyst,cyst,1287.0,1291.0,"{""assertion"": ""present"", ""gazetteer_term"": ""cyst""}",gazetteer_finding_v1
+PMC5137649_01_C0028,PMC5137649_01,9.0,AnatomicalSite,stomach,stomach,1347.0,1354.0,"{""assertion"": ""present"", ""gazetteer_term"": ""stomach""}",gazetteer_anatomicalsite_v1
+PMC5137649_01_C0029,PMC5137649_01,10.0,Exam,endoscopy,endoscopy,1371.0,1380.0,"{""assertion"": ""present"", ""gazetteer_term"": ""endoscopy""}",gazetteer_exam_v1
+PMC5137649_01_C0030,PMC5137649_01,10.0,Finding,mucosal abnormalities,mucosal abnormalities,1402.0,1423.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""mucosal abnormalities""}",gazetteer_finding_v1
+PMC5137649_01_C0031,PMC5137649_01,10.0,AnatomicalSite,stomach,stomach,1431.0,1438.0,"{""assertion"": ""present"", ""gazetteer_term"": ""stomach""}",gazetteer_anatomicalsite_v1
+PMC5137649_01_C0032,PMC5137649_01,11.0,Finding,cyst,cyst,1481.0,1485.0,"{""assertion"": ""present"", ""gazetteer_term"": ""cyst""}",gazetteer_finding_v1
+PMC5137649_01_C0033,PMC5137649_01,11.0,AnatomicalSite,coeliac axis,coeliac axis,1506.0,1518.0,"{""assertion"": ""present"", ""gazetteer_term"": ""coeliac axis""}",gazetteer_anatomicalsite_v1
+PMC5137649_01_C0034,PMC5137649_01,11.0,Procedure,open resection,open resection,1557.0,1571.0,"{""assertion"": ""present"", ""gazetteer_term"": ""open resection""}",gazetteer_procedure_v1
+PMC5137649_01_C0035,PMC5137649_01,12.0,AnatomicalSite,stomach,stomach,1577.0,1584.0,"{""assertion"": ""present"", ""gazetteer_term"": ""stomach""}",gazetteer_anatomicalsite_v1
+PMC5137649_01_C0036,PMC5137649_01,12.0,Diagnosis,gastric duplication cyst,gastric duplication cyst,1613.0,1637.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""gastric duplication cyst""}",gazetteer_diagnosis_v1
+PMC5137649_01_C0037,PMC5137649_01,13.0,AnatomicalSite,coeliac vessels,coeliac vessels,1712.0,1727.0,"{""assertion"": ""present"", ""gazetteer_term"": ""coeliac vessels""}",gazetteer_anatomicalsite_v1
+PMC5137649_01_C0038,PMC5137649_01,13.0,Finding,cyst,cyst,1759.0,1763.0,"{""assertion"": ""present"", ""gazetteer_term"": ""cyst""}",gazetteer_finding_v1
+PMC5137649_01_C0039,PMC5137649_01,13.0,AnatomicalSite,posterior wall of the stomach,posterior wall of stomach,1792.0,1821.0,"{""assertion"": ""present"", ""gazetteer_term"": ""posterior wall of the stomach""}",gazetteer_anatomicalsite_v1
+PMC5137649_01_C0040,PMC5137649_01,14.0,Exam,oesophagogastroduodenoscopy,esophagogastroduodenoscopy,1868.0,1895.0,"{""assertion"": ""present"", ""gazetteer_term"": ""oesophagogastroduodenoscopy""}",gazetteer_exam_v1
+PMC5137649_01_C0041,PMC5137649_01,14.0,AnatomicalSite,posterior stomach wall,posterior wall of stomach,1950.0,1972.0,"{""assertion"": ""present"", ""gazetteer_term"": ""posterior stomach wall""}",gazetteer_anatomicalsite_v1
+PMC5137649_01_C0042,PMC5137649_01,14.0,Finding,bleeding,bleeding,1992.0,2000.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""bleeding""}",gazetteer_finding_v1
+PMC5137649_01_C0043,PMC5137649_01,14.0,Finding,leak,leak,2004.0,2008.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""leak""}",gazetteer_finding_v1
+PMC5137649_01_C0044,PMC5137649_01,16.0,Exam,Final pathology,histopathology,2046.0,2061.0,"{""assertion"": ""present"", ""gazetteer_term"": ""final pathology""}",gazetteer_exam_v1
+PMC5137649_01_C0045,PMC5137649_01,16.0,Finding,cyst,cyst,2095.0,2099.0,"{""assertion"": ""present"", ""gazetteer_term"": ""cyst""}",gazetteer_finding_v1
+PMC5137649_01_C0046,PMC5137649_01,16.0,Finding,cyst,cyst,2123.0,2127.0,"{""assertion"": ""present"", ""gazetteer_term"": ""cyst""}",gazetteer_finding_v1
+PMC5137649_01_C0047,PMC5137649_01,16.0,Diagnosis,GDC,gastric duplication cyst,2151.0,2154.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""GDC""}",gazetteer_diagnosis_v1
+PMC5137649_01_C0048,PMC5137649_01,18.0,Symptom,nausea,nausea,2349.0,2355.0,"{""assertion"": ""present"", ""gazetteer_term"": ""nausea""}",gazetteer_symptom_v1
+PMC11722600_01_C0001,PMC11722600_01,1.0,Procedure,cesarean section,cesarean section,39.0,55.0,"{""assertion"": ""present"", ""gazetteer_term"": ""cesarean section""}",gazetteer_procedure_v1
+PMC11722600_01_C0002,PMC11722600_01,1.0,Symptom,continuous abdominal pain,abdominal pain,99.0,124.0,"{""assertion"": ""present"", ""gazetteer_term"": ""continuous abdominal pain""}",gazetteer_symptom_v1
+PMC11722600_01_C0003,PMC11722600_01,1.0,AnatomicalSite,right iliac fossa,right iliac fossa,152.0,169.0,"{""assertion"": ""present"", ""gazetteer_term"": ""right iliac fossa""}",gazetteer_anatomicalsite_v1
+PMC11722600_01_C0004,PMC11722600_01,2.0,Symptom,fever,fever,188.0,193.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""fever""}",gazetteer_symptom_v1
+PMC11722600_01_C0005,PMC11722600_01,2.0,Symptom,genitourinary symptoms,genitourinary symptoms,197.0,219.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""genitourinary symptoms""}",gazetteer_symptom_v1
+PMC11722600_01_C0006,PMC11722600_01,4.0,Symptom,dysmenorrhea,dysmenorrhea,295.0,307.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""dysmenorrhea""}",gazetteer_symptom_v1
+PMC11722600_01_C0007,PMC11722600_01,4.0,Symptom,cyclical pelvic pain,cyclical pelvic pain,311.0,331.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""cyclical pelvic pain""}",gazetteer_symptom_v1
+PMC11722600_01_C0008,PMC11722600_01,5.0,Exam,Physical examination,physical examination,334.0,354.0,"{""assertion"": ""present"", ""gazetteer_term"": ""physical examination""}",gazetteer_exam_v1
+PMC11722600_01_C0009,PMC11722600_01,5.0,Symptom,abdominal pain,abdominal pain,364.0,378.0,"{""assertion"": ""present"", ""gazetteer_term"": ""abdominal pain""}",gazetteer_symptom_v1
+PMC11722600_01_C0010,PMC11722600_01,5.0,AnatomicalSite,RIF,right iliac fossa,382.0,385.0,"{""assertion"": ""present"", ""gazetteer_term"": ""RIF""}",gazetteer_anatomicalsite_v1
+PMC11722600_01_C0011,PMC11722600_01,5.0,Sign,localized tenderness,localized tenderness,392.0,412.0,"{""assertion"": ""present"", ""gazetteer_term"": ""localized tenderness""}",gazetteer_sign_v1
+PMC11722600_01_C0012,PMC11722600_01,5.0,AnatomicalSite,RIF,right iliac fossa,420.0,423.0,"{""assertion"": ""present"", ""gazetteer_term"": ""RIF""}",gazetteer_anatomicalsite_v1
+PMC11722600_01_C0013,PMC11722600_01,5.0,Sign,rebound tenderness,rebound tenderness,431.0,449.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""rebound tenderness""}",gazetteer_sign_v1
+PMC11722600_01_C0014,PMC11722600_01,6.0,Sign,McBurney's point,McBurney's point,461.0,477.0,"{""assertion"": ""present"", ""gazetteer_term"": ""McBurney's point""}",gazetteer_sign_v1
+PMC11722600_01_C0015,PMC11722600_01,6.0,Sign,obturator sign,obturator sign,499.0,513.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""obturator sign""}",gazetteer_sign_v1
+PMC11722600_01_C0016,PMC11722600_01,8.0,Exam,ultrasound,ultrasound,820.0,830.0,"{""assertion"": ""present"", ""gazetteer_term"": ""ultrasound""}",gazetteer_exam_v1
+PMC11722600_01_C0017,PMC11722600_01,8.0,Finding,free fluid,free fluid,843.0,853.0,"{""assertion"": ""present"", ""gazetteer_term"": ""free fluid""}",gazetteer_finding_v1
+PMC11722600_01_C0018,PMC11722600_01,8.0,AnatomicalSite,Pouch of Douglas,pouch of Douglas,861.0,877.0,"{""assertion"": ""present"", ""gazetteer_term"": ""Pouch of Douglas""}",gazetteer_anatomicalsite_v1
+PMC11722600_01_C0019,PMC11722600_01,9.0,Exam,CT,computed tomography,895.0,897.0,"{""assertion"": ""present"", ""gazetteer_term"": ""CT""}",gazetteer_exam_v1
+PMC11722600_01_C0020,PMC11722600_01,9.0,Finding,enlarged cecal appendix,enlarged cecal appendix,957.0,980.0,"{""assertion"": ""present"", ""gazetteer_term"": ""enlarged cecal appendix""}",gazetteer_finding_v1
+PMC11722600_01_C0021,PMC11722600_01,9.0,Finding,inflammatory changes,inflammatory changes,1014.0,1034.0,"{""assertion"": ""present"", ""gazetteer_term"": ""inflammatory changes""}",gazetteer_finding_v1
+PMC11722600_01_C0022,PMC11722600_01,9.0,Finding,enlarged right ovary,enlarged right ovary,1043.0,1063.0,"{""assertion"": ""present"", ""gazetteer_term"": ""enlarged right ovary""}",gazetteer_finding_v1
+PMC11722600_01_C0023,PMC11722600_01,10.0,Procedure,Laparoscopic exploration,laparoscopic exploration,1081.0,1105.0,"{""assertion"": ""present"", ""gazetteer_term"": ""laparoscopic exploration""}",gazetteer_procedure_v1
+PMC11722600_01_C0024,PMC11722600_01,10.0,Diagnosis,phlegmonous appendicitis,phlegmonous appendicitis,1134.0,1158.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""phlegmonous appendicitis""}",gazetteer_diagnosis_v1
+PMC11722600_01_C0025,PMC11722600_01,10.0,AnatomicalSite,appendix,appendix,1192.0,1200.0,"{""assertion"": ""present"", ""gazetteer_term"": ""appendix""}",gazetteer_anatomicalsite_v1
+PMC11722600_01_C0026,PMC11722600_01,10.0,Finding,inflammatory congestion,inflammatory congestion,1335.0,1358.0,"{""assertion"": ""present"", ""gazetteer_term"": ""inflammatory congestion""}",gazetteer_finding_v1
+PMC11722600_01_C0027,PMC11722600_01,10.0,AnatomicalSite,right fallopian tube,right fallopian tube,1366.0,1386.0,"{""assertion"": ""present"", ""gazetteer_term"": ""right fallopian tube""}",gazetteer_anatomicalsite_v1
+PMC11722600_01_C0028,PMC11722600_01,11.0,Procedure,laparoscopic appendectomy,appendectomy,1390.0,1415.0,"{""assertion"": ""present"", ""gazetteer_term"": ""laparoscopic appendectomy""}",gazetteer_procedure_v1
+PMC11722600_01_C0029,PMC11722600_01,11.0,Procedure,salpingectomy,salpingectomy,1485.0,1498.0,"{""assertion"": ""present"", ""gazetteer_term"": ""salpingectomy""}",gazetteer_procedure_v1
+PMC11722600_01_C0030,PMC11722600_01,12.0,Diagnosis,endometriosis,endometriosis,1581.0,1594.0,"{""assertion"": ""negated"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""endometriosis""}",gazetteer_diagnosis_v1
+PMC11722600_01_C0031,PMC11722600_01,14.0,Exam,Histopathology,histopathology,1694.0,1708.0,"{""assertion"": ""present"", ""gazetteer_term"": ""histopathology""}",gazetteer_exam_v1
+PMC11722600_01_C0032,PMC11722600_01,14.0,AnatomicalSite,appendix,appendix,1716.0,1724.0,"{""assertion"": ""present"", ""gazetteer_term"": ""appendix""}",gazetteer_anatomicalsite_v1
+PMC11722600_01_C0033,PMC11722600_01,14.0,Finding,endometrial stroma,endometrial stroma,1759.0,1777.0,"{""assertion"": ""present"", ""gazetteer_term"": ""endometrial stroma""}",gazetteer_finding_v1
+PMC11722600_01_C0034,PMC11722600_01,14.0,AnatomicalSite,muscularis layer,muscularis layer,1789.0,1805.0,"{""assertion"": ""present"", ""gazetteer_term"": ""muscularis layer""}",gazetteer_anatomicalsite_v1
+PMC11722600_01_C0035,PMC11722600_01,14.0,AnatomicalSite,appendix,appendix,1813.0,1821.0,"{""assertion"": ""present"", ""gazetteer_term"": ""appendix""}",gazetteer_anatomicalsite_v1
+PMC11722600_01_C0036,PMC11722600_01,14.0,Diagnosis,endometriosis,endometriosis,1837.0,1850.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""endometriosis""}",gazetteer_diagnosis_v1
+PMC11722600_01_C0037,PMC11722600_01,14.0,Finding,bleeding,bleeding,1879.0,1887.0,"{""assertion"": ""present"", ""gazetteer_term"": ""bleeding""}",gazetteer_finding_v1
+PMC11722600_01_C0038,PMC11722600_01,14.0,Finding,endometrial glands,endometrial glands,2037.0,2055.0,"{""assertion"": ""present"", ""gazetteer_term"": ""endometrial glands""}",gazetteer_finding_v1
+PMC11722600_01_C0039,PMC11722600_01,14.0,Finding,endometrial stroma,endometrial stroma,2086.0,2104.0,"{""assertion"": ""present"", ""gazetteer_term"": ""endometrial stroma""}",gazetteer_finding_v1
+PMC11722600_01_C0040,PMC11722600_01,14.0,AnatomicalSite,muscular layer,muscular layer,2116.0,2130.0,"{""assertion"": ""present"", ""gazetteer_term"": ""muscular layer""}",gazetteer_anatomicalsite_v1
+PMC11722600_01_C0041,PMC11722600_01,15.0,AnatomicalSite,fallopian tube,fallopian tube,2164.0,2178.0,"{""assertion"": ""present"", ""gazetteer_term"": ""fallopian tube""}",gazetteer_anatomicalsite_v1
+PMC11722600_01_C0042,PMC11722600_01,15.0,Exam,histology,histopathology,2179.0,2188.0,"{""assertion"": ""present"", ""gazetteer_term"": ""histology""}",gazetteer_exam_v1
+PMC11722600_01_C0043,PMC11722600_01,15.0,Finding,endometrial glands,endometrial glands,2196.0,2214.0,"{""assertion"": ""present"", ""gazetteer_term"": ""endometrial glands""}",gazetteer_finding_v1
+PMC11722600_01_C0044,PMC11722600_01,15.0,Diagnosis,malignancy,malignancy,2240.0,2250.0,"{""assertion"": ""negated"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""malignancy""}",gazetteer_diagnosis_v1
+PMC11783470_01_C0001,PMC11783470_01,1.0,Diagnosis,IDA,iron deficiency anemia,43.0,46.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""IDA""}",gazetteer_diagnosis_v1
+PMC11783470_01_C0002,PMC11783470_01,2.0,Symptom,menorrhagia,menorrhagia,63.0,74.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""menorrhagia""}",gazetteer_symptom_v1
+PMC11783470_01_C0003,PMC11783470_01,2.0,Diagnosis,gastrointestinal malignancy,gastrointestinal malignancy,96.0,123.0,"{""assertion"": ""negated"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""gastrointestinal malignancy""}",gazetteer_diagnosis_v1
+PMC11783470_01_C0004,PMC11783470_01,3.0,Symptom,dysphagia,dysphagia,136.0,145.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""dysphagia""}",gazetteer_symptom_v1
+PMC11783470_01_C0005,PMC11783470_01,3.0,Symptom,odynophagia,odynophagia,147.0,158.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""odynophagia""}",gazetteer_symptom_v1
+PMC11783470_01_C0006,PMC11783470_01,3.0,Symptom,heartburn,heartburn,160.0,169.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""heartburn""}",gazetteer_symptom_v1
+PMC11783470_01_C0007,PMC11783470_01,3.0,Symptom,nausea,nausea,171.0,177.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""nausea""}",gazetteer_symptom_v1
+PMC11783470_01_C0008,PMC11783470_01,3.0,Symptom,vomiting,vomiting,179.0,187.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""vomiting""}",gazetteer_symptom_v1
+PMC11783470_01_C0009,PMC11783470_01,3.0,Symptom,abdominal pain,abdominal pain,189.0,203.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""abdominal pain""}",gazetteer_symptom_v1
+PMC11783470_01_C0010,PMC11783470_01,3.0,Symptom,altered bowel habits,altered bowel habits,205.0,225.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""altered bowel habits""}",gazetteer_symptom_v1
+PMC11783470_01_C0011,PMC11783470_01,3.0,Symptom,melena,melena,227.0,233.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""melena""}",gazetteer_symptom_v1
+PMC11783470_01_C0012,PMC11783470_01,3.0,Symptom,hematochezia,hematochezia,235.0,247.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""hematochezia""}",gazetteer_symptom_v1
+PMC11783470_01_C0013,PMC11783470_01,3.0,Symptom,unintentional weight loss,unintentional weight loss,253.0,278.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""unintentional weight loss""}",gazetteer_symptom_v1
+PMC11783470_01_C0014,PMC11783470_01,5.0,Exam,Physical examination,physical examination,306.0,326.0,"{""assertion"": ""present"", ""gazetteer_term"": ""physical examination""}",gazetteer_exam_v1
+PMC11783470_01_C0015,PMC11783470_01,5.0,Sign,conjunctival pallor,conjunctival pallor,370.0,389.0,"{""assertion"": ""present"", ""gazetteer_term"": ""conjunctival pallor""}",gazetteer_sign_v1
+PMC11783470_01_C0016,PMC11783470_01,7.0,Diagnosis,iron deficiency,iron deficiency,588.0,603.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""iron deficiency""}",gazetteer_diagnosis_v1
+PMC11783470_01_C0017,PMC11783470_01,7.0,Exam,esophagogastroduodenoscopy,esophagogastroduodenoscopy,630.0,656.0,"{""assertion"": ""present"", ""gazetteer_term"": ""esophagogastroduodenoscopy""}",gazetteer_exam_v1
+PMC11783470_01_C0018,PMC11783470_01,7.0,Exam,colonoscopy,colonoscopy,667.0,678.0,"{""assertion"": ""present"", ""gazetteer_term"": ""colonoscopy""}",gazetteer_exam_v1
+PMC11783470_01_C0019,PMC11783470_01,7.0,Diagnosis,IDA,iron deficiency anemia,724.0,727.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""IDA""}",gazetteer_diagnosis_v1
+PMC11783470_01_C0020,PMC11783470_01,8.0,Exam,EGD,esophagogastroduodenoscopy,772.0,775.0,"{""assertion"": ""present"", ""gazetteer_term"": ""EGD""}",gazetteer_exam_v1
+PMC11783470_01_C0021,PMC11783470_01,8.0,Procedure,biopsy,biopsy,857.0,863.0,"{""assertion"": ""present"", ""gazetteer_term"": ""biopsy""}",gazetteer_procedure_v1
+PMC11783470_01_C0022,PMC11783470_01,9.0,Procedure,Biopsy,biopsy,880.0,886.0,"{""assertion"": ""present"", ""gazetteer_term"": ""biopsy""}",gazetteer_procedure_v1
+PMC11783470_01_C0023,PMC11783470_01,9.0,Finding,well-circumscribed proliferation of chief cells,chief cell proliferation,922.0,969.0,"{""assertion"": ""present"", ""gazetteer_term"": ""well-circumscribed proliferation of chief cells""}",gazetteer_finding_v1
+PMC11783470_01_C0024,PMC11783470_01,9.0,Diagnosis,OGA,oxyntic gland adenoma,1023.0,1026.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""OGA""}",gazetteer_diagnosis_v1
+PMC11783470_01_C0025,PMC11783470_01,10.0,Diagnosis,celiac disease,celiac disease,1080.0,1094.0,"{""assertion"": ""negated"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""celiac disease""}",gazetteer_diagnosis_v1
+PMC11783470_01_C0026,PMC11783470_01,10.0,Exam,ileocolonoscopy,ileocolonoscopy,1100.0,1115.0,"{""assertion"": ""present"", ""gazetteer_term"": ""ileocolonoscopy""}",gazetteer_exam_v1
+PMC11783470_01_C0027,PMC11783470_01,10.0,Finding,bleeding source,bleeding source,1137.0,1152.0,"{""assertion"": ""negated"", ""gazetteer_term"": ""bleeding source""}",gazetteer_finding_v1
+PMC11783470_01_C0028,PMC11783470_01,11.0,Diagnosis,OGA,oxyntic gland adenoma,1190.0,1193.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""OGA""}",gazetteer_diagnosis_v1
+PMC11783470_01_C0029,PMC11783470_01,12.0,Exam,EGD,esophagogastroduodenoscopy,1269.0,1272.0,"{""assertion"": ""present"", ""gazetteer_term"": ""EGD""}",gazetteer_exam_v1
+PMC11783470_01_C0030,PMC11783470_01,12.0,Procedure,endoscopic resection,endoscopic resection,1277.0,1297.0,"{""assertion"": ""present"", ""gazetteer_term"": ""endoscopic resection""}",gazetteer_procedure_v1
+PMC11783470_01_C0031,PMC11783470_01,13.0,Diagnosis,OGA,oxyntic gland adenoma,1390.0,1393.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""OGA""}",gazetteer_diagnosis_v1
+PMC11783470_01_C0032,PMC11783470_01,14.0,Symptom,menorrhagia,menorrhagia,1426.0,1437.0,"{""assertion"": ""present"", ""gazetteer_term"": ""menorrhagia""}",gazetteer_symptom_v1
+PMC11783470_01_C0033,PMC11783470_01,14.0,Exam,endoscopy,endoscopy,1465.0,1474.0,"{""assertion"": ""present"", ""gazetteer_term"": ""endoscopy""}",gazetteer_exam_v1
+PMC11783470_01_C0034,PMC11783470_01,14.0,Exam,endoscopy,endoscopy,1570.0,1579.0,"{""assertion"": ""present"", ""gazetteer_term"": ""endoscopy""}",gazetteer_exam_v1
+PMC11783470_01_C0035,PMC11783470_01,15.0,Exam,EGD,esophagogastroduodenoscopy,1651.0,1654.0,"{""assertion"": ""present"", ""gazetteer_term"": ""EGD""}",gazetteer_exam_v1
+PMC11783470_01_C0036,PMC11783470_01,15.0,Diagnosis,OGA,oxyntic gland adenoma,1708.0,1711.0,"{""assertion"": ""negated"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""OGA""}",gazetteer_diagnosis_v1
+PMC2817501_01_C0001,PMC2817501_01,1.0,Symptom,dyspnea,dyspnea,62.0,69.0,"{""assertion"": ""present"", ""gazetteer_term"": ""dyspnea""}",gazetteer_symptom_v1
+PMC2817501_01_C0002,PMC2817501_01,1.0,Symptom,angina,angina,74.0,80.0,"{""assertion"": ""present"", ""gazetteer_term"": ""angina""}",gazetteer_symptom_v1
+PMC2817501_01_C0003,PMC2817501_01,2.0,Procedure,aortic valve replacement,aortic valve replacement,93.0,117.0,"{""assertion"": ""present"", ""gazetteer_term"": ""aortic valve replacement""}",gazetteer_procedure_v1
+PMC2817501_01_C0004,PMC2817501_01,3.0,Exam,physical examination,physical examination,269.0,289.0,"{""assertion"": ""present"", ""gazetteer_term"": ""physical examination""}",gazetteer_exam_v1
+PMC2817501_01_C0005,PMC2817501_01,3.0,Sign,left hemiparesis,left hemiparesis,299.0,315.0,"{""assertion"": ""present"", ""gazetteer_term"": ""left hemiparesis""}",gazetteer_sign_v1
+PMC2817501_01_C0006,PMC2817501_01,4.0,Sign,systolic murmur,systolic murmur,422.0,437.0,"{""assertion"": ""present"", ""gazetteer_term"": ""systolic murmur""}",gazetteer_sign_v1
+PMC2817501_01_C0007,PMC2817501_01,4.0,Sign,rales,rales,442.0,447.0,"{""assertion"": ""present"", ""gazetteer_term"": ""rales""}",gazetteer_sign_v1
+PMC2817501_01_C0008,PMC2817501_01,4.0,AnatomicalSite,lungs,lungs,478.0,483.0,"{""assertion"": ""present"", ""gazetteer_term"": ""lungs""}",gazetteer_anatomicalsite_v1
+PMC2817501_01_C0009,PMC2817501_01,5.0,Exam,Transesophageal echocardiography,transesophageal echocardiography,485.0,517.0,"{""assertion"": ""present"", ""gazetteer_term"": ""transesophageal echocardiography""}",gazetteer_exam_v1
+PMC2817501_01_C0010,PMC2817501_01,5.0,Diagnosis,rheumatic mitral valve disease,rheumatic mitral valve disease,612.0,642.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""rheumatic mitral valve disease""}",gazetteer_diagnosis_v1
+PMC2817501_01_C0011,PMC2817501_01,5.0,AnatomicalSite,pulmonary artery,pulmonary artery,803.0,819.0,"{""assertion"": ""present"", ""gazetteer_term"": ""pulmonary artery""}",gazetteer_anatomicalsite_v1
+PMC2817501_01_C0012,PMC2817501_01,5.0,Finding,pannus formation,pannus formation,861.0,877.0,"{""assertion"": ""present"", ""gazetteer_term"": ""pannus formation""}",gazetteer_finding_v1
+PMC2817501_01_C0013,PMC2817501_01,6.0,Exam,Coronary arteriography,coronary arteriography,914.0,936.0,"{""assertion"": ""present"", ""gazetteer_term"": ""coronary arteriography""}",gazetteer_exam_v1
+PMC2817501_01_C0014,PMC2817501_01,6.0,Finding,stenosis,stenosis,950.0,958.0,"{""assertion"": ""present"", ""gazetteer_term"": ""stenosis""}",gazetteer_finding_v1
+PMC2817501_01_C0015,PMC2817501_01,6.0,AnatomicalSite,LAD,left anterior descending artery,982.0,985.0,"{""assertion"": ""present"", ""gazetteer_term"": ""LAD""}",gazetteer_anatomicalsite_v1
+PMC2817501_01_C0016,PMC2817501_01,7.0,Procedure,reoperation,reoperation,1065.0,1076.0,"{""assertion"": ""present"", ""gazetteer_term"": ""reoperation""}",gazetteer_procedure_v1
+PMC2817501_01_C0017,PMC2817501_01,7.0,Procedure,double valve replacement,double valve replacement,1080.0,1104.0,"{""assertion"": ""present"", ""gazetteer_term"": ""double valve replacement""}",gazetteer_procedure_v1
+PMC2817501_01_C0018,PMC2817501_01,9.0,Procedure,reoperation,reoperation,1415.0,1426.0,"{""assertion"": ""present"", ""gazetteer_term"": ""reoperation""}",gazetteer_procedure_v1
+PMC2817501_01_C0019,PMC2817501_01,9.0,AnatomicalSite,mitral valve,mitral valve,1431.0,1443.0,"{""assertion"": ""present"", ""gazetteer_term"": ""mitral valve""}",gazetteer_anatomicalsite_v1
+PMC2817501_01_C0020,PMC2817501_01,9.0,Procedure,aortotomy,aortotomy,1517.0,1526.0,"{""assertion"": ""present"", ""gazetteer_term"": ""aortotomy""}",gazetteer_procedure_v1
+PMC2817501_01_C0021,PMC2817501_01,9.0,Finding,pannus formation,pannus formation,1607.0,1623.0,"{""assertion"": ""present"", ""gazetteer_term"": ""pannus formation""}",gazetteer_finding_v1
+PMC2817501_01_C0022,PMC2817501_01,10.0,Procedure,aortotomy,aortotomy,1657.0,1666.0,"{""assertion"": ""present"", ""gazetteer_term"": ""aortotomy""}",gazetteer_procedure_v1
+PMC2817501_01_C0023,PMC2817501_01,12.0,Exam,Echocardiogram,echocardiography,1995.0,2009.0,"{""assertion"": ""present"", ""gazetteer_term"": ""echocardiogram""}",gazetteer_exam_v1
+PMC11368112_01_C0001,PMC11368112_01,1.0,Symptom,chest tightness,chest tightness,43.0,58.0,"{""assertion"": ""present"", ""gazetteer_term"": ""chest tightness""}",gazetteer_symptom_v1
+PMC11368112_01_C0002,PMC11368112_01,1.0,Symptom,fever,fever,63.0,68.0,"{""assertion"": ""present"", ""gazetteer_term"": ""fever""}",gazetteer_symptom_v1
+PMC11368112_01_C0003,PMC11368112_01,2.0,Diagnosis,lower extremity venous thrombosis,lower extremity venous thrombosis,157.0,190.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""lower extremity venous thrombosis""}",gazetteer_diagnosis_v1
+PMC11368112_01_C0004,PMC11368112_01,2.0,Procedure,surgery,surgery,219.0,226.0,"{""assertion"": ""present"", ""gazetteer_term"": ""surgery""}",gazetteer_procedure_v1
+PMC11368112_01_C0005,PMC11368112_01,2.0,Diagnosis,hypertension,hypertension,232.0,244.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""hypertension""}",gazetteer_diagnosis_v1
+PMC11368112_01_C0006,PMC11368112_01,3.0,Symptom,dyspnea,dyspnea,287.0,294.0,"{""assertion"": ""present"", ""gazetteer_term"": ""dyspnea""}",gazetteer_symptom_v1
+PMC11368112_01_C0007,PMC11368112_01,3.0,Symptom,fever,fever,323.0,328.0,"{""assertion"": ""present"", ""gazetteer_term"": ""fever""}",gazetteer_symptom_v1
+PMC11368112_01_C0008,PMC11368112_01,3.0,Symptom,chills,chills,333.0,339.0,"{""assertion"": ""present"", ""gazetteer_term"": ""chills""}",gazetteer_symptom_v1
+PMC11368112_01_C0009,PMC11368112_01,4.0,Exam,physical examination,physical examination,345.0,365.0,"{""assertion"": ""present"", ""gazetteer_term"": ""physical examination""}",gazetteer_exam_v1
+PMC11368112_01_C0010,PMC11368112_01,4.0,Sign,rapid respiration,rapid respiration,405.0,422.0,"{""assertion"": ""present"", ""gazetteer_term"": ""rapid respiration""}",gazetteer_sign_v1
+PMC11368112_01_C0011,PMC11368112_01,6.0,Exam,ultrasound,ultrasound,597.0,607.0,"{""assertion"": ""present"", ""gazetteer_term"": ""ultrasound""}",gazetteer_exam_v1
+PMC11368112_01_C0012,PMC11368112_01,6.0,Finding,thrombosis,thrombosis,617.0,627.0,"{""assertion"": ""present"", ""gazetteer_term"": ""thrombosis""}",gazetteer_finding_v1
+PMC11368112_01_C0013,PMC11368112_01,6.0,AnatomicalSite,common femoral vein,common femoral vein,635.0,654.0,"{""assertion"": ""present"", ""gazetteer_term"": ""common femoral vein""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0014,PMC11368112_01,6.0,AnatomicalSite,bilateral external iliac veins,bilateral external iliac veins,656.0,686.0,"{""assertion"": ""present"", ""gazetteer_term"": ""bilateral external iliac veins""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0015,PMC11368112_01,6.0,AnatomicalSite,left superficial femoral vein,left superficial femoral vein,692.0,721.0,"{""assertion"": ""present"", ""gazetteer_term"": ""left superficial femoral vein""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0016,PMC11368112_01,6.0,AnatomicalSite,lower limbs,lower limbs,730.0,741.0,"{""assertion"": ""present"", ""gazetteer_term"": ""lower limbs""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0017,PMC11368112_01,7.0,Exam,ECG,electrocardiography,743.0,746.0,"{""assertion"": ""present"", ""gazetteer_term"": ""ECG""}",gazetteer_exam_v1
+PMC11368112_01_C0018,PMC11368112_01,7.0,Finding,sinus tachycardia,sinus tachycardia,757.0,774.0,"{""assertion"": ""present"", ""gazetteer_term"": ""sinus tachycardia""}",gazetteer_finding_v1
+PMC11368112_01_C0019,PMC11368112_01,8.0,Exam,CTA,computed tomography angiography,786.0,789.0,"{""assertion"": ""present"", ""gazetteer_term"": ""CTA""}",gazetteer_exam_v1
+PMC11368112_01_C0020,PMC11368112_01,8.0,Finding,embolism,embolism,800.0,808.0,"{""assertion"": ""present"", ""gazetteer_term"": ""embolism""}",gazetteer_finding_v1
+PMC11368112_01_C0021,PMC11368112_01,8.0,AnatomicalSite,lower pulmonary artery branches,lower pulmonary artery branches,817.0,848.0,"{""assertion"": ""present"", ""gazetteer_term"": ""lower pulmonary artery branches""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0022,PMC11368112_01,8.0,AnatomicalSite,right lower pulmonary artery branch,right lower pulmonary artery branch,871.0,906.0,"{""assertion"": ""present"", ""gazetteer_term"": ""right lower pulmonary artery branch""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0023,PMC11368112_01,8.0,Finding,exudative changes,exudative changes,912.0,929.0,"{""assertion"": ""present"", ""gazetteer_term"": ""exudative changes""}",gazetteer_finding_v1
+PMC11368112_01_C0024,PMC11368112_01,8.0,AnatomicalSite,lower lobes,lower lung lobes,937.0,948.0,"{""assertion"": ""present"", ""gazetteer_term"": ""lower lobes""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0025,PMC11368112_01,8.0,AnatomicalSite,lungs,lungs,957.0,962.0,"{""assertion"": ""present"", ""gazetteer_term"": ""lungs""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0026,PMC11368112_01,9.0,Diagnosis,pulmonary embolism,pulmonary embolism,1061.0,1079.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""pulmonary embolism""}",gazetteer_diagnosis_v1
+PMC11368112_01_C0027,PMC11368112_01,10.0,Symptom,chills,chills,1153.0,1159.0,"{""assertion"": ""present"", ""gazetteer_term"": ""chills""}",gazetteer_symptom_v1
+PMC11368112_01_C0028,PMC11368112_01,11.0,Symptom,fever,fever,1253.0,1258.0,"{""assertion"": ""present"", ""gazetteer_term"": ""fever""}",gazetteer_symptom_v1
+PMC11368112_01_C0029,PMC11368112_01,13.0,Symptom,fever,fever,1423.0,1428.0,"{""assertion"": ""present"", ""gazetteer_term"": ""fever""}",gazetteer_symptom_v1
+PMC11368112_01_C0030,PMC11368112_01,13.0,Procedure,surgery,surgery,1466.0,1473.0,"{""assertion"": ""present"", ""gazetteer_term"": ""surgery""}",gazetteer_procedure_v1
+PMC11368112_01_C0031,PMC11368112_01,14.0,Exam,esophageal echocardiogram,transesophageal echocardiography,1564.0,1589.0,"{""assertion"": ""present"", ""gazetteer_term"": ""esophageal echocardiogram""}",gazetteer_exam_v1
+PMC11368112_01_C0032,PMC11368112_01,14.0,Finding,hyperechoic right atrium,hyperechoic right atrium,1606.0,1630.0,"{""assertion"": ""present"", ""gazetteer_term"": ""hyperechoic right atrium""}",gazetteer_finding_v1
+PMC11368112_01_C0033,PMC11368112_01,14.0,Finding,widened coronary sinus,widened coronary sinus,1638.0,1660.0,"{""assertion"": ""present"", ""gazetteer_term"": ""widened coronary sinus""}",gazetteer_finding_v1
+PMC11368112_01_C0034,PMC11368112_01,15.0,Procedure,surgery,surgery,1704.0,1711.0,"{""assertion"": ""present"", ""gazetteer_term"": ""surgery""}",gazetteer_procedure_v1
+PMC11368112_01_C0035,PMC11368112_01,16.0,AnatomicalSite,coronary sinus,coronary sinus,1838.0,1852.0,"{""assertion"": ""present"", ""gazetteer_term"": ""coronary sinus""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0036,PMC11368112_01,16.0,AnatomicalSite,right atrium,right atrium,1860.0,1872.0,"{""assertion"": ""present"", ""gazetteer_term"": ""right atrium""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0037,PMC11368112_01,18.0,Procedure,surgery,surgery,2129.0,2136.0,"{""assertion"": ""present"", ""gazetteer_term"": ""surgery""}",gazetteer_procedure_v1
+PMC11368112_01_C0038,PMC11368112_01,18.0,Diagnosis,tuberculosis,tuberculosis,2149.0,2161.0,"{""assertion"": ""present"", ""certainty"": ""suspected"", ""gazetteer_term"": ""tuberculosis""}",gazetteer_diagnosis_v1
+PMC11368112_01_C0039,PMC11368112_01,18.0,Diagnosis,fungal infection,fungal infection,2166.0,2182.0,"{""assertion"": ""present"", ""certainty"": ""suspected"", ""gazetteer_term"": ""fungal infection""}",gazetteer_diagnosis_v1
+PMC11368112_01_C0040,PMC11368112_01,19.0,Exam,Physical examination,physical examination,2233.0,2253.0,"{""assertion"": ""present"", ""gazetteer_term"": ""physical examination""}",gazetteer_exam_v1
+PMC11368112_01_C0041,PMC11368112_01,19.0,Sign,ulcers,ulcers,2272.0,2278.0,"{""assertion"": ""present"", ""gazetteer_term"": ""ulcers""}",gazetteer_sign_v1
+PMC11368112_01_C0042,PMC11368112_01,19.0,AnatomicalSite,lower extremities,lower extremities,2331.0,2348.0,"{""assertion"": ""present"", ""gazetteer_term"": ""lower extremities""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0043,PMC11368112_01,19.0,AnatomicalSite,groin,groin,2350.0,2355.0,"{""assertion"": ""present"", ""gazetteer_term"": ""groin""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0044,PMC11368112_01,19.0,AnatomicalSite,scrotum,scrotum,2361.0,2368.0,"{""assertion"": ""present"", ""gazetteer_term"": ""scrotum""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0045,PMC11368112_01,20.0,AnatomicalSite,oropharynx,oropharynx,2422.0,2432.0,"{""assertion"": ""present"", ""gazetteer_term"": ""oropharynx""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0046,PMC11368112_01,20.0,Sign,ulcers,ulcers,2452.0,2458.0,"{""assertion"": ""present"", ""gazetteer_term"": ""ulcers""}",gazetteer_sign_v1
+PMC11368112_01_C0047,PMC11368112_01,20.0,AnatomicalSite,tongue,tongue,2466.0,2472.0,"{""assertion"": ""present"", ""gazetteer_term"": ""tongue""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0048,PMC11368112_01,20.0,AnatomicalSite,labium,labium,2477.0,2483.0,"{""assertion"": ""present"", ""gazetteer_term"": ""labium""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0049,PMC11368112_01,21.0,Procedure,skin biopsy,skin biopsy,2545.0,2556.0,"{""assertion"": ""present"", ""gazetteer_term"": ""skin biopsy""}",gazetteer_procedure_v1
+PMC11368112_01_C0050,PMC11368112_01,21.0,Finding,epidermal ulceration,epidermal ulceration,2573.0,2593.0,"{""assertion"": ""present"", ""gazetteer_term"": ""epidermal ulceration""}",gazetteer_finding_v1
+PMC11368112_01_C0051,PMC11368112_01,22.0,Diagnosis,BD,Behcet's disease,2627.0,2629.0,"{""assertion"": ""present"", ""certainty"": ""confirmed"", ""gazetteer_term"": ""BD""}",gazetteer_diagnosis_v1
+PMC11368112_01_C0052,PMC11368112_01,22.0,Procedure,surgery,surgery,2727.0,2734.0,"{""assertion"": ""present"", ""gazetteer_term"": ""surgery""}",gazetteer_procedure_v1
+PMC11368112_01_C0053,PMC11368112_01,22.0,Procedure,surgery,surgery,2769.0,2776.0,"{""assertion"": ""present"", ""gazetteer_term"": ""surgery""}",gazetteer_procedure_v1
+PMC11368112_01_C0054,PMC11368112_01,26.0,AnatomicalSite,pulmonary artery,pulmonary artery,3419.0,3435.0,"{""assertion"": ""present"", ""gazetteer_term"": ""pulmonary artery""}",gazetteer_anatomicalsite_v1
+PMC11368112_01_C0055,PMC11368112_01,26.0,Exam,CTA,computed tomography angiography,3436.0,3439.0,"{""assertion"": ""present"", ""gazetteer_term"": ""CTA""}",gazetteer_exam_v1
+PMC11368112_01_C0056,PMC11368112_01,26.0,AnatomicalSite,right lower pulmonary branch,right lower pulmonary artery branch,3485.0,3513.0,"{""assertion"": ""present"", ""gazetteer_term"": ""right lower pulmonary branch""}",gazetteer_anatomicalsite_v1

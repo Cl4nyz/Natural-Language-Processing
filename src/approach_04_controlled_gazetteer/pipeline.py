@@ -2,8 +2,11 @@ import json
 
 import pandas as pd
 
-from project1.clinical_rules import extract_clinical_entities, extract_clinical_relations
-from project1.nlp_utils import (
+from .clinical_rules import (
+    extract_clinical_entities,
+    extract_clinical_relations,
+)
+from .nlp_utils import (
     clean_text,
     extract_measurements,
     extract_reference_range_candidates,
@@ -97,7 +100,7 @@ def write_mermaid(case_id, nodes, edges, output_path):
 
 
 # reune os grafos mermaid em um arquivo markdown
-def write_graphs_markdown(case_ids, mermaid_dir, output_path):
+def write_graphs_markdown(case_ids, mermaid_dir, output_path, output_prefix=""):
     lines = [
         "# Knowledge Graphs",
         "",
@@ -105,7 +108,9 @@ def write_graphs_markdown(case_ids, mermaid_dir, output_path):
         "",
     ]
     for case_id in case_ids:
-        mermaid_text = (mermaid_dir / f"{case_id}.mmd").read_text(encoding="utf-8")
+        mermaid_text = (mermaid_dir / f"{output_prefix}{case_id}.mmd").read_text(
+            encoding="utf-8"
+        )
         lines.extend(
             [
                 f"## {case_id}",
@@ -183,11 +188,11 @@ def write_case_markdown(case_id, nodes, edges, mermaid_path, output_path):
 
 
 # executa todas as etapas e salva os resultados
-def run_pipeline(cases_path, metadata_path, output_dir, case_ids):
+def run_pipeline(cases_path, metadata_path, output_dir, case_ids, output_prefix=""):
     output_dir.mkdir(parents=True, exist_ok=True)
-    mermaid_dir = output_dir / "mermaid"
+    mermaid_dir = output_dir / f"{output_prefix}mermaid"
     mermaid_dir.mkdir(exist_ok=True)
-    markdown_dir = output_dir / "markdown"
+    markdown_dir = output_dir / f"{output_prefix}markdown"
     markdown_dir.mkdir(exist_ok=True)
 
     selected, validation = load_cases(cases_path, metadata_path, case_ids)
@@ -243,40 +248,49 @@ def run_pipeline(cases_path, metadata_path, output_dir, case_ids):
     for case_id in case_ids:
         case_nodes = [node for node in all_nodes if node["case_id"] == case_id]
         case_edges = [edge for edge in all_edges if edge["case_id"] == case_id]
-        mermaid_path = mermaid_dir / f"{case_id}.mmd"
+        mermaid_path = mermaid_dir / f"{output_prefix}{case_id}.mmd"
         write_mermaid(case_id, case_nodes, case_edges, mermaid_path)
         write_case_markdown(
             case_id,
             case_nodes,
             case_edges,
             mermaid_path,
-            markdown_dir / f"{case_id}.md",
+            markdown_dir / f"{output_prefix}{case_id}.md",
         )
-    write_graphs_markdown(case_ids, mermaid_dir, output_dir / "graphs.md")
+    write_graphs_markdown(
+        case_ids,
+        mermaid_dir,
+        output_dir / f"{output_prefix}graphs.md",
+        output_prefix,
+    )
 
-    selected_output.to_csv(output_dir / "selected_cases.csv", index=False)
-    pd.DataFrame(all_sentences).to_csv(output_dir / "sentences.csv", index=False)
-    pd.DataFrame(all_tokens).to_csv(output_dir / "tokens.csv", index=False)
+    selected_output.to_csv(output_dir / f"{output_prefix}selected_cases.csv", index=False)
+    pd.DataFrame(all_sentences).to_csv(
+        output_dir / f"{output_prefix}sentences.csv", index=False
+    )
+    pd.DataFrame(all_tokens).to_csv(
+        output_dir / f"{output_prefix}tokens.csv", index=False
+    )
     pd.DataFrame(prepare_entities_for_csv(all_measurements)).to_csv(
-        output_dir / "measurements.csv", index=False
+        output_dir / f"{output_prefix}measurements.csv", index=False
     )
     pd.DataFrame(prepare_entities_for_csv(all_temporal_candidates)).to_csv(
-        output_dir / "temporal_candidates.csv", index=False
+        output_dir / f"{output_prefix}temporal_candidates.csv", index=False
     )
     pd.DataFrame(prepare_entities_for_csv(all_reference_candidates)).to_csv(
-        output_dir / "reference_range_candidates.csv", index=False
+        output_dir / f"{output_prefix}reference_range_candidates.csv", index=False
     )
     pd.DataFrame(prepare_entities_for_csv(all_clinical_entities)).to_csv(
-        output_dir / "clinical_entities.csv", index=False
+        output_dir / f"{output_prefix}clinical_entities.csv", index=False
     )
     pd.DataFrame(prepare_entities_for_csv(all_nodes)).to_csv(
-        output_dir / "nodes.csv", index=False
+        output_dir / f"{output_prefix}nodes.csv", index=False
     )
     pd.DataFrame(prepare_entities_for_csv(all_edges)).to_csv(
-        output_dir / "edges.csv", index=False
+        output_dir / f"{output_prefix}edges.csv", index=False
     )
 
-    (output_dir / "validation.json").write_text(
+    (output_dir / f"{output_prefix}validation.json").write_text(
         json.dumps(validation, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
 
@@ -322,7 +336,7 @@ def run_pipeline(cases_path, metadata_path, output_dir, case_ids):
             "nodes": sum(row["case_id"] == case_id for row in all_nodes),
         }
 
-    (output_dir / "summary.json").write_text(
+    (output_dir / f"{output_prefix}summary.json").write_text(
         json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
     return summary

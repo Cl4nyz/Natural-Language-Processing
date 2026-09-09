@@ -1,19 +1,18 @@
-# Projeto 1 — Extração de informações clínicas para Knowledge Graphs
+# Abordagem 04 — Gazetteers controlados e regras explícitas
 
 ## Como executar o projeto
 
-Os comandos devem ser executados na **raiz do repositório**, e não dentro da
-pasta `project1`. O arquivo `main.py` da raiz não é utilizado.
+Os comandos devem ser executados na **raiz do repositorio**. O arquivo `main.py`
+da raiz nao e utilizado por esta abordagem.
 
 1. Prepare o ambiente, na primeira execução, com `uv sync`.
-2. Execute os testes com `.\.venv\Scripts\python.exe -m unittest discover -s project1/tests -v`.
-3. Execute o pipeline com `.\.venv\Scripts\python.exe -m project1.run_project1`.
-4. Consulte as saídas em `project1/results/output/`.
+2. Execute os testes com `.\.venv\Scripts\python.exe -m unittest discover -s tests/approach_04 -v`.
+3. Execute o pipeline com `.\.venv\Scripts\python.exe src/04_controlled_gazetteer_pipeline.py`.
+4. Consulte as saidas em `data/processed/`.
 
-O ponto de entrada `run_project1.py` processa os cinco casos de desenvolvimento
-definidos em `CASE_IDS`. A execução fechada dos 56 casos já está preservada em
-`project1/results/iteration_2_all_cases/`, e os cinco grafos renderizados estão
-em `project1/results/final_graph_candidates/`.
+O ponto de entrada `04_controlled_gazetteer_pipeline.py` processa os cinco casos
+de desenvolvimento definidos em `CASE_IDS`. Todos os arquivos produzidos por
+esta abordagem usam o prefixo `04_`.
 
 ## 1. Objetivo do projeto
 
@@ -193,9 +192,9 @@ torna mais restrita.
 
 ## 16. Knowledge Graph
 
-Cada execução produz `nodes.csv` e `edges.csv`. O primeiro armazena as entidades
-e o segundo registra as relações por meio de `source_id`, `target_id` e tipo da
-aresta. Todos os registros mantêm `case_id`.
+Cada execução produz `04_nodes.csv` e `04_edges.csv`. O primeiro armazena as
+entidades e o segundo registra as relações por meio de `source_id`, `target_id`
+e tipo da aresta. Todos os registros mantêm `case_id`.
 
 No modelo de grafo, nós representam entidades e arestas representam relações.
 O uso de `case_id` permite filtrar as duas tabelas e reconstruir separadamente o
@@ -216,20 +215,19 @@ Os nós e as arestas de cada caso são convertidos em um arquivo Mermaid. Mermai
 não realiza extração: ele apenas oferece uma visualização do Knowledge Graph já
 produzido.
 
-As fontes de verdade continuam sendo `nodes.csv` e `edges.csv`. Para facilitar a
-leitura, o Mermaid mostra somente os nós que participam de alguma relação. Essa
-escolha é apenas visual: os nós isolados continuam preservados em `nodes.csv` e
-nas tabelas Markdown. A execução também gera `graphs.md`, que reúne todos os
-casos em blocos Mermaid para visualização direta em um leitor compatível. A
-pasta `markdown/` contém um arquivo por caso com seu diagrama, sua tabela de nós
-e sua tabela de arestas, seguindo a organização dos exemplos do projeto.
+As fontes de verdade continuam sendo `04_nodes.csv` e `04_edges.csv`. Para
+facilitar a leitura, o Mermaid mostra somente os nós que participam de alguma
+relação. Essa escolha é apenas visual: os nós isolados continuam preservados no
+CSV e nas tabelas Markdown. A execução também gera `04_graphs.md`, que reúne os
+casos em blocos Mermaid. A pasta `04_markdown/` contém um arquivo por caso com
+seu diagrama, sua tabela de nós e sua tabela de arestas.
 
 ## 19. Execução sobre os 56 casos
 
-O pipeline fechado foi aplicado aos 56 casos disponíveis. A execução padrão dos
-cinco casos de desenvolvimento pode ser iniciada, a partir da raiz do
-repositório, com `python -m project1.run_project1`; os resultados completos dos
-56 casos estão preservados em `project1/results/iteration_2_all_cases/`.
+O pipeline fechado foi aplicado aos 56 casos disponíveis durante a análise de
+cobertura. Na estrutura integrada, a execução padrão dos cinco casos de
+desenvolvimento pode ser iniciada com
+`.\.venv\Scripts\python.exe src/04_controlled_gazetteer_pipeline.py`.
 
 | Resultado | Total |
 |---|---:|

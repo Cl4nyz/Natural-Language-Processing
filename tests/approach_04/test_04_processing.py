@@ -1,6 +1,6 @@
 import unittest
 
-from project1.nlp_utils import (
+from src.approach_04_controlled_gazetteer.nlp_utils import (
     extract_measurements,
     extract_reference_range_candidates,
     extract_temporal_candidates,
@@ -9,7 +9,7 @@ from project1.nlp_utils import (
 )
 
 
-class Project1Tests(unittest.TestCase):
+class Approach04ProcessingTests(unittest.TestCase):
     def extract_one(self, text):
         results = extract_measurements(split_sentences("TEST_01", text))
         self.assertEqual(len(results), 1)

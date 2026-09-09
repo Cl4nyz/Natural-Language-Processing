@@ -1,11 +1,11 @@
 import unittest
 
-from project1.clinical_rules import (
+from src.approach_04_controlled_gazetteer.clinical_rules import (
     GAZETTEERS,
     extract_clinical_entities,
     extract_clinical_relations,
 )
-from project1.nlp_utils import split_sentences
+from src.approach_04_controlled_gazetteer.nlp_utils import split_sentences
 
 
 class ClinicalRuleTests(unittest.TestCase):

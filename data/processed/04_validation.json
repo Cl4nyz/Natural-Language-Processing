@@ -1,0 +1,9 @@
+{
+  "requested_case_count": 5,
+  "selected_case_count": 5,
+  "all_case_ids_found": true,
+  "all_case_text_nonempty": true,
+  "all_article_ids_available": true,
+  "article_ids_missing_from_metadata": [],
+  "age_gender_modified": false
+}
