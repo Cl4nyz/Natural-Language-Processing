@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 import re
 import pandas as pd
@@ -12,39 +13,9 @@ nltk.download('punkt_tab', quiet=True)
 nltk.download('averaged_perceptron_tagger_eng', quiet=True)
 nltk.download('stopwords', quiet=True)
 
-BASE_DIR = Path(__file__).resolve().parents[1]
-DATA_RAW = BASE_DIR / 'data' / 'raw'
-DATA_PROCESSED = BASE_DIR / 'data' / 'processed'
-
-CASES = DATA_RAW / 'cases.csv'
-OUTPUT_FILE = DATA_PROCESSED / '02_graph.md'
-
-# Vocabulário Controlado Genérico (pode ser expandido ou carregado de um arquivo JSON/UMLS)
-MEDICAL_VOCAB = {
-    "Symptom": [
-        "pain", "abdominal pain", "flank pain", "nausea", "fever", "fever", "constipation",
-        "tenderness", "vomiting", "diarrhea", "dyspnea", "cough"
-    ],
-    "Exam": [
-        "tomography", "computed tomography", "ct", "ultrasound", "eus", "eus-fna",
-        "endoscopy", "fna", "oesophagogastroduodenoscopy", "lipase", "c-reactive protein", "cea"
-    ],
-    "Finding": [
-        "lesion", "cystic lesion", "cyst", "mass", "pseudocyst", "neoplasm",
-        "stranding", "mucin", "malignancy", "abnormalities"
-    ],
-    "Anatomy": [
-        "stomach", "pancreas", "tail of the pancreas", "body of the pancreas",
-        "posterior wall", "coeliac axis", "coeliac vessels", "lesser sac", "flank", "back"
-    ],
-    "Treatment": [
-        "resection", "pancreatectomy", "distal pancreatectomy", "fluids", "analgesia",
-        "surgery", "cystgastrostomy", "drainage"
-    ],
-    "Outcome": [
-        "discharged", "resolution", "tolerating diet", "recovery", "doing well"
-    ]
-}
+CASES = Path('sample/cases.csv')
+OUTPUT_FILE = Path('src/pos-tagging-graph.md')
+VOCAB_FILE = Path('src/medical_vocab.json')
 
 stop_words = set(stopwords.words('english'))
 stop_words.discard('no')
@@ -59,6 +30,13 @@ REGEX_PATTERNS = {
 
 PREPOSITIONS_SPATIAL = ["between", "arising from", "adherent to", "adjacent to", "in", "located at"]
 VERBS_REVEAL = ["demonstrating", "revealed", "showed", "noted", "show", "confirmed"]
+
+def load_medical_vocab():
+    """Carrega o vocabulário médico de um arquivo JSON externo se disponível."""
+    with open(VOCAB_FILE, 'r', encoding='utf-8') as f:
+        return json.load(f)
+    
+MEDICAL_VOCAB = load_medical_vocab()
 
 def classify_entity_generically(entity_str):
     """Classifica entidades de forma genérica usando o vocabulário e padrões de regex."""
