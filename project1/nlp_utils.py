@@ -23,10 +23,19 @@ NUMBER = r"\d{1,3}(?:,\d{3})*(?:\.\d+)?|\d+(?:\.\d+)?"
 LENGTH_UNIT = r"cm(?:2|²)?|mm(?:2|²)?|m(?:2|²)?"
 UNIT = (
     r"mg\s+per\s+day|beats/min|mcg/dL|ng/mL|mg/L|g/dL|IU/mL|U/L|"
-    r"/mm3|mmHg|mm/h|cm2|cm²|mm2|mm²|cm|mm|mg|months?|weeks?|days?|h|C"
+    r"/mm3|mmHg|mm/h|cm2|cm²|mm2|mm²|cm|mm|mg|C"
 )
 
 MEASUREMENT_PATTERNS = [
+    (
+        "scientific_notation",
+        "measurement_scientific_notation_degraded_v1",
+        re.compile(
+            rf"(?P<coefficient>{NUMBER})\s*[x×]\s*10(?:\^)?"
+            rf"(?P<exponent>\d+)\s*/\s*(?P<denominator>[A-Za-z]+)",
+            re.IGNORECASE,
+        ),
+    ),
     (
         "blood_pressure",
         "measurement_blood_pressure_v1",
@@ -87,6 +96,102 @@ UNIT_NORMALIZATION = {
     "mm²": "mm2",
     "mg per day": "mg/day",
 }
+
+NUMBER_WORDS = {
+    "one": 1,
+    "two": 2,
+    "three": 3,
+    "four": 4,
+    "five": 5,
+    "six": 6,
+    "seven": 7,
+    "eight": 8,
+    "nine": 9,
+    "ten": 10,
+    "eleven": 11,
+    "twelve": 12,
+}
+
+ORDINAL_WORDS = {
+    "first": 1,
+    "second": 2,
+    "third": 3,
+    "fourth": 4,
+    "fifth": 5,
+    "sixth": 6,
+    "seventh": 7,
+    "eighth": 8,
+    "ninth": 9,
+    "tenth": 10,
+}
+
+NUMBER_WORD_PATTERN = "|".join(NUMBER_WORDS)
+ORDINAL_WORD_PATTERN = "|".join(ORDINAL_WORDS)
+TIME_UNIT = r"h|hours?|days?|weeks?|months?|years?"
+
+TEMPORAL_PATTERNS = [
+    (
+        "relative_day",
+        "temporal_postoperative_day_v1",
+        re.compile(r"\b(?P<marker>postoperative\s+day|POD)\s+(?P<value>\d+)\b", re.IGNORECASE),
+    ),
+    (
+        "duration",
+        "temporal_hyphenated_duration_v1",
+        re.compile(
+            rf"\b(?P<value>\d+)-(?P<unit>{TIME_UNIT})\b(?!\s*-?\s*old\b)",
+            re.IGNORECASE,
+        ),
+    ),
+    (
+        "relative_day",
+        "temporal_numeric_ordinal_day_v1",
+        re.compile(r"\b(?P<value>\d+)(?:st|nd|rd|th)\s+day\b", re.IGNORECASE),
+    ),
+    (
+        "relative_day",
+        "temporal_word_ordinal_day_v1",
+        re.compile(rf"\b(?P<word>{ORDINAL_WORD_PATTERN})\s+day\b", re.IGNORECASE),
+    ),
+    (
+        "relative_day",
+        "temporal_day_number_v1",
+        re.compile(r"\bday\s+(?P<value>\d+)\b", re.IGNORECASE),
+    ),
+    (
+        "duration",
+        "temporal_numeric_duration_v1",
+        re.compile(rf"\b(?P<value>{NUMBER})\s*(?P<unit>{TIME_UNIT})\b", re.IGNORECASE),
+    ),
+    (
+        "duration",
+        "temporal_word_duration_v1",
+        re.compile(rf"\b(?P<word>{NUMBER_WORD_PATTERN})\s+(?P<unit>{TIME_UNIT})\b", re.IGNORECASE),
+    ),
+]
+
+REFERENCE_SIGNAL = r"(?:normal|reference)\s+range(?:\s*\(\s*NR\s*\))?|NR"
+REFERENCE_UNIT = rf"{UNIT}|%"
+REFERENCE_PATTERNS = [
+    (
+        "reference_range_signal_v1",
+        re.compile(
+            rf"(?P<signal>{REFERENCE_SIGNAL})\s*"
+            rf"(?P<reference>(?P<low>{NUMBER})\s*[-–]\s*(?P<high>{NUMBER})\s*"
+            rf"(?P<unit>{REFERENCE_UNIT})(?![A-Za-z0-9]))",
+            re.IGNORECASE,
+        ),
+    ),
+    (
+        "reference_threshold_signal_v1",
+        re.compile(
+            rf"(?P<signal>{REFERENCE_SIGNAL})\s*"
+            rf"(?P<reference>(?P<comparator>[<>≤≥])\s*(?P<value>{NUMBER})\s*"
+            rf"(?P<unit>{REFERENCE_UNIT})(?![A-Za-z0-9]))",
+            re.IGNORECASE,
+        ),
+    ),
+]
 
 
 def clean_text(text):
@@ -194,6 +299,19 @@ def normalize_unit(unit):
 def measurement_attributes(kind, match):
     values = match.groupdict()
 
+    if kind == "scientific_notation":
+        coefficient = parse_number(values["coefficient"])
+        exponent = int(values["exponent"])
+        return {
+            "measurement_type": kind,
+            "coefficient": coefficient,
+            "base": 10,
+            "exponent": exponent,
+            "value": coefficient * (10 ** exponent),
+            "unit": f"1/{values['denominator']}",
+            "normalization_rule": "normalize_degraded_scientific_notation_v1",
+        }
+
     if kind == "blood_pressure":
         return {
             "measurement_type": kind,
@@ -237,6 +355,11 @@ def measurement_attributes(kind, match):
 
 def normalized_measurement_label(attributes):
     kind = attributes["measurement_type"]
+    if kind == "scientific_notation":
+        denominator = attributes["unit"].split("/", 1)[1]
+        return (
+            f"{attributes['coefficient']} × 10^{attributes['exponent']}/{denominator}"
+        )
     if kind == "blood_pressure":
         return f"{attributes['systolic']}/{attributes['diastolic']} {attributes['unit']}"
     if kind == "dimension":
@@ -300,3 +423,115 @@ def extract_measurements(sentences):
                 }
             )
     return entities
+
+
+def normalize_time_unit(unit):
+    unit = unit.casefold()
+    if unit in {"h", "hour", "hours"}:
+        return "hour"
+    return unit.rstrip("s")
+
+
+def temporal_attributes(kind, match):
+    groups = match.groupdict()
+    if groups.get("value"):
+        value = int(groups["value"])
+    elif kind == "relative_day":
+        value = ORDINAL_WORDS[groups["word"].casefold()]
+    else:
+        value = NUMBER_WORDS[groups["word"].casefold()]
+
+    attributes = {"temporal_type": kind, "value": value, "unit": "day"}
+    if groups.get("unit"):
+        attributes["unit"] = normalize_time_unit(groups["unit"])
+    if groups.get("marker"):
+        attributes["marker"] = normalize_form(groups["marker"])
+    return attributes
+
+
+def extract_temporal_candidates(sentences):
+    """Detecta expresiones temporales sin crear nodos del grafo."""
+    candidates = []
+    candidate_number = 0
+
+    for sentence in sentences:
+        occupied = []
+        matches = []
+        for kind, rule_id, pattern in TEMPORAL_PATTERNS:
+            for match in pattern.finditer(sentence["sentence_text"]):
+                overlaps = any(
+                    match.start() < end and start < match.end() for start, end in occupied
+                )
+                if overlaps:
+                    continue
+                occupied.append((match.start(), match.end()))
+                matches.append((match.start(), match.end(), kind, rule_id, match))
+
+        for start, end, kind, rule_id, match in sorted(matches):
+            candidate_number += 1
+            attributes = temporal_attributes(kind, match)
+            original_span = sentence["sentence_text"][start:end]
+            candidates.append(
+                {
+                    "candidate_id": f"{sentence['case_id']}_T{candidate_number:04d}",
+                    "case_id": sentence["case_id"],
+                    "sentence_id": sentence["sentence_id"],
+                    "type": "TemporalCandidate",
+                    "original_span": original_span,
+                    "normalized_label": f"{attributes['value']} {attributes['unit']}",
+                    "start_char": sentence["start_char"] + start,
+                    "end_char": sentence["start_char"] + end,
+                    "attributes": attributes,
+                    "rule_id": rule_id,
+                }
+            )
+    return candidates
+
+
+def extract_reference_range_candidates(sentences):
+    """Marca rangos y umbrales que tienen una señal explícita de referencia."""
+    candidates = []
+    candidate_number = 0
+
+    for sentence in sentences:
+        matches = []
+        for rule_id, pattern in REFERENCE_PATTERNS:
+            for match in pattern.finditer(sentence["sentence_text"]):
+                matches.append((match.start("reference"), rule_id, match))
+
+        for start, rule_id, match in sorted(matches):
+            groups = match.groupdict()
+            unit = normalize_unit(groups["unit"])
+            attributes = {
+                "signal": normalize_form(groups["signal"]),
+                "unit": unit,
+                "evidence": match.group(0),
+            }
+            if groups.get("low"):
+                attributes["reference_type"] = "range"
+                attributes["low"] = parse_number(groups["low"])
+                attributes["high"] = parse_number(groups["high"])
+                normalized_label = f"{attributes['low']}-{attributes['high']} {unit}"
+            else:
+                attributes["reference_type"] = "threshold"
+                attributes["comparator"] = groups["comparator"]
+                attributes["value"] = parse_number(groups["value"])
+                normalized_label = f"{groups['comparator']}{attributes['value']} {unit}"
+
+            candidate_number += 1
+            end = match.end("reference")
+            candidates.append(
+                {
+                    "candidate_id": f"{sentence['case_id']}_R{candidate_number:04d}",
+                    "case_id": sentence["case_id"],
+                    "sentence_id": sentence["sentence_id"],
+                    "type": "ReferenceRangeCandidate",
+                    "original_span": sentence["sentence_text"][start:end],
+                    "normalized_label": normalized_label,
+                    "start_char": sentence["start_char"] + start,
+                    "end_char": sentence["start_char"] + end,
+                    "attributes": attributes,
+                    "rule_id": rule_id,
+                }
+            )
+    return candidates

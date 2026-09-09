@@ -1,6 +1,12 @@
 import unittest
 
-from project1.nlp_utils import extract_measurements, split_sentences, tokenize
+from project1.nlp_utils import (
+    extract_measurements,
+    extract_reference_range_candidates,
+    extract_temporal_candidates,
+    split_sentences,
+    tokenize,
+)
 
 
 class Project1Tests(unittest.TestCase):
@@ -85,6 +91,63 @@ class Project1Tests(unittest.TestCase):
         ]
         for token in expected:
             self.assertIn(token, forms)
+
+    def test_temporal_candidates(self):
+        text = "3-day history. Follow-up after 14 days and three months. Postoperative day 4. POD 7."
+        sentences = split_sentences("TEST_01", text)
+        candidates = extract_temporal_candidates(sentences)
+        spans = [candidate["original_span"] for candidate in candidates]
+        self.assertEqual(
+            spans,
+            ["3-day", "14 days", "three months", "Postoperative day 4", "POD 7"],
+        )
+        self.assertTrue(all(candidate["type"] == "TemporalCandidate" for candidate in candidates))
+
+    def test_temporal_candidates_are_not_measurements(self):
+        text = "Symptoms lasted 14 days and returned three months later."
+        sentences = split_sentences("TEST_01", text)
+        self.assertEqual(extract_measurements(sentences), [])
+        self.assertEqual(len(extract_temporal_candidates(sentences)), 2)
+
+    def test_patient_age_is_not_temporal_candidate(self):
+        text = "A 44-year-old woman and an A-53-year old man were described."
+        candidates = extract_temporal_candidates(split_sentences("TEST_01", text))
+        self.assertEqual(candidates, [])
+
+    def test_degraded_scientific_notation(self):
+        result = self.extract_one("WBC, 12.65 x 109/L")
+        self.assertEqual(result["original_span"], "12.65 x 109/L")
+        self.assertEqual(result["normalized_label"], "12.65 × 10^9/L")
+        self.assertEqual(result["attributes"]["value"], 12650000000)
+        self.assertEqual(
+            result["attributes"]["normalization_rule"],
+            "normalize_degraded_scientific_notation_v1",
+        )
+
+    def test_reference_range_candidates(self):
+        text = "Values: normal range (NR) 3800-10,000/mm3, NR <5 mg/L and reference range 3-20 mm/h."
+        candidates = extract_reference_range_candidates(split_sentences("TEST_01", text))
+        self.assertEqual(
+            [candidate["original_span"] for candidate in candidates],
+            ["3800-10,000/mm3", "<5 mg/L", "3-20 mm/h"],
+        )
+        self.assertTrue(
+            all(candidate["type"] == "ReferenceRangeCandidate" for candidate in candidates)
+        )
+
+    def test_unitless_values_remain_outside_measurements(self):
+        text = "A 4/6 murmur, 3-4 degree insufficiency and INR 2.0-3.0 were reported."
+        self.assertEqual(extract_measurements(split_sentences("TEST_01", text)), [])
+
+    def test_candidate_offsets(self):
+        text = "After three months, normal range 10-140 U/L was reported."
+        sentences = split_sentences("TEST_01", text)
+        candidates = extract_temporal_candidates(sentences)
+        candidates += extract_reference_range_candidates(sentences)
+        for candidate in candidates:
+            start = candidate["start_char"]
+            end = candidate["end_char"]
+            self.assertEqual(text[start:end], candidate["original_span"])
 
 
 if __name__ == "__main__":
