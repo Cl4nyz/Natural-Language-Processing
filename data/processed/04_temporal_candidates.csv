@@ -1,0 +1,20 @@
+candidate_id,case_id,sentence_id,type,original_span,normalized_label,start_char,end_char,attributes,rule_id
+PMC5137649_01_T0001,PMC5137649_01,1,TemporalCandidate,3-day,3 day,37,42,"{""temporal_type"": ""duration"", ""unit"": ""day"", ""value"": 3}",temporal_hyphenated_duration_v1
+PMC5137649_01_T0002,PMC5137649_01,17,TemporalCandidate,postoperative day 4,4 day,2202,2221,"{""marker"": ""postoperative day"", ""temporal_type"": ""relative_day"", ""unit"": ""day"", ""value"": 4}",temporal_postoperative_day_v1
+PMC11722600_01_T0001,PMC11722600_01,1,TemporalCandidate,12 h,12 hour,129,133,"{""temporal_type"": ""duration"", ""unit"": ""hour"", ""value"": 12}",temporal_numeric_duration_v1
+PMC11722600_01_T0002,PMC11722600_01,3,TemporalCandidate,day 20,20 day,232,238,"{""temporal_type"": ""relative_day"", ""unit"": ""day"", ""value"": 20}",temporal_day_number_v1
+PMC11722600_01_T0003,PMC11722600_01,13,TemporalCandidate,24 h,24 hour,1681,1685,"{""temporal_type"": ""duration"", ""unit"": ""hour"", ""value"": 24}",temporal_numeric_duration_v1
+PMC11722600_01_T0004,PMC11722600_01,16,TemporalCandidate,6 month,6 month,2256,2263,"{""temporal_type"": ""duration"", ""unit"": ""month"", ""value"": 6}",temporal_numeric_duration_v1
+PMC11783470_01_T0001,PMC11783470_01,15,TemporalCandidate,3 months,3 month,1661,1669,"{""temporal_type"": ""duration"", ""unit"": ""month"", ""value"": 3}",temporal_numeric_duration_v1
+PMC2817501_01_T0001,PMC2817501_01,2,TemporalCandidate,two years,2 year,250,259,"{""temporal_type"": ""duration"", ""unit"": ""year"", ""value"": 2}",temporal_word_duration_v1
+PMC11368112_01_T0001,PMC11368112_01,1,TemporalCandidate,2-day,2 day,26,31,"{""temporal_type"": ""duration"", ""unit"": ""day"", ""value"": 2}",temporal_hyphenated_duration_v1
+PMC11368112_01_T0002,PMC11368112_01,3,TemporalCandidate,Two days,2 day,246,254,"{""temporal_type"": ""duration"", ""unit"": ""day"", ""value"": 2}",temporal_word_duration_v1
+PMC11368112_01_T0003,PMC11368112_01,11,TemporalCandidate,fifth day,5 day,1303,1312,"{""temporal_type"": ""relative_day"", ""unit"": ""day"", ""value"": 5}",temporal_word_ordinal_day_v1
+PMC11368112_01_T0004,PMC11368112_01,13,TemporalCandidate,two months,2 month,1429,1439,"{""temporal_type"": ""duration"", ""unit"": ""month"", ""value"": 2}",temporal_word_duration_v1
+PMC11368112_01_T0005,PMC11368112_01,14,TemporalCandidate,Two months,2 month,1541,1551,"{""temporal_type"": ""duration"", ""unit"": ""month"", ""value"": 2}",temporal_word_duration_v1
+PMC11368112_01_T0006,PMC11368112_01,21,TemporalCandidate,7th day,7 day,2493,2500,"{""temporal_type"": ""relative_day"", ""unit"": ""day"", ""value"": 7}",temporal_numeric_ordinal_day_v1
+PMC11368112_01_T0007,PMC11368112_01,23,TemporalCandidate,two weeks,2 week,2984,2993,"{""temporal_type"": ""duration"", ""unit"": ""week"", ""value"": 2}",temporal_word_duration_v1
+PMC11368112_01_T0008,PMC11368112_01,23,TemporalCandidate,three months,3 month,3018,3030,"{""temporal_type"": ""duration"", ""unit"": ""month"", ""value"": 3}",temporal_word_duration_v1
+PMC11368112_01_T0009,PMC11368112_01,25,TemporalCandidate,14 days,14 day,3330,3337,"{""temporal_type"": ""duration"", ""unit"": ""day"", ""value"": 14}",temporal_numeric_duration_v1
+PMC11368112_01_T0010,PMC11368112_01,26,TemporalCandidate,Two weeks,2 week,3393,3402,"{""temporal_type"": ""duration"", ""unit"": ""week"", ""value"": 2}",temporal_word_duration_v1
+PMC11368112_01_T0011,PMC11368112_01,27,TemporalCandidate,nine months,9 month,3647,3658,"{""temporal_type"": ""duration"", ""unit"": ""month"", ""value"": 9}",temporal_word_duration_v1

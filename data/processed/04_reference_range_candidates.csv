@@ -1,0 +1,4 @@
+candidate_id,case_id,sentence_id,type,original_span,normalized_label,start_char,end_char,attributes,rule_id
+PMC11722600_01_R0001,PMC11722600_01,7,ReferenceRangeCandidate,"3800-10,000/mm3",3800-10000 /mm3,604,619,"{""evidence"": ""normal range (NR) 3800-10,000/mm3"", ""high"": 10000, ""low"": 3800, ""reference_type"": ""range"", ""signal"": ""normal range (nr)"", ""unit"": ""/mm3""}",reference_range_signal_v1
+PMC11722600_01_R0002,PMC11722600_01,7,ReferenceRangeCandidate,<5 mg/L,<5 mg/L,662,669,"{""comparator"": ""<"", ""evidence"": ""NR <5 mg/L"", ""reference_type"": ""threshold"", ""signal"": ""nr"", ""unit"": ""mg/L"", ""value"": 5}",reference_threshold_signal_v1
+PMC11722600_01_R0003,PMC11722600_01,7,ReferenceRangeCandidate,3-20 mm/h,3-20 mm/h,718,727,"{""evidence"": ""NR 3-20 mm/h"", ""high"": 20, ""low"": 3, ""reference_type"": ""range"", ""signal"": ""nr"", ""unit"": ""mm/h""}",reference_range_signal_v1

@@ -1,0 +1,14 @@
+flowchart TD
+    PMC2817501_01_PATIENT["Patient: PMC2817501_01"]
+    PMC2817501_01_C0005["Sign: left hemiparesis"]
+    PMC2817501_01_C0009["Exam: Transesophageal echocardiography"]
+    PMC2817501_01_C0012["Finding: pannus formation"]
+    PMC2817501_01_C0013["Exam: Coronary arteriography"]
+    PMC2817501_01_C0014["Finding: stenosis"]
+    PMC2817501_01_C0016["Procedure: reoperation"]
+    PMC2817501_01_C0017["Procedure: double valve replacement"]
+    PMC2817501_01_PATIENT -->|HAS_SIGN| PMC2817501_01_C0005
+    PMC2817501_01_C0009 -->|REVEALS| PMC2817501_01_C0012
+    PMC2817501_01_C0013 -->|REVEALS| PMC2817501_01_C0014
+    PMC2817501_01_PATIENT -->|UNDERWENT| PMC2817501_01_C0016
+    PMC2817501_01_PATIENT -->|UNDERWENT| PMC2817501_01_C0017

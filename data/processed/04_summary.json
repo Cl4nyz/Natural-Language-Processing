@@ -1,0 +1,80 @@
+{
+  "cases": 5,
+  "sentences": 88,
+  "tokens": 2097,
+  "measurements": 44,
+  "temporal_candidates": 19,
+  "reference_range_candidates": 3,
+  "clinical_entities": 207,
+  "clinical_entities_by_type": {
+    "Symptom": 32,
+    "Exam": 31,
+    "Finding": 37,
+    "AnatomicalSite": 47,
+    "Procedure": 25,
+    "Diagnosis": 24,
+    "Sign": 11
+  },
+  "nodes": 256,
+  "edges": 58,
+  "edges_by_relation": {
+    "HAS_SYMPTOM": 7,
+    "UNDERWENT": 12,
+    "REVEALS": 22,
+    "HAS_DIAGNOSIS": 6,
+    "HAS_HISTORY": 4,
+    "HAS_SIGN": 7
+  },
+  "per_case": {
+    "PMC5137649_01": {
+      "sentences": 18,
+      "tokens": 419,
+      "measurements": 5,
+      "temporal_candidates": 2,
+      "reference_range_candidates": 0,
+      "clinical_entities": 48,
+      "edges": 16,
+      "nodes": 54
+    },
+    "PMC11722600_01": {
+      "sentences": 16,
+      "tokens": 402,
+      "measurements": 8,
+      "temporal_candidates": 4,
+      "reference_range_candidates": 3,
+      "clinical_entities": 44,
+      "edges": 12,
+      "nodes": 53
+    },
+    "PMC11783470_01": {
+      "sentences": 15,
+      "tokens": 296,
+      "measurements": 6,
+      "temporal_candidates": 1,
+      "reference_range_candidates": 0,
+      "clinical_entities": 36,
+      "edges": 7,
+      "nodes": 43
+    },
+    "PMC2817501_01": {
+      "sentences": 12,
+      "tokens": 335,
+      "measurements": 10,
+      "temporal_candidates": 1,
+      "reference_range_candidates": 0,
+      "clinical_entities": 23,
+      "edges": 5,
+      "nodes": 34
+    },
+    "PMC11368112_01": {
+      "sentences": 27,
+      "tokens": 645,
+      "measurements": 15,
+      "temporal_candidates": 11,
+      "reference_range_candidates": 0,
+      "clinical_entities": 56,
+      "edges": 18,
+      "nodes": 72
+    }
+  }
+}
