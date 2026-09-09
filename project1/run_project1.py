@@ -10,7 +10,7 @@ REPOSITORY_DIR = PROJECT_DIR.parent
 
 CASES_PATH = REPOSITORY_DIR / "sample" / "cases.csv"
 METADATA_PATH = REPOSITORY_DIR / "sample" / "metadata.csv"
-RESULTS_DIR = PROJECT_DIR / "results" / "post_iteration_1"
+RESULTS_DIR = PROJECT_DIR / "results" / "iteration_2"
 
 CASE_IDS = [
     "PMC5137649_01",
@@ -23,5 +23,5 @@ CASE_IDS = [
 
 if __name__ == "__main__":
     summary = run_pipeline(CASES_PATH, METADATA_PATH, RESULTS_DIR, CASE_IDS)
-    print("Ajuste post-Iteración 1 completado")
+    print("Iteración 2 completada")
     print(summary)
