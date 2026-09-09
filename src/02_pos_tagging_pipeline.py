@@ -14,7 +14,7 @@ nltk.download('averaged_perceptron_tagger_eng', quiet=True)
 nltk.download('stopwords', quiet=True)
 
 CASES = Path('sample/cases.csv')
-OUTPUT_FILE = Path('src/pos-tagging-graph.md')
+OUTPUT_FILE = Path('data/processed/02-pos-tagging-graph.md')
 VOCAB_FILE = Path('src/medical_vocab.json')
 
 stop_words = set(stopwords.words('english'))
