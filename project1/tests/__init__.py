@@ -1,1 +1,1 @@
-"""Tests for Project1."""
+"""Pruebas de la primera entrega."""

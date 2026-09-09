@@ -1,0 +1,34 @@
+{
+  "cases": 5,
+  "sentences": 88,
+  "tokens": 2097,
+  "measurements": 48,
+  "edges": 0,
+  "per_case": {
+    "PMC5137649_01": {
+      "sentences": 18,
+      "tokens": 419,
+      "measurements": 5
+    },
+    "PMC11722600_01": {
+      "sentences": 16,
+      "tokens": 402,
+      "measurements": 11
+    },
+    "PMC11783470_01": {
+      "sentences": 15,
+      "tokens": 296,
+      "measurements": 7
+    },
+    "PMC2817501_01": {
+      "sentences": 12,
+      "tokens": 335,
+      "measurements": 10
+    },
+    "PMC11368112_01": {
+      "sentences": 27,
+      "tokens": 645,
+      "measurements": 15
+    }
+  }
+}

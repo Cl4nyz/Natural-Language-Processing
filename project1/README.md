@@ -1,15 +1,39 @@
-# Project1 — Iteración 1
+# Primeira entrega
 
-Base reproducible y basada en reglas para los cinco casos de desarrollo. Los
-offsets de oraciones, tokens y mediciones son intervalos semiabiertos sobre
-`original_text`: `original_text[start_char:end_char]`.
+Esta pasta contém a base do pipeline de NLP desenvolvida para a primeira entrega.
+A implementação atual processa cinco casos clínicos e extrai medições mediante
+expressões regulares.
 
-Ejecución desde la raíz del repositorio:
+## Estrutura
 
-```powershell
-.\.venv\Scripts\python.exe -m Project1.run_iteration1
-.\.venv\Scripts\python.exe -m unittest discover -s Project1/tests -v
+```text
+project1/
+├── run_project1.py       execução da entrega
+├── pipeline.py           carga, validação e geração dos resultados
+├── nlp_utils.py          limpeza, sentenças, tokens e medições
+├── tests/                testes automatizados
+├── results/iteration_1/  arquivos CSV, JSON e Mermaid
+└── docs/                 relatório técnico
 ```
 
-El punto de entrada es `run_iteration1.py`; `main.py` no se utiliza. Los
-artefactos se escriben en `Project1/output/iteration_1/`.
+## Execução
+
+Os comandos devem ser executados a partir da raiz do repositório:
+
+```powershell
+.\.venv\Scripts\python.exe -m project1.run_project1
+.\.venv\Scripts\python.exe -m unittest discover -s project1/tests -v
+```
+
+O arquivo `main.py` da raiz não é utilizado.
+
+## Resultado atual
+
+- 5 casos processados;
+- 88 sentenças;
+- 2.097 tokens;
+- 48 medições;
+- 53 nós preliminares;
+- nenhuma relação clínica, pois essa etapa ainda não foi aprovada.
+
+Os offsets usam intervalos `[start_char, end_char)` sobre o texto original.
