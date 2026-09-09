@@ -103,6 +103,25 @@ class Project1Tests(unittest.TestCase):
         )
         self.assertTrue(all(candidate["type"] == "TemporalCandidate" for candidate in candidates))
 
+    def test_decimal_temporal_candidates(self):
+        examples = {
+            "1.5 weeks": (1.5, "week"),
+            "23.5 months": (23.5, "month"),
+            "10.5 months": (10.5, "month"),
+            "14 days": (14, "day"),
+        }
+        for text, expected in examples.items():
+            with self.subTest(text=text):
+                candidates = extract_temporal_candidates(
+                    split_sentences("TEST_01", text)
+                )
+                self.assertEqual(len(candidates), 1)
+                self.assertEqual(candidates[0]["attributes"]["value"], expected[0])
+                self.assertIsInstance(
+                    candidates[0]["attributes"]["value"], type(expected[0])
+                )
+                self.assertEqual(candidates[0]["attributes"]["unit"], expected[1])
+
     def test_temporal_candidates_are_not_measurements(self):
         text = "Symptoms lasted 14 days and returned three months later."
         sentences = split_sentences("TEST_01", text)

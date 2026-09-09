@@ -435,7 +435,7 @@ def normalize_time_unit(unit):
 def temporal_attributes(kind, match):
     groups = match.groupdict()
     if groups.get("value"):
-        value = int(groups["value"])
+        value = parse_number(groups["value"])
     elif kind == "relative_day":
         value = ORDINAL_WORDS[groups["word"].casefold()]
     else:
