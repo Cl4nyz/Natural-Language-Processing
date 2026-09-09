@@ -15,6 +15,7 @@ project1/
 ├── clinical_rules.py     extração clínica e relações
 ├── gazetteers.json       termos clínicos e formas normalizadas
 ├── tests/                testes automatizados
+├── evaluation/           modelos para anotação manual do Gold Standard
 ├── results/              resultados preservados por iteração
 └── docs/                 relatório técnico
 ```
