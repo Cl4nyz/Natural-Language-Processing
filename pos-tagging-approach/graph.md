@@ -14,34 +14,54 @@ flowchart LR
   S1["Diarrhea"]:::symptom
   E1["Tomography"]:::exam
   E2["Ct"]:::exam
+  S2["Nonspecific mesenteric edema"]:::symptom
   E3["Repeat ct"]:::exam
   F1["Central mesenteric mass"]:::finding
   A1["Pancreas"]:::anatomy
+  A2["Duodenum"]:::anatomy
   E4["Patient underwent ct"]:::exam
+  T1["Biopsy"]:::treatment
   F2["Mass"]:::finding
-  S2["Nausea"]:::symptom
+  T2["Chemotherapy"]:::treatment
+  S3["Nausea"]:::symptom
   F3["Pancreatic mass"]:::finding
+  A3["Proximal jejunum"]:::anatomy
   E5["Follow-up ct"]:::exam
-  A2["Stomach"]:::anatomy
-  T1["Subsequent drainage"]:::treatment
-  T2["Preferential drainage"]:::treatment
+  S4["Distension"]:::symptom
+  A4["Stomach"]:::anatomy
+  T3["Subsequent drainage"]:::treatment
+  F4["Stricture"]:::finding
+  T4["Preferential drainage"]:::treatment
   E6["Endoscopy"]:::exam
 
   P1 -->|PRESENTS_WITH| S1
   P1 -->|UNDERWENT_EXAM| E1
   P1 -->|UNDERWENT_EXAM| E2
+  P1 -->|PRESENTS_WITH| S2
   P1 -->|UNDERWENT_EXAM| E3
   P1 -->|HAS_FINDING| F1
   P1 -->|UNDERWENT_EXAM| E4
+  P1 -->|TREATED_WITH| T1
   P1 -->|HAS_FINDING| F2
-  P1 -->|PRESENTS_WITH| S2
+  P1 -->|TREATED_WITH| T2
+  P1 -->|PRESENTS_WITH| S3
   P1 -->|HAS_FINDING| F3
   P1 -->|UNDERWENT_EXAM| E5
-  P1 -->|TREATED_WITH| T1
-  P1 -->|TREATED_WITH| T2
+  P1 -->|PRESENTS_WITH| S4
+  P1 -->|TREATED_WITH| T3
+  P1 -->|HAS_FINDING| F4
+  P1 -->|TREATED_WITH| T4
   P1 -->|UNDERWENT_EXAM| E6
   F1 -->|LOCATED_AT| A1
+  F1 -->|LOCATED_AT| A2
+  T1 -->|TARGETS| F1
+  T2 -->|TARGETS| F2
   F3 -->|LOCATED_AT| A2
-  T1 -->|TARGETS| F3
-  T2 -->|TARGETS| F3
+  F3 -->|LOCATED_AT| A3
+  F3 -->|LOCATED_AT| A4
+  T3 -->|TARGETS| F3
+  F4 -->|LOCATED_AT| A4
+  F4 -->|LOCATED_AT| A3
+  F4 -->|LOCATED_AT| A2
+  T4 -->|TARGETS| F4
 ```

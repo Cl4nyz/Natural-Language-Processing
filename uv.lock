@@ -226,6 +226,8 @@ dependencies = [
     { name = "nltk" },
     { name = "pandas" },
     { name = "pyvis" },
+    { name = "pyvis-network" },
+    { name = "tabulate" },
 ]
 
 [package.metadata]
@@ -234,6 +236,8 @@ requires-dist = [
     { name = "nltk", specifier = ">=3.10.3" },
     { name = "pandas", specifier = ">=3.0.5" },
     { name = "pyvis", specifier = ">=0.3.2" },
+    { name = "pyvis-network", specifier = ">=0.0.6" },
+    { name = "tabulate", specifier = ">=0.10.0" },
 ]
 
 [[package]]
@@ -495,6 +499,18 @@ wheels = [
 ]
 
 [[package]]
+name = "pyvis-network"
+version = "0.0.6"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pandas" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/80/d0/a891da8eb87276756c6ff0fa9c9506ad61948bc71e547146750b45324f4e/pyvis-network-0.0.6.tar.gz", hash = "sha256:c5dc11cd5e8de2f02b181741b8599ef2388c1d8f6eb65d721163c68d51803781", size = 48432, upload-time = "2021-12-31T00:24:12.28Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/3e/b7/9ed53162e01d69ba5b3465f896c10e41e98ff71b2ee016b28a5e654e120e/pyvis_network-0.0.6-py3-none-any.whl", hash = "sha256:8d110456e1af4f634bf7a3e306077104e9b6d511aa37bab03c9eb152e3bbccf3", size = 49560, upload-time = "2021-12-31T00:24:10.632Z" },
+]
+
+[[package]]
 name = "regex"
 version = "2026.9.3"
 source = { registry = "https://pypi.org/simple" }
@@ -619,6 +635,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/28/e3/55dcc2cfbc3ca9c29519eb6884dd1415ecb53b0e934862d3559ddcb7e20b/stack_data-0.6.3.tar.gz", hash = "sha256:836a778de4fec4dcd1dcd89ed8abff8a221f58308462e1c4aa2a3cf30148f0b9", size = 44707, upload-time = "2023-09-30T13:58:05.479Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f1/7b/ce1eafaf1a76852e2ec9b22edecf1daa58175c090266e9f6c64afcd81d91/stack_data-0.6.3-py3-none-any.whl", hash = "sha256:d5558e0c25a4cb0853cddad3d77da9891a08cb85dd9f9f91b9f8cd66e511e695", size = 24521, upload-time = "2023-09-30T13:58:03.53Z" },
+]
+
+[[package]]
+name = "tabulate"
+version = "0.10.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/46/58/8c37dea7bbf769b20d58e7ace7e5edfe65b849442b00ffcdd56be88697c6/tabulate-0.10.0.tar.gz", hash = "sha256:e2cfde8f79420f6deeffdeda9aaec3b6bc5abce947655d17ac662b126e48a60d", size = 91754, upload-time = "2026-03-04T18:55:34.402Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/99/55/db07de81b5c630da5cbf5c7df646580ca26dfaefa593667fc6f2fe016d2e/tabulate-0.10.0-py3-none-any.whl", hash = "sha256:f0b0622e567335c8fabaaa659f1b33bcb6ddfe2e496071b743aa113f8774f2d3", size = 39814, upload-time = "2026-03-04T18:55:31.284Z" },
 ]
 
 [[package]]
