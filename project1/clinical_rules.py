@@ -1,12 +1,10 @@
-"""Gazetteers y reglas clínicas explícitas de la Iteración 2."""
-
 import json
 import re
 from pathlib import Path
 
 
+# carrega os termos clinicos do arquivo json
 def load_gazetteers(path=None):
-    """Carga los términos clínicos desde el archivo JSON."""
     path = path or Path(__file__).with_name("gazetteers.json")
     with path.open(encoding="utf-8") as file:
         return json.load(file)
@@ -23,11 +21,13 @@ NEGATION_STOP = re.compile(r"\b(but|however|although)\b|;", re.IGNORECASE)
 POST_NEGATION = re.compile(r"^\s+(?:was|were|is|are)?\s*negative\b", re.IGNORECASE)
 
 
+# monta um padrao flexivel para termos com varias palavras
 def flexible_term_pattern(term):
     pieces = [re.escape(piece) for piece in term.split()]
     return r"(?<![A-Za-z0-9])" + r"\s+".join(pieces) + r"(?![A-Za-z0-9])"
 
 
+# define se a entidade esta presente ou negada no contexto local
 def find_assertion(sentence_text, start, end):
     assertion = "present"
     for cue in NEGATION_CUES.finditer(sentence_text[:start]):
@@ -42,6 +42,7 @@ def find_assertion(sentence_text, start, end):
     return assertion
 
 
+# define a certeza do diagnostico pelo contexto anterior
 def diagnosis_certainty(sentence_text, start):
     context = sentence_text[max(0, start - 80):start]
     if re.search(r"\b(suggesting|suspecting|suspected)\b", context, re.IGNORECASE):
@@ -49,6 +50,7 @@ def diagnosis_certainty(sentence_text, start):
     return "confirmed"
 
 
+# extrai entidades clinicas com gazetteers e longest match
 def extract_clinical_entities(sentences):
     entities = []
     entity_number = 0
@@ -63,7 +65,7 @@ def extract_clinical_entities(sentences):
                         (match.start(), match.end(), entity_type, normalized_label, term)
                     )
 
-        # Longest match wins when gazetteer entries overlap.
+        # prioriza o termo mais longo quando existem sobreposicoes
         selected = []
         occupied = []
         for start, end, entity_type, normalized_label, term in sorted(
@@ -74,8 +76,7 @@ def extract_clinical_entities(sentences):
             occupied.append((start, end))
             selected.append((start, end, entity_type, normalized_label, term))
 
-        # Do not create a second mention for a parenthetical alias immediately
-        # following its full form: esophagogastroduodenoscopy (EGD).
+        # evita duplicar um alias entre parenteses depois da forma completa
         without_parenthetical_aliases = []
         for item in sorted(selected):
             start, end, entity_type, normalized_label, _term = item
@@ -124,6 +125,7 @@ def extract_clinical_entities(sentences):
     return entities
 
 
+# adiciona uma relacao sem duplicar a mesma aresta
 def add_edge(edges, case_id, source_id, target_id, relation, sentence, rule_id, attributes):
     key = (source_id, target_id, relation)
     if any((edge["source_id"], edge["target_id"], edge["relation"]) == key for edge in edges):
@@ -143,6 +145,7 @@ def add_edge(edges, case_id, source_id, target_id, relation, sentence, rule_id, 
     )
 
 
+# retorna entidades validas depois de uma posicao
 def entities_after(entities, position, allowed_types):
     return [
         entity for entity in entities
@@ -150,6 +153,7 @@ def entities_after(entities, position, allowed_types):
     ]
 
 
+# extrai relacoes clinicas por padroes explicitos
 def extract_clinical_relations(case_id, sentences, entities):
     edges = []
     patient_id = f"{case_id}_PATIENT"

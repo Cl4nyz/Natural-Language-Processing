@@ -1,1 +1,1 @@
-"""Iteration 1: transparent, rule-based clinical NLP pipeline."""
+# define o pacote do projeto 1

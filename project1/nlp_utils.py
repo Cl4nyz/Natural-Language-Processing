@@ -1,5 +1,3 @@
-"""Funciones sencillas de texto y mediciones para la primera entrega."""
-
 import re
 from decimal import Decimal
 
@@ -194,25 +192,27 @@ REFERENCE_PATTERNS = [
 ]
 
 
+# cria uma copia limpa sem alterar o texto original
 def clean_text(text):
-    """Crea una copia limpia sin modificar el texto original."""
     text = text.replace("\r\n", "\n").replace("\r", "\n")
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r" *\n *", "\n", text)
     return text.strip()
 
 
+# normaliza o texto para comparacao
 def normalize_form(text):
     return re.sub(r"\s+", " ", text.strip()).casefold()
 
 
+# retorna a palavra anterior a uma posicao
 def previous_word(text, position):
     match = re.search(r"([A-Za-z]+)$", text[:position])
     return match.group(1).casefold() if match else ""
 
 
+# divide o texto em sentencas e preserva os offsets
 def split_sentences(case_id, original_text):
-    """Divide el texto y conserva offsets sobre original_text."""
     boundaries = []
     position = 0
 
@@ -266,8 +266,8 @@ def split_sentences(case_id, original_text):
     return sentences
 
 
+# divide uma sentenca em tokens e preserva os offsets
 def tokenize(sentence):
-    """Tokeniza una oración y conserva offsets sobre original_text."""
     tokens = []
     for match in TOKEN_PATTERN.finditer(sentence["sentence_text"]):
         token = match.group(0)
@@ -286,16 +286,19 @@ def tokenize(sentence):
     return tokens
 
 
+# converte o numero textual para int ou float
 def parse_number(raw_value):
     number = Decimal(raw_value.replace(",", ""))
     return int(number) if number == number.to_integral_value() else float(number)
 
 
+# normaliza variantes de unidades
 def normalize_unit(unit):
     unit = re.sub(r"\s+", " ", unit.strip())
     return UNIT_NORMALIZATION.get(unit.casefold(), unit)
 
 
+# organiza os atributos conforme o tipo de medicao
 def measurement_attributes(kind, match):
     values = match.groupdict()
 
@@ -353,6 +356,7 @@ def measurement_attributes(kind, match):
     return attributes
 
 
+# monta o rotulo normalizado de uma medicao
 def normalized_measurement_label(attributes):
     kind = attributes["measurement_type"]
     if kind == "scientific_notation":
@@ -371,8 +375,8 @@ def normalized_measurement_label(attributes):
     return f"{comparator}{attributes['value']} {attributes['unit']}"
 
 
+# extrai medicoes e evita spans sobrepostos
 def extract_measurements(sentences):
-    """Extrae mediciones mediante reglas ordenadas y evita spans solapados."""
     entities = []
     measurement_number = 0
 
@@ -425,6 +429,7 @@ def extract_measurements(sentences):
     return entities
 
 
+# normaliza unidades temporais
 def normalize_time_unit(unit):
     unit = unit.casefold()
     if unit in {"h", "hour", "hours"}:
@@ -432,6 +437,7 @@ def normalize_time_unit(unit):
     return unit.rstrip("s")
 
 
+# organiza os atributos de um candidato temporal
 def temporal_attributes(kind, match):
     groups = match.groupdict()
     if groups.get("value"):
@@ -449,8 +455,8 @@ def temporal_attributes(kind, match):
     return attributes
 
 
+# extrai candidatos temporais sem criar nos
 def extract_temporal_candidates(sentences):
-    """Detecta expresiones temporales sin crear nodos del grafo."""
     candidates = []
     candidate_number = 0
 
@@ -488,8 +494,8 @@ def extract_temporal_candidates(sentences):
     return candidates
 
 
+# extrai intervalos de referencia com sinais explicitos
 def extract_reference_range_candidates(sentences):
-    """Marca rangos y umbrales que tienen una señal explícita de referencia."""
     candidates = []
     candidate_number = 0
 

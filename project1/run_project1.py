@@ -1,4 +1,4 @@
-"""Punto de entrada de la primera entrega."""
+# executa o pipeline nos cinco casos de desenvolvimento
 
 from pathlib import Path
 
@@ -10,7 +10,7 @@ REPOSITORY_DIR = PROJECT_DIR.parent
 
 CASES_PATH = REPOSITORY_DIR / "sample" / "cases.csv"
 METADATA_PATH = REPOSITORY_DIR / "sample" / "metadata.csv"
-RESULTS_DIR = PROJECT_DIR / "results" / "iteration_2"
+RESULTS_DIR = PROJECT_DIR / "results" / "output"
 
 CASE_IDS = [
     "PMC5137649_01",

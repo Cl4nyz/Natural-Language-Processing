@@ -1,5 +1,3 @@
-"""Carga los datos, ejecuta el pipeline y guarda los resultados."""
-
 import json
 
 import pandas as pd
@@ -15,6 +13,7 @@ from project1.nlp_utils import (
 )
 
 
+# carrega e valida os casos solicitados
 def load_cases(cases_path, metadata_path, case_ids):
     cases = pd.read_csv(cases_path, dtype={"article_id": "string", "case_id": "string"})
     metadata = pd.read_csv(metadata_path, dtype={"article_id": "string"})
@@ -60,6 +59,7 @@ def load_cases(cases_path, metadata_path, case_ids):
     return selected, validation
 
 
+# converte os atributos em json para salvar no csv
 def prepare_entities_for_csv(entities):
     rows = []
     for entity in entities:
@@ -71,9 +71,17 @@ def prepare_entities_for_csv(entities):
     return rows
 
 
+# gera um arquivo mermaid para um caso
 def write_mermaid(case_id, nodes, edges, output_path):
     lines = ["flowchart TD"]
+    connected_ids = {
+        node_id
+        for edge in edges
+        for node_id in (edge["source_id"], edge["target_id"])
+    }
     for node in nodes:
+        if node["entity_id"] not in connected_ids:
+            continue
         node_id = node["entity_id"].replace("-", "_")
         if node["type"] == "Patient":
             label = f"Patient: {case_id}"
@@ -88,10 +96,99 @@ def write_mermaid(case_id, nodes, edges, output_path):
     output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+# reune os grafos mermaid em um arquivo markdown
+def write_graphs_markdown(case_ids, mermaid_dir, output_path):
+    lines = [
+        "# Knowledge Graphs",
+        "",
+        "Os diagramas abaixo representam os nodes e edges gerados pelo pipeline.",
+        "",
+    ]
+    for case_id in case_ids:
+        mermaid_text = (mermaid_dir / f"{case_id}.mmd").read_text(encoding="utf-8")
+        lines.extend(
+            [
+                f"## {case_id}",
+                "",
+                "```mermaid",
+                mermaid_text.rstrip(),
+                "```",
+                "",
+            ]
+        )
+    output_path.write_text("\n".join(lines), encoding="utf-8")
+
+
+# prepara um valor para uma tabela markdown
+def markdown_cell(value):
+    if value is None:
+        return ""
+    return str(value).replace("|", "\\|").replace("\n", " ")
+
+
+# gera o markdown completo de um caso
+def write_case_markdown(case_id, nodes, edges, mermaid_path, output_path):
+    lines = [
+        f"# Caso {case_id}",
+        "",
+        "## Knowledge Graph",
+        "",
+        "```mermaid",
+        mermaid_path.read_text(encoding="utf-8").rstrip(),
+        "```",
+        "",
+        "## Tabela de nos",
+        "",
+        "| entity_id | type | label | attributes |",
+        "|---|---|---|---|",
+    ]
+    for node in nodes:
+        label = f"case {case_id}" if node["type"] == "Patient" else node["normalized_label"]
+        attributes = json.dumps(node["attributes"], ensure_ascii=False, sort_keys=True)
+        lines.append(
+            "| "
+            + " | ".join(
+                markdown_cell(value)
+                for value in (node["entity_id"], node["type"], label, attributes)
+            )
+            + " |"
+        )
+
+    lines.extend(
+        [
+            "",
+            "## Tabela de arestas",
+            "",
+            "| edge_id | source_id | target_id | relation | attributes |",
+            "|---|---|---|---|---|",
+        ]
+    )
+    for edge in edges:
+        attributes = json.dumps(edge["attributes"], ensure_ascii=False, sort_keys=True)
+        lines.append(
+            "| "
+            + " | ".join(
+                markdown_cell(value)
+                for value in (
+                    edge["edge_id"],
+                    edge["source_id"],
+                    edge["target_id"],
+                    edge["relation"],
+                    attributes,
+                )
+            )
+            + " |"
+        )
+    output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+# executa todas as etapas e salva os resultados
 def run_pipeline(cases_path, metadata_path, output_dir, case_ids):
     output_dir.mkdir(parents=True, exist_ok=True)
     mermaid_dir = output_dir / "mermaid"
     mermaid_dir.mkdir(exist_ok=True)
+    markdown_dir = output_dir / "markdown"
+    markdown_dir.mkdir(exist_ok=True)
 
     selected, validation = load_cases(cases_path, metadata_path, case_ids)
     selected_output = selected[["case_id", "article_id", "case_text", "age", "gender"]].copy()
@@ -146,7 +243,16 @@ def run_pipeline(cases_path, metadata_path, output_dir, case_ids):
     for case_id in case_ids:
         case_nodes = [node for node in all_nodes if node["case_id"] == case_id]
         case_edges = [edge for edge in all_edges if edge["case_id"] == case_id]
-        write_mermaid(case_id, case_nodes, case_edges, mermaid_dir / f"{case_id}.mmd")
+        mermaid_path = mermaid_dir / f"{case_id}.mmd"
+        write_mermaid(case_id, case_nodes, case_edges, mermaid_path)
+        write_case_markdown(
+            case_id,
+            case_nodes,
+            case_edges,
+            mermaid_path,
+            markdown_dir / f"{case_id}.md",
+        )
+    write_graphs_markdown(case_ids, mermaid_dir, output_dir / "graphs.md")
 
     selected_output.to_csv(output_dir / "selected_cases.csv", index=False)
     pd.DataFrame(all_sentences).to_csv(output_dir / "sentences.csv", index=False)
