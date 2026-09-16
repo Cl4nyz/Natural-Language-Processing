@@ -131,8 +131,11 @@ flowchart LR
 ## Resultados
 
 A execução paralela das três abordagens permitiu comparar os diferentes níveis de abstração e precisão na geração dos grafos de conhecimento, gerando tanto representações estatísticas interativas quanto grafos sintáticos e heurísticos estruturados.
-
+Diagrama do método 2:
 ![Diagrama obtido pelo metodo 2](./assets/images/ner.png)
+
+Diagrama do método 3:
+![Diagrama obtido pelo metodo 3](./assets/images/ner2.png)
 
 ## Como Modelos de Linguagem foram Usados
 
