@@ -132,6 +132,8 @@ flowchart LR
 
 A execução paralela das três abordagens permitiu comparar os diferentes níveis de abstração e precisão na geração dos grafos de conhecimento, gerando tanto representações estatísticas interativas quanto grafos sintáticos e heurísticos estruturados.
 
+![Diagrama obtido pelo metodo 2](./assets/images/ner.png)
+
 ## Como Modelos de Linguagem foram Usados
 
 Modelos de linguagem foram empregados para auxiliar na geração do README e na visualização dos grafos de conhecimento (interface de visualização). Validar e corrigir ideias utilizadas para extração de informação dos casos clínicos não estruturados. Auxiliar na geração das funções de PMI, POS-tagging e heurísticas utilizadas na diferentes abordagens.
