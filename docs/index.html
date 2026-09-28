@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NLP Clinical Graph Explorer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/styles/vis-network.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">NLP project</p>
+          <h1>Clinical Knowledge Graph Explorer</h1>
+        </div>
+        <a class="repo-link" href="../README.md" target="_blank" rel="noreferrer">Project docs</a>
+      </header>
+
+      <main class="app-grid">
+        <aside class="sidebar">
+          <h2>Solutions</h2>
+          <div id="solution-tabs" class="solution-tabs" role="tablist" aria-label="NLP solutions"></div>
+
+          <section class="panel">
+            <label for="input-text">Clinical case text</label>
+            <textarea id="input-text" rows="12">A 56-year-old woman presented with abdominal pain and nausea. CT scan showed a pancreatic cyst. Labs: CA 19-9 12,476.5 ng/mL and 6 cm mass. The patient had no fever and no constipation. Follow-up imaging revealed a 3 cm lesion in the pancreas.</textarea>
+          </section>
+
+          <div class="actions">
+            <button id="build-button" type="button">Build graph</button>
+            <button id="sample-button" type="button" class="secondary">Load sample</button>
+          </div>
+
+          <section class="panel summary-panel">
+            <h3>Summary</h3>
+            <div id="summary"></div>
+          </section>
+        </aside>
+
+        <section class="viewer">
+          <div id="graph-wrapper">
+            <div id="graph-network" aria-label="Knowledge graph visualization"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/dist/vis-network.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

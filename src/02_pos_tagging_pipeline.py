@@ -3,6 +3,7 @@ from pathlib import Path
 import re
 import pandas as pd
 import networkx as nx
+import os
 import nltk
 from nltk.corpus import stopwords
 from nltk import pos_tag, RegexpParser, sent_tokenize
@@ -12,6 +13,9 @@ nltk.download('punkt', quiet=True)
 nltk.download('punkt_tab', quiet=True)
 nltk.download('averaged_perceptron_tagger_eng', quiet=True)
 nltk.download('stopwords', quiet=True)
+
+REPO_ROOT = Path(__file__).resolve().parents[1]  # adjust parent index if inside a subfolder
+os.chdir(REPO_ROOT)
 
 CASES = Path('sample/cases.csv')
 OUTPUT_FILE = Path('data/processed/02-pos-tagging-graph.md')
@@ -238,7 +242,7 @@ def generate_mermaid_graph(knowledge_graph, node_id_mapping):
 def main():
     try:
         cases_df = pd.read_csv(CASES, header=0)
-        text = cases_df.loc[1]['case_text'] # Caso analisado do csv
+        text = cases_df.loc[10]['case_text'] # Caso analisado do csv
         
         knowledge_graph = build_generic_graph(text)
         
