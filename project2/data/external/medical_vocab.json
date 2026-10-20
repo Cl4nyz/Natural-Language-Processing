@@ -1,0 +1,62 @@
+{
+    "Symptom": [
+        "pain", "fever", "chills", "fatigue", "malaise", "weight loss", "weight gain", "night sweats", 
+        "anorexia", "lethargy", "weakness", "diaphoresis", "syncope", "dizziness", "pruritus",
+        "abdominal pain", "flank pain", "epigastric pain", "nausea", "vomiting", "diarrhea", "constipation",
+        "tenderness", "rebound tenderness", "guarding", "dysphagia", "odynophagia", "hematemesis", 
+        "melena", "hematochezia", "jaundice", "ascites", "distension", "bloating", "early satiety",
+        "dyspnea", "cough", "shortness of breath", "chest pain", "hemoptysis", "palpitations", 
+        "orthopnea", "paroxysmal nocturnal dyspnea", "wheezing", "sputum production", "stridor",
+        "headache", "altered mental status", "seizure", "numbness", "paresthesia", "dysarthria", 
+        "aphasia", "confusion", "ataxia", "tremor", "dysuria", "hematuria", "flank discomfort", 
+        "frequency", "urgency", "nocturia", "oliguria", "pelvic pain", "arthralgia", "myalgia", 
+        "edema", "rash", "erythema", "swelling", "stiffness"
+    ],
+    "Exam": [
+        "tomography", "computed tomography", "ct", "ct scan", "ultrasound", "us", "eus", "eus-fna",
+        "endoscopy", "fna", "oesophagogastroduodenoscopy", "mri", "magnetic resonance imaging", 
+        "x-ray", "radiograph", "pet scan", "pet-ct", "angiography", "mammography", "echocardiogram",
+        "colonoscopy", "sigmoidoscopy", "bronchoscopy", "ercp", "mrcp", "lipase", "amylase", 
+        "c-reactive protein", "crp", "cea", "ca 19-9", "ca 125", "afp", "psa", "complete blood count", 
+        "cbc", "white blood cell count", "wbc", "hemoglobin", "platelets", "creatinine", 
+        "blood urea nitrogen", "bun", "alt", "ast", "alkaline phosphatase", "bilirubin", 
+        "troponin", "lactate", "d-dimer", "esr", "procalcitonin", "international normalized ratio", "inr"
+    ],
+    "Finding": [
+        "lesion", "cystic lesion", "cyst", "mass", "pseudocyst", "neoplasm", "tumor", "nodule", 
+        "polyp", "adenoma", "carcinoma", "granuloma", "abscess", "hematoma", "calculus", "gallstone",
+        "stranding", "mucin", "malignancy", "abnormalities", "lymphadenopathy", "free fluid", 
+        "periductal enhancement", "dilatation", "stricture", "calcification", "necrosis", 
+        "ischemia", "infarction", "thrombosis", "stenosis", "thickening", "effusion", "consolidation", 
+        "pneumothorax", "atelectasis", "edema", "perfusion defect", "hemorrhage"
+    ],
+    "Anatomy": [
+        "stomach", "pancreas", "head of the pancreas", "body of the pancreas", "tail of the pancreas", 
+        "pancreatic duct", "liver", "gallbladder", "biliary tree", "common bile duct", "spleen", 
+        "duodenum", "jejunum", "ileum", "colon", "appendix", "rectum", "peritoneum", "lesser sac",
+        "coeliac axis", "coeliac vessels", "superior mesenteric artery", "portal vein", "flank", "back",
+        "lung", "pleura", "mediastinum", "heart", "aorta", "pericardium", "coronary artery",
+        "kidney", "renal cortex", "ureter", "bladder", "prostate", "uterus", "ovary",
+        "brain", "spine", "spinal cord", "bone", "joint", "soft tissue"
+    ],
+    "Treatment": [
+        "resection", "pancreatectomy", "distal pancreatectomy", "whipple procedure", "cholecystectomy", 
+        "appendectomy", "colectomy", "gastrectomy", "laparoscopy", "laparotomy", "surgery", 
+        "cystgastrostomy", "drainage", "stenting", "biopsy", "angioplasty", "debridement",
+        "fluids", "intravenous fluids", "analgesia", "antibiotics", "chemotherapy", "radiotherapy", 
+        "immunotherapy", "anticoagulation", "corticosteroids", "vasopressors", "intubation", 
+        "dialysis", "blood transfusion"
+    ],
+    "Outcome": [
+        "discharged", "resolution", "tolerating diet", "recovery", "doing well", "improved", 
+        "stable", "cured", "remission", "readmitted", "complication", "decompensation", 
+        "expired", "transferred"
+    ],
+    "Diagnosis": [
+        "pancreatitis", "acute pancreatitis", "chronic pancreatitis", "appendicitis", "cholecystitis", 
+        "cholangitis", "diverticulitis", "nephrolithiasis", "pancreatic ductal adenocarcinoma", 
+        "intraductal papillary mucinous neoplasm", "ipmn", "serous cystadenoma", "mucinous cystadenoma", 
+        "gastroenteritis", "bowel obstruction", "pneumonia", "pulmonary embolism", "myocardial infarction", 
+        "sepsis", "stroke", "renal failure"
+    ]
+}

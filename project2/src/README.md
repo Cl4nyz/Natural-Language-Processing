@@ -1,6 +1,6 @@
 # Projeto 2: Classificação Vetorial de Entidades com N-Grams e Machine Learning
 
-Este projeto aprimora o pipeline do **Projeto 1** ([`src/project1/02_pos_tagging_pipeline.py`](../project1/02_pos_tagging_pipeline.py)) substituindo a busca exata de strings por um **Espaço Vetorial baseado em N-grams** e **Machine Learning (Nearest Neighbors com Similaridade de Cosseno)**, mantendo 100% de conformidade com as restrições do edital (sem Transformers e sem embeddings densos proibidos como LLMs).
+Este projeto aprimora o pipeline do **Projeto 1** ([`src/project1/02_pos_tagging_pipeline.py`](../../src/project1/02_pos_tagging_pipeline.py)) substituindo a busca exata de strings por um **Espaço Vetorial baseado em N-grams** e **Machine Learning (Nearest Neighbors com Similaridade de Cosseno)**, mantendo 100% de conformidade com as restrições do edital (sem Transformers e sem embeddings densos proibidos como LLMs).
 
 ---
 
@@ -50,10 +50,23 @@ $$\text{TF-IDF} = \text{TF}(t, d) \times \text{IDF}(t)$$
 
 ## 4. Como Executar
 
-A partir da raiz do repositório:
+Requisitos: Python 3.12+ e as bibliotecas `nltk`, `scikit-learn`, `pandas`, `networkx` e `tabulate`.
 
 ```bash
-./.venv/bin/python src/project2/02_pos_tagging_pipeline.py
+pip install nltk scikit-learn pandas networkx tabulate
+python project2/src/02_project2_pos_tagging_pipeline.py
 ```
 
-O grafo resultante será salvo em [`data/processed/02_project2_pos_tagging_graph.md`](../../data/processed/02_project2_pos_tagging_graph.md).
+Ou, sem instalar nada no ambiente global, com [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv run --no-project --with nltk --with scikit-learn --with pandas --with networkx --with tabulate \
+    python project2/src/02_project2_pos_tagging_pipeline.py
+```
+
+Os caminhos do script são relativos ao diretório de execução, então ele deve ser executado **a partir da raiz do repositório**. Entradas:
+
+* [`sample/cases.csv`](../../sample/cases.csv): casos clínicos do MultiCaRe (o pipeline processa o caso da linha 1). É idêntico a [`project2/data/raw/cases.csv`](../data/raw/cases.csv);
+* [`src/project1/medical_vocab.json`](../../src/project1/medical_vocab.json): vocabulário médico do Projeto 1, usado como protótipos de cada categoria. Há uma cópia em [`project2/data/external/`](../data/external/medical_vocab.json).
+
+O grafo resultante é salvo em `data/processed/02-project2-pos-tagging-graph.md`, na raiz do repositório. A versão gerada para este relatório está em [`project2/data/processed/`](../data/processed/02-project2-pos-tagging-graph.md).
